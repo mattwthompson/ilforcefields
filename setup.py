@@ -2,7 +2,7 @@ import os
 from setuptools import setup
 
 setup(
-    name = "il-forcefields",
+    name = "il_forcefields",
     version = "0.0.0",
     author = "Matt Thompson",
     author_email = "matt.thompson@vanderbilt.edu",
