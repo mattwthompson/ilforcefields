@@ -13,4 +13,6 @@ class TetraAlkylAmmonium(mb.Compound):
         for i, chain_length in enumerate(chain_lengths):
             alkyl = Alkane(n=chain_length, cap_front=False, cap_end=True)
             self.add(alkyl, label='alkyl_{}'.format(i))
-            mb.force_overlap(self['alkyl_{}'.format(i)], self['alkyl_{}'.format(i)]['up'], self['ammonium']['port_{}'.format(i)])
+            mb.force_overlap(self['alkyl_{}'.format(i)],
+                self['alkyl_{}'.format(i)]['up'],
+                self['ammonium']['port_{}'.format(i)])
