@@ -20,6 +20,12 @@
   <Type name="lopes_018" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_017,%lopes_018]" desc="CS in CMIm" doi="10.1021/jp0362133" overrides="lopes_017"/>
   <Type name="lopes_019" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_018]" desc="CT in CMIm" overrides="lopes_008" doi="10.1021/jp0362133"/>
   <Type name="lopes_020" class="CT" element="C" mass="12.011" def="H[C;%lopes_016,%lopes_017,%lopes_018,%lopes_019]" desc="HC in CMIm" overrides="lopes_009" doi="10.1021/jp0362133"/>
+  <Type name="lopes_021" class="CT" element="C" mass="12.011" def="C(F)(F)(F)S" desc="C in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="lopes_022" class="F" element="F" mass="18.9984" def="FC(F)(F)S" desc="F in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="lopes_023" class="S" element="S" mass="32.065" def="S(O)(O)C(F)(F)(F)" desc="S in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="lopes_024" class="O" element="O" mass="15.9994" def="OS(O)(O)C(F)(F)(F)" desc="O in OTf" doi="10.1021/jp0476545"/>
+  <Type name="lopes_025" class="O" element="O" mass="15.9994" def="OS(N)(O)C(F)(F)(F)" desc="O in Tf2N" doi="10.1021/jp0476545"/>
+  <Type name="lopes_026" class="N" element="N" mass="14.0067" def="N(S(O)(O)(C))S(O)(O)(C)" desc="N in Tf2N" doi="10.1021/jp0476545"/>
   <Type name="opls_401" class="Cl-" element="Cl" mass="35.45300" def="Cl" desc="chloride ion"/>
  </AtomTypes>
  <HarmonicBondForce>
@@ -27,6 +33,11 @@
   <Bond type1="lopes_012" type2="lopes_010" length="0.1378" k="178700" doi="10.1021/jp0362133"/>
   <Bond type1="lopes_012" type2="lopes_012" length="0.1341" k="217600" doi="10.1021/jp0362133"/>
   <Bond type1="lopes_010" type2="lopes_014" length="0.1466" k="141000" doi="10.1021/jp0362133"/>
+  <Bond type1="lopes_021" type2="lopes_022" length="0.1323" k="739400" doi="10.1021/jp0476545"/>
+  <Bond type1="lopes_021" type2="lopes_023" length="0.1818" k="394000" doi="10.1021/jp0476545"/>
+  <Bond type1="lopes_023" type2="lopes_024" length="0.1442" k="1066200" doi="10.1021/jp0476545"/>
+  <Bond type1="lopes_023" type2="lopes_025" length="0.1442" k="1066200" doi="10.1021/jp0476545"/>
+  <Bond type1="lopes_023" type2="lopes_026" length="0.157" k="622600" doi="10.1021/jp0476545"/>
   <Bond class1="H" class2="N" length="0.101" k="363171.2" doi="10.1021/jp0362133"/>
   <Bond class1="CT" class2="CT" length="0.1529" k="224262.4" doi="10.1021/jp0362133"/>
   <Bond class1="CT" class2="HC" length="0.109" k="284512.0" doi="10.1021/jp0362133"/>
@@ -82,6 +93,12 @@
   <Atom type="lopes_018" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_019" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_020" charge="0.06" sigma="0.35" epsilon="0.12552"/>
+  <Atom type="lopes_021" charge="0.35" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="lopes_022" charge="-0.16" sigma="0.295" epsilon="0.22175"/>
+  <Atom type="lopes_023" charge="1.02" sigma="0.355" epsilon="1.046"/>
+  <Atom type="lopes_024" charge="-0.63" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="lopes_025" charge="-0.53" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="lopes_026" charge="-0.66" sigma="0.325" epsilon="0.71128"/>
   <Atom type="opls_401" charge="-1" sigma="0.441724" epsilon="0.492833"/>
  </NonbondedForce>
 </ForceField>
