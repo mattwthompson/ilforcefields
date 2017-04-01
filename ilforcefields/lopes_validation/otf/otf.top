@@ -1,0 +1,73 @@
+;
+;   File otf.top  was generated
+;   By user: mwt (508)
+;   On host: grindale.vuse.vanderbilt.edu
+;   At date: Fri. March  5 11:48:17 2017
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       __main__.py, VERSION 2.7.3
+;   Executable:   __main__.py
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     //anaconda/lib/python3.5/site-packages/ipykernel/__main__.py -f /Users/mwt/Library/Jupyter/runtime/kernel-3fb9441d-38be-499f-a6b5-f3e81c7bc948.json
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               no              1           0.5
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+lopes_021        6   12.01078    0.000000  A          0.35       0.27614
+lopes_022        9   18.99840    0.000000  A         0.295       0.22175
+lopes_023       16   32.06550    0.000000  A         0.355         1.046
+lopes_024        8   15.99943    0.000000  A         0.296       0.87864
+
+
+[ moleculetype ]
+; Name            nrexcl
+Compound          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 Compound rtp Compound q -1.0
+    1  lopes_021      1 Compound      C      1   0.350000    12.0108   ; qtot 0.3500
+    2  lopes_022      1 Compound      F      2  -0.160000    18.9984   ; qtot 0.1900
+    3  lopes_022      1 Compound      F      3  -0.160000    18.9984   ; qtot 0.0300
+    4  lopes_022      1 Compound      F      4  -0.160000    18.9984   ; qtot -0.1300
+    5  lopes_023      1 Compound      S      5   1.020000    32.0655   ; qtot 0.8900
+    6  lopes_024      1 Compound      O      6  -0.630000    15.9994   ; qtot 0.2600
+    7  lopes_024      1 Compound      O      7  -0.630000    15.9994   ; qtot -0.3700
+    8  lopes_024      1 Compound      O      8  -0.630000    15.9994   ; qtot -1.0000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1
+      1      3     1
+      1      4     1
+      1      5     1
+      5      6     1
+      5      8     1
+      5      7     1
+
+[ pairs ]
+;    ai     aj funct         c0         c1         c2         c3
+      2      6     1 0.29550000 0.22070253
+      3      6     1 0.29550000 0.22070253
+      4      6     1 0.29550000 0.22070253
+      2      7     1 0.29550000 0.22070253
+      3      7     1 0.29550000 0.22070253
+      4      7     1 0.29550000 0.22070253
+      2      8     1 0.29550000 0.22070253
+      3      8     1 0.29550000 0.22070253
+      4      8     1 0.29550000 0.22070253
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+Compound             1
