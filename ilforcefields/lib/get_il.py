@@ -11,5 +11,5 @@ class GetIL(mb.Compound):
         if any(file == filename for file in os.listdir(cache_dir)):
             mb.Compound.__init__(self)
 
-            mb.load(os.path.join(cache_dir, filename), compound=self)
+            self = mb.load(os.path.join(cache_dir, filename), compound=self)
             self.name = il_name
