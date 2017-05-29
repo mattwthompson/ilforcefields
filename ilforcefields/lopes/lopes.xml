@@ -119,7 +119,7 @@
   <Atom type="lopes_017" charge="0.01" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_018" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_019" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
-  <Atom type="lopes_020" charge="0.06" sigma="0.35" epsilon="0.12552"/>
+  <Atom type="lopes_020" charge="0.06" sigma="0.25" epsilon="0.12552"/>
   <Atom type="lopes_021" charge="0.35" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_022" charge="-0.16" sigma="0.295" epsilon="0.22175"/>
   <Atom type="lopes_023" charge="1.02" sigma="0.355" epsilon="1.046"/>
