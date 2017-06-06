@@ -84,14 +84,30 @@
   <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948196" k="313.8"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
-  <Proper class1="H" class2="N" class3="CT" class4="HC" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="H" class2="N" class3="CT" class4="" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" class2="CT" class3="N" class4="CT" c0="-8.97677" c1="-76.68644" c2="-8.61067" c3="94.27389" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" class2="CT" class3="CT" class4="HC" c0="0.6276" c1="1.8828" c2="0.0" c3="-2.5104" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" class2="CT" class3="CT" class4="CT" c0="2.9288" c1="-1.4644" c2="0.2092" c3="-1.6736" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" class2="CT" class3="CT" class4="N" c0="5.48732" c1="0.02719" c2="0.0" c3="-5.51451" c4="0.0" c5="0.0"/>
-  <Proper class1="HC" class2="CT" class3="CT" class4="HC" c0="0.6276" c1="1.8828" c2="0.0" c3="-2.5104" c4="0.0" c5="0.0"/>
-  <Proper class1="HC" class2="CT" class3="CT" class4="N" c0="0.97069" c1="2.91206" c2="0.0" c3="-3.88275" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_013" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_011" type4="lopes_013" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_012" type3="lopes_012" type4="lopes_011" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_012" type3="lopes_012" type4="lopes_013" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_013" type2="lopes_012" type3="lopes_012" type4="lopes_013" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_014" type2="lopes_010" type3="lopes_012" type4="lopes_013" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_014" type2="lopes_010" type3="lopes_012" type4="lopes_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_010" type3="lopes_012" type4="lopes_013" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_010" type3="lopes_012" type4="lopes_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.275" c1="1.65" c2="0" c3="-1.1" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.0" c1="0.0" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-3.7715" c1="19.911" c2="-4.43" c3="-1.754" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-3.7715" c1="19.911" c2="-4.43" c3="-1.754" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-4.845" c1="9.69" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-4.845" c1="9.69" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="0.936" c1="0.846" c2="0.681" c3="-2.04" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="0.936" c1="0.846" c2="0.681" c3="-2.04" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_010" type2="" type3="" type4="" c0="8.37" c1="0.0" c2="-8.37" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_011" type2="" type3="" type4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_012" type2="" type3="" type4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_022" type2="lopes_021" type3="lopes_023" type4="lopes_024" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
   <Proper type1="lopes_022" type2="lopes_021" type3="lopes_023" type4="lopes_025" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
   <Proper type1="lopes_023" type2="lopes_026" type3="lopes_023" type4="lopes_025" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
