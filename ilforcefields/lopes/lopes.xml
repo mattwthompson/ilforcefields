@@ -30,6 +30,8 @@
   <Type name="lopes_030a" class="" element="F" mass="18.9984" def="FP([!%lopes_030a])([!%lopes_030a])([!%lopes_030a])([!%lopes_030a])F" desc="F1 in PF6" doi="10.1021/jp0476545"/>
   <Type name="lopes_030b" class="" element="F" mass="18.9984" def="FP([!%lopes_030a;!%lopes_030b])([!%lopes_030a;!%lopes_030b])([%lopes_030a])([%lopes_030a])F" desc="F2 in PF6" overrides="lopes_030a" doi="10.1021/jp0476545"/>
   <Type name="lopes_030c" class="" element="F" mass="18.9984" def="FP([%lopes_030a])([%lopes_030a])([%lopes_030b])([%lopes_030b])F" desc="F3 in PF6" overrides="lopes_030a,lopes_030b" doi="10.1021/jp0476545"/>
+  <Type name="lopes_031" class="" element="B" mass="10.811" def="B" desc="B in BF4" doi="10.1021/jp063901o"/>
+  <Type name="lopes_032" class="" element="F" mass="18.998" def="FB" desc="F in BF4" doi="10.1021/jp063901o"/>
   <Type name="opls_401" class="" element="Cl" mass="35.45300" def="Cl" desc="chloride ion"/>
  </AtomTypes>
  <HarmonicBondForce>
@@ -58,6 +60,7 @@
   <Bond type1="lopes_027" type2="lopes_030a" length="0.1606" k="310000"/>
   <Bond type1="lopes_027" type2="lopes_030b" length="0.1606" k="310000"/>
   <Bond type1="lopes_027" type2="lopes_030c" length="0.1606" k="310000"/>
+  <Bond type1="lopes_031" type2="lopes_032" length="0.1394" k="323500"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
@@ -101,6 +104,7 @@
   <Angle type1="lopes_030a" type2="lopes_027" type3="lopes_030a" angle="3.14159265" k="291"/>
   <Angle type1="lopes_030b" type2="lopes_027" type3="lopes_030b" angle="3.14159265" k="291"/>
   <Angle type1="lopes_030c" type2="lopes_027" type3="lopes_030c" angle="3.14159265" k="291"/>
+  <Angle type1="lopes_032" type2="lopes_031" type3="lopes_032" angle="1.9111355" k="669.5"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
@@ -185,6 +189,8 @@
   <Atom type="lopes_030a" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
   <Atom type="lopes_030b" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
   <Atom type="lopes_030c" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
+  <Atom type="lopes_031" charge="0.96" sigma="0.358" epsilon="0.3975"/>
+  <Atom type="lopes_032" charge="-0.49" sigma="0.312" epsilon="0.2552"/>
   <Atom type="opls_401" charge="-1" sigma="0.31181" epsilon="0.25522"/>
  </NonbondedForce>
 </ForceField>
