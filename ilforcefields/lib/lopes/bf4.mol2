@@ -1,0 +1,20 @@
+@<TRIPOS>MOLECULE
+RES
+5 4 1 0 1
+SMALL
+USER_CHARGES
+@<TRIPOS>CRYSIN
+    7.1137     7.1813     7.0592    90.0000    90.0000    90.0000  1  1
+@<TRIPOS>ATOM
+       1 B           -0.0813     1.4248    -0.1528 lopes_031      1 RES        0.960000
+       2 F            1.2006     1.8554     0.3811 lopes_032      1 RES       -0.490000
+       3 F           -0.7433     2.5508    -0.7913 lopes_032      1 RES       -0.490000
+       4 F           -0.9131     0.9235     0.9291 lopes_032      1 RES       -0.490000
+       5 F            0.1306     0.3695    -1.1301 lopes_032      1 RES       -0.490000
+@<TRIPOS>BOND
+       1        1        3 1
+       2        2        1 1
+       3        4        1 1
+       4        5        1 1
+@<TRIPOS>SUBSTRUCTURE
+       1 RES             1 RESIDUE    0 1    ROOT      0
