@@ -19,7 +19,7 @@
   <Type name="lopes_017" class="" element="C" mass="12.011" def="[C;X4]([C;%lopes_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="lopes_018"/>
   <Type name="lopes_018" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_017,%lopes_018]" desc="CS in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_019" class="" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_018]" desc="CT in CMIm" overrides="lopes_008" doi="10.1021/jp0362133"/>
-  <Type name="lopes_020" class="" element="C" mass="12.011" def="H[C;%lopes_016,%lopes_017,%lopes_018,%lopes_019]" desc="HC in CMIm" overrides="lopes_009" doi="10.1021/jp0362133"/>
+  <Type name="lopes_020" class="" element="H" mass="1.008" def="H[C;%lopes_016,%lopes_017,%lopes_018,%lopes_019]" desc="HC in CMIm" overrides="lopes_009" doi="10.1021/jp0362133"/>
   <Type name="lopes_021" class="" element="C" mass="12.011" def="C(F)(F)(F)S" desc="C in triflamides" doi="10.1021/jp0476545"/>
   <Type name="lopes_022" class="" element="F" mass="18.9984" def="FC(F)(F)S" desc="F in triflamides" doi="10.1021/jp0476545"/>
   <Type name="lopes_023" class="" element="S" mass="32.065" def="S(O)(O)C(F)(F)(F)" desc="S in triflamides" doi="10.1021/jp0476545"/>
@@ -118,36 +118,36 @@
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_012" type4="lopes_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_011" type2="lopes_010" type3="lopes_012" type4="lopes_013" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_011" type2="lopes_010" type3="lopes_012" type4="lopes_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.2595" c1="1.557" c2="0" c3="-1.038" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.2595" c1="0.7785" c2="0" c3="-1.038" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_011" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.0" c1="0.0" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-4.228" c1="23.844" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-4.228" c1="23.844" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-7.9035" c1="15.807" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-7.9035" c1="15.807" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="-8.6575" c1="18.831" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="-8.6575" c1="18.831" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_017" c0="0.7655" c1="4.593" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_018" c0="1.0185" c1="1.317" c2="0.658" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="1.0185" c1="1.317" c2="0.658" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_017" type4="lopes_015" c0="1.0185" c1="1.317" c2="0.658" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_018" type2="lopes_018" type3="lopes_017" type4="lopes_015" c0="1.0185" c1="1.317" c2="0.658" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_018" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="1.0185" c1="1.317" c2="0.658" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_016" type4="lopes_018" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_020" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_017" type4="lopes_020" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_020" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_017" type4="lopes_020" c0="10.8465" c1="-18.339" c2="0.657" c3="-2.334" c4="0" c5="0"/>
+  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_018" type3="lopes_017" type4="lopes_014" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_017" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper type1="lopes_015" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_017" type3="lopes_019" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_018" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
+  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
+  <Proper type1="lopes_019" type2="lopes_018" type3="lopes_017" type4="lopes_014" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
+  <Proper type1="lopes_018" type2="lopes_018" type3="lopes_017" type4="lopes_014" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
+  <Proper type1="lopes_018" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
   <Improper type1="" type2="" type3="lopes_010" type4="" c0="8.37" c1="0.0" c2="-8.37" c3="0.0" c4="0.0" c5="0.0"/>
   <Improper type1="" type2="" type3="lopes_011" type4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
   <Improper type1="" type2="" type3="lopes_012" type4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
