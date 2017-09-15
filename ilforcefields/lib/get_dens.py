@@ -1,4 +1,3 @@
-import inspect
 import os
 
 import mbuild as mb
