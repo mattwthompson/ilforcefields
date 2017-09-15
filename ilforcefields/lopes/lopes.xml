@@ -32,7 +32,8 @@
   <Type name="lopes_030c" class="" element="F" mass="18.9984" def="FP([%lopes_030a])([%lopes_030a])([%lopes_030b])([%lopes_030b])F" desc="F3 in PF6" overrides="lopes_030a,lopes_030b" doi="10.1021/jp0476545"/>
   <Type name="lopes_031" class="" element="B" mass="10.811" def="B" desc="B in BF4" doi="10.1021/jp063901o"/>
   <Type name="lopes_032" class="" element="F" mass="18.998" def="FB" desc="F in BF4" doi="10.1021/jp063901o"/>
-  <Type name="opls_401" class="" element="Cl" mass="35.45300" def="Cl" desc="chloride ion"/>
+  <Type name="lopes_033" class="" element="Cl" mass="35.45300" def="Cl" desc="chloride ion" doi="10.1021/jp063901o"/>
+  <Type name="lopes_034" class="" element="Br" mass="35.45300" def="Br" desc="bromide ion" doi="10.1021/jp063901o"/>
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="lopes_011" type2="lopes_013" length="0.108" k="284512"/>
@@ -191,6 +192,7 @@
   <Atom type="lopes_030c" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
   <Atom type="lopes_031" charge="0.96" sigma="0.358" epsilon="0.3975"/>
   <Atom type="lopes_032" charge="-0.49" sigma="0.312" epsilon="0.2552"/>
-  <Atom type="opls_401" charge="-1" sigma="0.31181" epsilon="0.25522"/>
+  <Atom type="lopes_033" charge="-1" sigma="0.365" epsilon="0.83"/>
+  <Atom type="lopes_034" charge="-1" sigma="0.397" epsilon="0.86"/>
  </NonbondedForce>
 </ForceField>
