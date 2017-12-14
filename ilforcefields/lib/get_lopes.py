@@ -5,8 +5,8 @@ from foyer import Forcefield
 
 
 def get_lopes():
-    warnings.warn("This is deprecated, use "
-                  "ilforcefield.utils.utils.get_forcefield('lopes')",
+    warnings.warn("This is deprecated, instead use "
+                  "ilforcefield.utils.utils.get_ff('lopes')",
                   DeprecationWarning)
 
     LOPES = Forcefield(resource_filename('ilforcefields',
