@@ -29,8 +29,6 @@ def get_il(il_name):
     cache_dir = resource_filename('ilforcefields', 'lib/un-typed')
     filename = '{}.mol2'.format(il_name)
     if any(file == filename for file in os.listdir(cache_dir)):
-        mb.Compound.__init__(self)
-
-        il = mb.load(os.path.join(cache_dir, filename), compound=self)
+        il = mb.load(os.path.join(cache_dir, filename))
         il.name = il_name
     return il
