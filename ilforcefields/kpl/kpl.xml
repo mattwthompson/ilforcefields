@@ -140,7 +140,7 @@
   <Atom type="kpl_019" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
   <Atom type="kpl_020" charge="0.06" sigma="0.25" epsilon="0.12552"/>
   <Atom type="kpl_021" charge="0.35" sigma="0.315" epsilon="0.08282"/>
-  <Atom type="kpl_022" charge="-0.16" sigma="0.2655" epsilon="0.0.06651"/>
+  <Atom type="kpl_022" charge="-0.16" sigma="0.2655" epsilon="0.06651"/>
   <Atom type="kpl_023" charge="1.02" sigma="0.40825" epsilon="0.31372"/>
   <Atom type="kpl_025" charge="-0.53" sigma="0.34632" epsilon="0.26353"/>
   <Atom type="kpl_026" charge="-0.66" sigma="0.325" epsilon="0.21333"/>
