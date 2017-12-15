@@ -163,7 +163,7 @@
   <Proper type1="lopes_022" type2="lopes_021" type3="lopes_023" type4="lopes_025" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
   <Proper type1="lopes_023" type2="lopes_026" type3="lopes_023" type4="lopes_025" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
   <Proper type1="lopes_022" type2="lopes_021" type3="lopes_023" type4="lopes_026" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
-  <Proper type1="lopes_023" type2="lopes_026" type3="lopes_023" type4="lopes_025" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
+  <Proper type1="lopes_023" type2="lopes_026" type3="lopes_023" type4="lopes_021" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
   <Proper type1="lopes_036" type2="lopes_035" type3="lopes_036" type4="lopes_027" c0="2.04" c1="-2.04" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
  </RBTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
