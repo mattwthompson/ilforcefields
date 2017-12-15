@@ -124,7 +124,7 @@
   <Proper type1="kpl_022" type2="kpl_021" type3="kpl_023" type4="kpl_025" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
   <Proper type1="kpl_023" type2="kpl_026" type3="kpl_023" type4="kpl_025" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
   <Proper type1="kpl_022" type2="kpl_021" type3="kpl_023" type4="kpl_026" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
-  <Proper type1="kpl_023" type2="kpl_026" type3="kpl_023" type4="kpl_025" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
+  <Proper type1="kpl_023" type2="kpl_026" type3="kpl_023" type4="kpl_021" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
  </RBTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
   <Atom type="kpl_010" charge="0.15" sigma="0.325" epsilon="0.71128"/>
