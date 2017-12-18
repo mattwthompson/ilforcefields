@@ -1,16 +1,25 @@
 import glob
 import itertools as it
 import os
+from pkg_resources import resource_filename
 
 import parmed as pmd
 import pytest
-
 from foyer import Forcefield
 from foyer.tests.utils import atomtype
 
-LOPES = Forcefield('/Users/mwt/science/forcefields/ilforcefields/ilforcefields/lopes/lopes.xml')
+from ilforcefields.utils.utils import get_ff
 
-LOPES_TESTFILES_DIR = '/Users/mwt/science/forcefields/ilforcefields/ilforcefields/lopes_validation'
+
+def test_get_lopes():
+    from ilforcefields.utils.utils import get_ff
+    LOPES = get_ff('lopes')
+
+
+LOPES = get_ff('LOPES')
+
+LOPES_TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
+
 
 class TestLOPES(object):
 
@@ -32,7 +41,7 @@ class TestLOPES(object):
                 _, mol_file = os.path.split(mol_path)
                 mol_name, ext = os.path.splitext(mol_file)
                 try:
-                   self.test_atomtyping(mol_name)
+                    self.test_atomtyping(mol_name)
                 except Exception as e:
                     print(e)
                     continue
