@@ -16,7 +16,7 @@ def test_get_lopes():
     LOPES = get_ff('lopes')
 
 
-LOPES = get_ff('LOPES')
+LOPES = Forcefield(resource_filename('ilforcefields', os.path.join('lopes', 'lopes.xml')))
 
 LOPES_TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
 
