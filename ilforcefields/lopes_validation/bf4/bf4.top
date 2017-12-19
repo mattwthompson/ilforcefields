@@ -1,0 +1,62 @@
+;
+;   File bf4.top  was generated
+;   By user: mwt (504)
+;   On host: Clare-MPB13-April2013-6.local
+;   At date: Tue. December  2 16:56:04 2017
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       , VERSION 0+untagged.2796.g26dcd59
+;   Executable:   
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             1             1
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+lopes_031        5   10.81170    0.000000  A         0.358        0.3975
+lopes_032        9   18.99840    0.000000  A         0.312        0.2552
+
+
+[ moleculetype ]
+; Name            nrexcl
+RES          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 RES rtp RES q -1.0
+    1  lopes_031      1    RES      B      1   0.960000    10.8117   ; qtot 0.9600
+    2  lopes_032      1    RES      F      2  -0.490000    18.9984   ; qtot 0.4700
+    3  lopes_032      1    RES      F      3  -0.490000    18.9984   ; qtot -0.0200
+    4  lopes_032      1    RES      F      4  -0.490000    18.9984   ; qtot -0.5100
+    5  lopes_032      1    RES      F      5  -0.490000    18.9984   ; qtot -1.0000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.13940 323500.000000
+      1      4     1   0.13940 323500.000000
+      1      5     1   0.13940 323500.000000
+      1      3     1   0.13940 323500.000000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      2      1      3     1   109.50000 669.500000
+      2      1      4     1   109.50000 669.500000
+      2      1      5     1   109.50000 669.500000
+      3      1      4     1   109.50000 669.500000
+      3      1      5     1   109.50000 669.500000
+      4      1      5     1   109.50000 669.500000
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+RES                  1
