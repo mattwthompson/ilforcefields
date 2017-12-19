@@ -6,7 +6,7 @@ from pkg_resources import resource_filename
 import parmed as pmd
 import pytest
 from foyer import Forcefield
-from foyer.tests.utils import atomtype
+import numpy as np
 
 from ilforcefields.utils.utils import get_ff
 
@@ -63,8 +63,9 @@ class TestLOPES(object):
             elif ext == '.mol2':
                 mol2_path = os.path.join(testfiles_dir, mol_name, mol_file)
                 structure = pmd.load_file(mol2_path, structure=True)
-        atomtype(structure, LOPES)
+        atomtyped_structure = LOPES.apply(structure)
 
+        assert np.round(np.sum([a.charge for a in atomtyped_structure.atoms]), 4) % 1.0 == 0.0
 
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()
