@@ -9,6 +9,7 @@ from foyer import Forcefield
 import numpy as np
 
 from ilforcefields.utils.utils import get_ff
+from ilforcefields.tests.utils import compare_atomtypes
 
 
 def test_get_lopes():
@@ -59,13 +60,13 @@ class TestLOPES(object):
                 gro_filename = '{}.gro'.format(mol_name)
                 top_path = os.path.join(testfiles_dir, mol_name, top_filename)
                 gro_path = os.path.join(testfiles_dir, mol_name, gro_filename)
-                structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
-            elif ext == '.mol2':
-                mol2_path = os.path.join(testfiles_dir, mol_name, mol_file)
-                structure = pmd.load_file(mol2_path, structure=True)
-        atomtyped_structure = LOPES.apply(structure)
+                structure = pmd.load_file(gro_path)
+                reference_structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
+        typed_structure = LOPES.apply(structure)
 
-        assert np.round(np.sum([a.charge for a in atomtyped_structure.atoms]), 4) % 1.0 == 0.0
+        compare_atomtypes(typed_structure, reference_structure)
+
+        assert np.round(np.sum([a.charge for a in typed_structure.atoms]), 6) % 1.0 == 0.0
 
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()
