@@ -37,12 +37,12 @@
   <Type name="lopes_036" class="" element="C" mass="12.011" def="C(NCN)N" desc="cyano C in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_037" class="" element="N" mass="14.0067" def="NCNCN" desc="cyano N in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_038" class="" element="N" mass="14.0067" def="[N;X3](C)(C)C" desc="NAP in Cnpy" doi="10.121/jp063901o"/>
-  <Type name="lopes_039" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_033]1" desc="CA1 ring in Cnpy" doi="10.121/jp063901o"/>
-  <Type name="lopes_040" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_033][C;X3;r6]1" desc="CA2 ring of Cnpy" doi="10.121/jp063901o"/>
-  <Type name="lopes_041" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%lopes_033][C;X3;r6][C;X3;r6]1" desc="C3 ring in Cnpy" doi="10.121/jp063901o"/>
-  <Type name="lopes_042" class="" element="H" mass="1.008" def="H[C;%lopes_036,%lopes_034,%lopes_035]" desc="HAP in Cnpy" doi="10.121/jp063901o"/>
+  <Type name="lopes_039" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038]1" desc="CA1 ring in Cnpy" doi="10.121/jp063901o"/>
+  <Type name="lopes_040" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6]1" desc="CA2 ring of Cnpy" doi="10.121/jp063901o"/>
+  <Type name="lopes_041" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6][C;X3;r6]1" desc="C3 ring in Cnpy" doi="10.121/jp063901o"/>
+  <Type name="lopes_042" class="" element="H" mass="1.008" def="H[C;%lopes_041,%lopes_039,%lopes_040]" desc="HAP in Cnpy" doi="10.121/jp063901o"/>
   <Type name="lopes_043" class="" element="N" mass="14.0067" def="[N;X4;R1](C)(C)(C)" desc="N3 in ammonium/pyrrolidinium" overrides="lopes_003" doi="10.121/jp063901o"/>
-  <Type name="lopes_044" class="" element="H" mass="1.008" def="H[N;%lopes_038]" desc="H in ammonium/pyrrolidinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_044" class="" element="H" mass="1.008" def="H[N;%lopes_043]" desc="H in ammonium/pyrrolidinium" doi="10.121/jp063901o"/>
 
  </AtomTypes>
  <HarmonicBondForce>
