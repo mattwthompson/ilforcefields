@@ -130,8 +130,8 @@
   <Proper type1="lopes_011" type2="lopes_010" type3="lopes_014" type4="lopes_015" c0="0.0" c1="0.0" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_012" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_010" type3="lopes_014" type4="lopes_016" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_011" type2="lopes_010" type3="lopes_014" type4="lopes_017" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
