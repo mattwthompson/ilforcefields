@@ -1,16 +1,26 @@
 import glob
 import itertools as it
 import os
+from pkg_resources import resource_filename
 
 import parmed as pmd
 import pytest
-
 from foyer import Forcefield
-from foyer.tests.utils import atomtype
+import numpy as np
 
-LOPES = Forcefield('/Users/mwt/science/forcefields/ilforcefields/ilforcefields/lopes/lopes.xml')
+from ilforcefields.utils.utils import get_ff
+from ilforcefields.tests.utils import compare_atomtypes
 
-LOPES_TESTFILES_DIR = '/Users/mwt/science/forcefields/ilforcefields/ilforcefields/lopes_validation'
+
+def test_get_lopes():
+    from ilforcefields.utils.utils import get_ff
+    LOPES = get_ff('lopes')
+
+
+LOPES = Forcefield(resource_filename('ilforcefields', os.path.join('lopes', 'lopes.xml')))
+
+LOPES_TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
+
 
 class TestLOPES(object):
 
@@ -32,7 +42,7 @@ class TestLOPES(object):
                 _, mol_file = os.path.split(mol_path)
                 mol_name, ext = os.path.splitext(mol_file)
                 try:
-                   self.test_atomtyping(mol_name)
+                    self.test_atomtyping(mol_name)
                 except Exception as e:
                     print(e)
                     continue
@@ -50,12 +60,13 @@ class TestLOPES(object):
                 gro_filename = '{}.gro'.format(mol_name)
                 top_path = os.path.join(testfiles_dir, mol_name, top_filename)
                 gro_path = os.path.join(testfiles_dir, mol_name, gro_filename)
-                structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
-            elif ext == '.mol2':
-                mol2_path = os.path.join(testfiles_dir, mol_name, mol_file)
-                structure = pmd.load_file(mol2_path, structure=True)
-        atomtype(structure, LOPES)
+                structure = pmd.load_file(gro_path)
+                reference_structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
+        typed_structure = LOPES.apply(structure)
 
+        compare_atomtypes(typed_structure, reference_structure)
+
+        assert np.round(np.sum([a.charge for a in typed_structure.atoms]), 6) % 1.0 == 0.0
 
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()

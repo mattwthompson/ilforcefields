@@ -1,0 +1,77 @@
+;
+;   File pf6.top  was generated
+;   By user: mwt (504)
+;   On host: Clare-MPB13-April2013-6.local
+;   At date: Tue. December  2 17:02:22 2017
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       , VERSION 0+untagged.2796.g26dcd59
+;   Executable:   
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             1             1
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+lopes_027       15   30.97376    0.000000  A         0.374        0.8368
+lopes_030a        9   18.99840    0.000000  A       0.31181       0.25522
+lopes_030b        9   18.99840    0.000000  A       0.31181       0.25522
+lopes_030c        9   18.99840    0.000000  A       0.31181       0.25522
+
+
+[ moleculetype ]
+; Name            nrexcl
+RES          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 RES rtp RES q -1.0
+    1  lopes_027      1    RES      P      1   1.340000    30.9738   ; qtot 1.3400
+    2 lopes_030a      1    RES      F      2  -0.390000    18.9984   ; qtot 0.9500
+    3 lopes_030a      1    RES      F      3  -0.390000    18.9984   ; qtot 0.5600
+    4 lopes_030b      1    RES      F      4  -0.390000    18.9984   ; qtot 0.1700
+    5 lopes_030b      1    RES      F      5  -0.390000    18.9984   ; qtot -0.2200
+    6 lopes_030c      1    RES      F      6  -0.390000    18.9984   ; qtot -0.6100
+    7 lopes_030c      1    RES      F      7  -0.390000    18.9984   ; qtot -1.0000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      5     1   0.16060 310000.000000
+      1      7     1   0.16060 310000.000000
+      1      6     1   0.16060 310000.000000
+      2      1     1   0.16060 310000.000000
+      3      1     1   0.16060 310000.000000
+      4      1     1   0.16060 310000.000000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      2      1      3     1   180.00000 291.000000
+      2      1      4     1   90.00000 1165.000000
+      2      1      5     1   90.00000 1165.000000
+      2      1      6     1   90.00000 1165.000000
+      2      1      7     1   90.00000 1165.000000
+      3      1      4     1   90.00000 1165.000000
+      3      1      5     1   90.00000 1165.000000
+      3      1      6     1   90.00000 1165.000000
+      3      1      7     1   90.00000 1165.000000
+      4      1      5     1   180.00000 291.000000
+      4      1      6     1   90.00000 1165.000000
+      4      1      7     1   90.00000 1165.000000
+      5      1      6     1   90.00000 1165.000000
+      5      1      7     1   90.00000 1165.000000
+      6      1      7     1   180.00000 291.000000
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+RES                  1
