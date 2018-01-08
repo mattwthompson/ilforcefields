@@ -75,7 +75,7 @@
   <Bond type1="lopes_035" type2="lopes_036" length="0.131" k="420600"/>
   <Bond type1="lopes_036" type2="lopes_037" length="0.115" k="774600"/>
   <Bond type1="lopes_038" type2="lopes_039" length="0.134" k="404200"/>
-  <Bond type1="lopes_049" type2="lopes_040" length="0.138" k="392500"/>
+  <Bond type1="lopes_039" type2="lopes_040" length="0.138" k="392500"/>
   <Bond type1="lopes_039" type2="lopes_042" length="0.108" k="307100"/>
   <Bond type1="lopes_040" type2="lopes_041" length="0.138" k="392500"/>
   <Bond type1="lopes_040" type2="lopes_042" length="0.108" k="307100"/>
