@@ -3,20 +3,19 @@
   <Type name="lopes_001" class="" element="H" mass="1.008" def="H[N;X4]" desc="H on R3NH+"/>
   <Type name="lopes_002" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)H" desc="N on R3NH+"/>
   <Type name="lopes_003" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)C" desc="N on R4N+"/>
-  <Type name="lopes_004" class="" element="C" mass="12.011" def="C[N;X4;%lopes_003]" desc="1st C on alkyl in TAA"/>
-  <Type name="lopes_005" class="" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="lopes_009"/>
-  <Type name="lopes_006" class="" element="C" mass="12.011" def="C(H)(H)(C)[C;%lopes_004]" desc="2nd C on alkyl in TAA" overrides="lopes_007"/>
-  <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_006]" desc="C in CH2 on alkyl in alkylammonium"/>
-  <Type name="lopes_008" class="" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007]" desc="Terminal C on alkyl in alkylammonium"/>
-  <Type name="lopes_009" class="" element="C" mass="12.011" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium"/>
-  <Type name="lopes_010" class="" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133"/>
+  <Type name="lopes_004" class="" element="C" mass="12.011" def="C[N;X4;%lopes_003,%lopes_043]" desc="1st C on alkyl in TAA" doi="10.121/jp063901o"/>
+  <Type name="lopes_005" class="" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="lopes_009" doi="10.121/jp063901o"/>
+  <Type name="lopes_006" class="" element="C" mass="12.011" def="C(H)(H)(C)[C;%lopes_004]" desc="2nd C on alkyl in TAA" overrides="lopes_007" doi="10.121/jp063901o"/>
+  <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_006]" desc="C in CH2 on alkyl in alkylammonium" doi="10.121/jp063901o"/>
+  <Type name="lopes_008" class="" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007,%lopes_006]" desc="Terminal C on alkyl in alkylammonium" doi="10.121/jp063901o"/>
+  <Type name="lopes_009" class="" element="H" mass="1.008" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.121/jp063901o"/>
+  <Type name="lopes_010" class="" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="lopes_038"/>
   <Type name="lopes_011" class="" element="C" mass="12.011" def="[C;X3;r5]1[N;%lopes_010][C;X3;r5][C;X3;r5][N;%lopes_010]1" desc="CR in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_012" class="" element="C" mass="12.011" def="[C;X3;r5]1[C;X3;r5][N;%lopes_010][C;X3;r5][N;%lopes_010]1" desc="CW in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_013" class="" element="H" mass="1.008" def="H[C;%lopes_011,%lopes_012]" desc="HA in CMIm" doi="10.1021/jp0362133" overrides="lopes_009"/>
-  <Type name="lopes_014" class="" element="C" mass="12.011" def="[C;X4][N;%lopes_010]" desc="C1 in CMIm" doi="10.1021/jp0362133" overrides="lopes_004,lopes_008"/>
+  <Type name="lopes_014" class="" element="C" mass="12.011" def="[C;X4][N;%lopes_010,%lopes_038]" desc="C1 in CMIm" doi="10.1021/jp0362133" overrides="lopes_004,lopes_008"/>
   <Type name="lopes_015" class="" element="H" mass="1.008" def="H[C;%lopes_014]" desc="H1 in CMIm" doi="10.1021/jp0362133" overrides="lopes_009"/>
-  <Type name="lopes_016" class="" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_014]" desc="CE in CMIm" overrides="lopes_008,lopes_017,lopes_019" doi="10.1021/jp0362133"/>
-  <Type name="lopes_017" class="" element="C" mass="12.011" def="[C;X4]([C;%lopes_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="lopes_018"/>
+  <Type name="lopes_016" class="" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_014]" desc="CE in CMIm" overrides="lopes_008,lopes_017,lopes_019" doi="10.1021/jp0362133"/> <Type name="lopes_017" class="" element="C" mass="12.011" def="[C;X4]([C;%lopes_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="lopes_018"/>
   <Type name="lopes_018" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_017,%lopes_018]" desc="CS in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_019" class="" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_018]" desc="CT in CMIm" overrides="lopes_008" doi="10.1021/jp0362133"/>
   <Type name="lopes_020" class="" element="H" mass="1.008" def="H[C;%lopes_016,%lopes_017,%lopes_018,%lopes_019]" desc="HC in CMIm" overrides="lopes_009" doi="10.1021/jp0362133"/>
@@ -37,6 +36,14 @@
   <Type name="lopes_035" class="" element="N" mass="14.0067" def="N(CN)CN" desc="central N in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_036" class="" element="C" mass="12.011" def="C(NCN)N" desc="cyano C in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_037" class="" element="N" mass="14.0067" def="NCNCN" desc="cyano N in dicyanamide" doi="10.1021/jp063901o"/>
+  <Type name="lopes_038" class="" element="N" mass="14.0067" def="[N;X3](C)(C)C" desc="NAP in pyridinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_039" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038]1" desc="CA1 in pyridinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_040" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6]1" desc="CA2 in pyridinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_041" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6][C;X3;r6]1" desc="C3 in pyridinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_042" class="" element="H" mass="1.008" def="H[C;%lopes_041,%lopes_039,%lopes_040]" desc="HAP in pyridinium" doi="10.121/jp063901o"/>
+  <Type name="lopes_043" class="" element="N" mass="14.0067" def="[N;X4;R1](C)(C)(C)" desc="N3 in ammonium/pyrrolidinium" overrides="lopes_003" doi="10.121/jp063901o"/>
+  <Type name="lopes_044" class="" element="H" mass="1.008" def="H[N;%lopes_043]" desc="H in ammonium/pyrrolidinium" doi="10.121/jp063901o"/>
+
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="lopes_011" type2="lopes_013" length="0.108" k="284512"/>
@@ -67,6 +74,25 @@
   <Bond type1="lopes_031" type2="lopes_032" length="0.1394" k="323500"/>
   <Bond type1="lopes_035" type2="lopes_036" length="0.131" k="420600"/>
   <Bond type1="lopes_036" type2="lopes_037" length="0.115" k="774600"/>
+  <Bond type1="lopes_038" type2="lopes_039" length="0.134" k="404200"/>
+  <Bond type1="lopes_039" type2="lopes_040" length="0.138" k="392500"/>
+  <Bond type1="lopes_039" type2="lopes_042" length="0.108" k="307100"/>
+  <Bond type1="lopes_040" type2="lopes_041" length="0.138" k="392500"/>
+  <Bond type1="lopes_040" type2="lopes_042" length="0.108" k="307100"/>
+  <Bond type1="lopes_041" type2="lopes_042" length="0.108" k="307100"/>
+  <Bond type1="lopes_038" type2="lopes_014" length="0.148" k="282000"/>
+  <Bond type1="lopes_043" type2="lopes_044" length="0.101" k="363200"/>
+  <Bond type1="lopes_044" type2="lopes_004" length="0.109" k="284500"/>
+  <Bond type1="lopes_004" type2="lopes_043" length="0.1471" k="307100"/>
+  <Bond type1="lopes_004" type2="lopes_006" length="0.1529" k="224200"/>
+  <Bond type1="lopes_004" type2="lopes_005" length="0.109" k="284500"/>
+  <Bond type1="lopes_006" type2="lopes_006" length="0.1529" k="224200"/>
+  <Bond type1="lopes_006" type2="lopes_009" length="0.109" k="284500"/>
+  <Bond type1="lopes_006" type2="lopes_007" length="0.1529" k="224200"/>
+  <Bond type1="lopes_007" type2="lopes_009" length="0.109" k="284500"/>
+  <Bond type1="lopes_007" type2="lopes_008" length="0.1529" k="224200"/>
+  <Bond type1="lopes_008" type2="lopes_009" length="0.109" k="284500"/>
+  <Bond type1="lopes_023" type2="lopes_022" length="0.1575" k="187900"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
@@ -113,6 +139,37 @@
   <Angle type1="lopes_032" type2="lopes_031" type3="lopes_032" angle="1.9111355" k="669.5"/>
   <Angle type1="lopes_035" type2="lopes_036" type3="lopes_037" angle="3.05781685" k="425"/>
   <Angle type1="lopes_036" type2="lopes_035" type3="lopes_036" angle="2.0682152" k="362"/>
+  <Angle type1="lopes_039" type2="lopes_038" type3="lopes_039" angle="2.1014" k="586"/>
+  <Angle type1="lopes_038" type2="lopes_039" type3="lopes_040" angle="2.0944" k="586"/>
+  <Angle type1="lopes_039" type2="lopes_040" type3="lopes_041" angle="2.0944" k="527.2"/>
+  <Angle type1="lopes_040" type2="lopes_041" type3="lopes_040" angle="2.0944" k="527.2"/>
+  <Angle type1="lopes_038" type2="lopes_039" type3="lopes_042" angle="2.0944" k="293"/>
+  <Angle type1="lopes_039" type2="lopes_040" type3="lopes_042" angle="2.0944" k="293"/>
+  <Angle type1="lopes_042" type2="lopes_040" type3="lopes_041" angle="2.0944" k="293"/>
+  <Angle type1="lopes_038" type2="lopes_014" type3="lopes_015" angle="1.9111" k="293"/>
+  <Angle type1="lopes_004" type2="lopes_004" type3="lopes_044" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_004" type2="lopes_043" type3="lopes_004" angle="1.9111" k="418.4"/>
+  <Angle type1="lopes_044" type2="lopes_004" type3="lopes_043" angle="1.9111" k="209.2"/>
+  <Angle type1="lopes_005" type2="lopes_004" type3="lopes_005" angle="1.8815" k="276.1"/>
+  <Angle type1="lopes_005" type2="lopes_004" type3="lopes_043" angle="1.9111" k="209.2"/>
+  <Angle type1="lopes_007" type2="lopes_008" type3="lopes_009" angle="1.967" k="488.3"/>
+  <Angle type1="lopes_006" type2="lopes_006" type3="lopes_009" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_043" type2="lopes_004" type3="lopes_006" angle="1.9111" k="669.4"/>
+  <Angle type1="lopes_006" type2="lopes_007" type3="lopes_008" angle="1.967" k="488.3"/>
+  <Angle type1="lopes_004" type2="lopes_006" type3="lopes_007" angle="1.967" k="488.3"/>
+  <Angle type1="lopes_005" type2="lopes_004" type3="lopes_006" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_004" type2="lopes_006" type3="lopes_009" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_006" type2="lopes_007" type3="lopes_009" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_009" type2="lopes_006" type3="lopes_009" angle="1.8815" k="276.1"/>
+  <Angle type1="lopes_009" type2="lopes_007" type3="lopes_009" angle="1.8815" k="276.1"/>
+  <Angle type1="lopes_009" type2="lopes_008" type3="lopes_009" angle="1.8815" k="276.1"/>
+  <Angle type1="lopes_006" type2="lopes_008" type3="lopes_009" angle="1.967" k="488.3"/>
+  <Angle type1="lopes_022" type2="lopes_023" type3="lopes_025" angle="1.8169" k="1077"/>
+  <Angle type1="lopes_022" type2="lopes_023" type3="lopes_026" angle="1.7977" k="902"/>
+  <Angle type1="lopes_004" type2="lopes_006" type3="lopes_006" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_009" type2="lopes_006" type3="lopes_007" angle="1.9321" k="313.8"/>
+  <Angle type1="lopes_009" type2="lopes_007" type3="lopes_008" angle="1.9321" k="313.8"/>
+ 
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
@@ -165,6 +222,46 @@
   <Proper type1="lopes_022" type2="lopes_021" type3="lopes_023" type4="lopes_026" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
   <Proper type1="lopes_023" type2="lopes_026" type3="lopes_023" type4="lopes_021" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
   <Proper type1="lopes_036" type2="lopes_035" type3="lopes_036" type4="lopes_027" c0="2.04" c1="-2.04" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_038" type2="lopes_039" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_038" type2="lopes_039" type3="lopes_040" type4="lopes_041" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_040" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_039" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_039" type2="lopes_038" type3="lopes_039" type4="lopes_042" c0="12.5520" c1="0.0" c2="-12.5520" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_042" type2="lopes_039" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_042" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_039" type2="lopes_038" type3="lopes_014" type4="lopes_015" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_039" type2="lopes_038" type3="lopes_039" type4="lopes_040" c0="12.552" c1="0.0" c2="-12.552" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_014" type2="lopes_038" type3="lopes_039" type4="lopes_040" c0="12.552" c1="0.0" c2="-12.552" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_017" type2="lopes_014" type3="lopes_038" type4="lopes_039" c0="1.112" c1="0.0" c2="1.648" c3="0.0" c4="-2.76" c5="0.0"/>
+  <Proper type1="lopes_016" type2="lopes_014" type3="lopes_038" type4="lopes_039" c0="1.112" c1="0.0" c2="1.648" c3="0.0" c4="-2.76" c5="0.0"/>
+  <Improper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_039" type2="lopes_039" type3="lopes_038" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_044" type2="lopes_004" type3="lopes_004" type4="lopes_043" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_044" type2="lopes_004" type3="lopes_043" type4="lopes_004" c0="1.17" c1="3.51" c2="0.0" c3="-4.68" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_043" type3="lopes_004" type4="lopes_006" c0="1.7886" c1="3.4916" c2="0.5356" c3="-5.8158" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_005" type2="lopes_004" type3="lopes_043" type4="lopes_004" c0="1.17" c1="3.51" c2="0" c3="-4.68" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_006" type3="lopes_007" type4="lopes_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_006" type3="lopes_006" type4="lopes_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_006" type2="lopes_007" type3="lopes_008" type4="lopes_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_005" type2="lopes_004" type3="lopes_006" type4="lopes_009" c0="0.66525" c1="1.99575" c2="0" c3="-2.661" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_043" type2="lopes_004" type3="lopes_006" type4="lopes_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_006" type3="lopes_006" type4="lopes_004" c0="3.56675" c1="-1.88905" c2="0.6569" c3="-2.3346" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_006" type3="lopes_007" type4="lopes_008" c0="3.56675" c1="-1.88905" c2="0.6569" c3="-2.3346" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_009" type2="lopes_007" type3="lopes_008" type4="lopes_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_009" type2="lopes_006" type3="lopes_007" type4="lopes_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_009" type2="lopes_006" type3="lopes_006" type4="lopes_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_005" type2="lopes_004" type3="lopes_006" type4="lopes_007" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_043" type2="lopes_004" type3="lopes_006" type4="lopes_006" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_043" type2="lopes_004" type3="lopes_006" type4="lopes_007" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_005" type2="lopes_004" type3="lopes_006" type4="lopes_006" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_043" type2="lopes_006" type3="lopes_008" type4="lopes_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_009" type2="lopes_006" type3="lopes_008" type4="lopes_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_022" type2="lopes_023" type3="lopes_026" type4="lopes_023" c0="-9.8553" c1="-19.4568" c2="0.8758" c3="16.9748" c4="11.4614" c5="0.0"/>
+  <Proper type1="lopes_025" type2="lopes_023" type3="lopes_026" type4="lopes_023" c0="-0.0075" c1="-0.0225" c2="0.0" c3="0.03" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_009" type2="lopes_006" type3="lopes_007" type4="lopes_008" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
  </RBTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
   <Atom type="lopes_001" charge="0.31" sigma="0.25" epsilon="0.12552"/>
@@ -175,7 +272,6 @@
   <Atom type="lopes_006" charge="0.01" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_007" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
   <Atom type="lopes_008" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
-  <Atom type="lopes_009" charge="0.06" sigma="0.25" epsilon="0.12552"/>
   <Atom type="lopes_009" charge="0.06" sigma="0.25" epsilon="0.12552"/>
   <Atom type="lopes_010" charge="0.15" sigma="0.325" epsilon="0.71128"/>
   <Atom type="lopes_011" charge="-0.11" sigma="0.355" epsilon="0.29288"/>
@@ -205,5 +301,12 @@
   <Atom type="lopes_035" charge="-0.76" sigma="0.325" epsilon="0.711"/>
   <Atom type="lopes_036" charge="0.64" sigma="0.33" epsilon="0.276"/>
   <Atom type="lopes_037" charge="-0.76" sigma="0.32" epsilon="0.711"/>
+  <Atom type="lopes_038" charge="0.15" sigma=".325" epsilon="0.71128"/>
+  <Atom type="lopes_039" charge="0.00" sigma=".355" epsilon="0.29288"/>
+  <Atom type="lopes_040" charge="-0.07" sigma=".355" epsilon="0.29288"/>
+  <Atom type="lopes_041" charge="0.02" sigma=".355" epsilon="0.29288"/>
+  <Atom type="lopes_042" charge="0.15" sigma=".242" epsilon="0.12552"/>
+  <Atom type="lopes_043" charge="0.12" sigma=".325" epsilon="0.71128"/>
+  <Atom type="lopes_044" charge="0.13" sigma=".250" epsilon="0.12552"/>
  </NonbondedForce>
 </ForceField>
