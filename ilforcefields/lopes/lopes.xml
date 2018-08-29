@@ -9,13 +9,14 @@
   <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_006]" desc="C in CH2 on alkyl in alkylammonium" doi="10.121/jp063901o"/>
   <Type name="lopes_008" class="" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007,%lopes_006]" desc="Terminal C on alkyl in alkylammonium" doi="10.121/jp063901o"/>
   <Type name="lopes_009" class="" element="H" mass="1.008" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.121/jp063901o"/>
-  <Type name="lopes_010" class="" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="lopes_038"/>
+  <Type name="lopes_010" class="NA" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="lopes_038"/>
   <Type name="lopes_011" class="" element="C" mass="12.011" def="[C;X3;r5]1[N;%lopes_010][C;X3;r5][C;X3;r5][N;%lopes_010]1" desc="CR in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_012" class="" element="C" mass="12.011" def="[C;X3;r5]1[C;X3;r5][N;%lopes_010][C;X3;r5][N;%lopes_010]1" desc="CW in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_013" class="" element="H" mass="1.008" def="H[C;%lopes_011,%lopes_012]" desc="HA in CMIm" doi="10.1021/jp0362133" overrides="lopes_009"/>
   <Type name="lopes_014" class="CT" element="C" mass="12.011" def="[C;X4][N;%lopes_010,%lopes_038]" desc="C1 in CMIm" doi="10.1021/jp0362133" overrides="lopes_004,lopes_008"/>
   <Type name="lopes_015" class="HC" element="H" mass="1.008" def="H[C;%lopes_014]" desc="H1 in CMIm" doi="10.1021/jp0362133" overrides="lopes_009"/>
-  <Type name="lopes_016" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_014]" desc="CE in CMIm" overrides="lopes_008,lopes_017,lopes_019" doi="10.1021/jp0362133"/> <Type name="lopes_017" class="" element="C" mass="12.011" def="[C;X4]([C;%lopes_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="lopes_018"/>
+  <Type name="lopes_016" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_014]" desc="CE in CMIm" overrides="lopes_008,lopes_017,lopes_019" doi="10.1021/jp0362133"/>
+  <Type name="lopes_017" class="CT" element="C" mass="12.011" def="[C;X4]([C;%lopes_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="lopes_018"/>
   <Type name="lopes_018" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_017,%lopes_018]" desc="CS in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_019" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%lopes_018]" desc="CT in CMIm" overrides="lopes_008" doi="10.1021/jp0362133"/>
   <Type name="lopes_020" class="HC" element="H" mass="1.008" def="H[C;%lopes_016,%lopes_017,%lopes_018,%lopes_019]" desc="HC in CMIm" overrides="lopes_009" doi="10.1021/jp0362133"/>
