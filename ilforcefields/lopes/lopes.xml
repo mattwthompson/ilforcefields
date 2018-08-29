@@ -37,10 +37,10 @@
   <Type name="lopes_035" class="" element="N" mass="14.0067" def="N(CN)CN" desc="central N in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_036" class="" element="C" mass="12.011" def="C(NCN)N" desc="cyano C in dicyanamide" doi="10.1021/jp063901o"/>
   <Type name="lopes_037" class="" element="N" mass="14.0067" def="NCNCN" desc="cyano N in dicyanamide" doi="10.1021/jp063901o"/>
-  <Type name="lopes_038" class="" element="N" mass="14.0067" def="[N;X3](C)(C)C" desc="NAP in pyridinium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_039" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038]1" desc="CA1 in pyridinium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_040" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6]1" desc="CA2 in pyridinium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_041" class="" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6][C;X3;r6]1" desc="C3 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_038" class="NAP" element="N" mass="14.0067" def="[N;r6;X3](C)(C)C" desc="NAP in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_039" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038]1" desc="CA1 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_040" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6]1" desc="CA2 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_041" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%lopes_038][C;X3;r6][C;X3;r6]1" desc="CA3 in pyridinium" doi="10.1021/jp063901o"/>
   <Type name="lopes_042" class="" element="H" mass="1.008" def="H[C;%lopes_041,%lopes_039,%lopes_040]" desc="HAP in pyridinium" doi="10.1021/jp063901o"/>
   <Type name="lopes_043" class="" element="N" mass="14.0067" def="[N;X4;R1](C)(C)(C)" desc="N3 in ammonium/pyrrolidinium" overrides="lopes_003" doi="10.1021/jp063901o"/>
   <Type name="lopes_044" class="" element="H" mass="1.008" def="H[N;%lopes_043]" desc="H in ammonium/pyrrolidinium" doi="10.1021/jp063901o"/>
@@ -145,14 +145,22 @@
   <Angle type1="lopes_032" type2="lopes_031" type3="lopes_032" angle="1.9111355" k="669.5"/>
   <Angle type1="lopes_035" type2="lopes_036" type3="lopes_037" angle="3.05781685" k="425"/>
   <Angle type1="lopes_036" type2="lopes_035" type3="lopes_036" angle="2.0682152" k="362"/>
-  <Angle type1="lopes_039" type2="lopes_038" type3="lopes_039" angle="2.1014" k="586"/>
+  <Angle class1="CA" class2="NAP" class3="CA" angle="2.10137642" k="586"/>
+  <Angle type1="lopes_039" type2="lopes_038" type3="lopes_039" angle="2.10137642" k="586"/>
+  <Angle class1="NAP" class2="CA" class3="CA" angle="2.0944" k="586"/>
   <Angle type1="lopes_038" type2="lopes_039" type3="lopes_040" angle="2.0944" k="586"/>
+  <Angle class1="CA" class2="CA" class3="CA" angle="2.0944" k="586"/>
   <Angle type1="lopes_039" type2="lopes_040" type3="lopes_041" angle="2.0944" k="527.2"/>
   <Angle type1="lopes_040" type2="lopes_041" type3="lopes_040" angle="2.0944" k="527.2"/>
+  <Angle class1="CA" class2="CA" type3="lopes_042" angle="2.0944" k="293"/>
   <Angle type1="lopes_038" type2="lopes_039" type3="lopes_042" angle="2.0944" k="293"/>
   <Angle type1="lopes_039" type2="lopes_040" type3="lopes_042" angle="2.0944" k="293"/>
   <Angle type1="lopes_042" type2="lopes_040" type3="lopes_041" angle="2.0944" k="293"/>
-  <Angle type1="lopes_038" type2="lopes_014" type3="lopes_015" angle="1.9111" k="293"/>
+  <Angle type1="lopes_040" type2="lopes_040" type3="lopes_041" angle="2.0944" k="293"/>
+  <Angle type1="lopes_040" type2="lopes_041" type3="lopes_042" angle="2.0944" k="293"/>
+  <Angle type1="lopes_039" type2="lopes_038" type3="lopes_014" angle="2.09090444" k="585.8"/>
+  <Angle type1="lopes_038" class2="CT" class3="HC" angle="1.9111" k="292.9"/>
+  <Angle type1="lopes_038" class2="CT" class3="CT" angle="1.9669861" k="488.3"/>
   <Angle type1="lopes_004" type2="lopes_004" type3="lopes_044" angle="1.9321" k="313.8"/>
   <Angle type1="lopes_004" type2="lopes_043" type3="lopes_004" angle="1.9111" k="418.4"/>
   <Angle type1="lopes_044" type2="lopes_004" type3="lopes_043" angle="1.9111" k="209.2"/>
