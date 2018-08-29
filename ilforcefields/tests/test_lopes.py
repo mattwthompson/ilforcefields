@@ -8,7 +8,7 @@ import pytest
 from foyer import Forcefield
 import numpy as np
 
-from ilforcefields.utils.utils import get_ff
+from ilforcefields.utils.utils import get_ff, get_il
 from ilforcefields.tests.utils import compare_atomtypes
 
 
@@ -62,11 +62,38 @@ class TestLOPES(object):
                 gro_path = os.path.join(testfiles_dir, mol_name, gro_filename)
                 structure = pmd.load_file(gro_path)
                 reference_structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
-        typed_structure = LOPES.apply(structure)
+        typed_structure = LOPES.apply(structure,
+                                      assert_angle_params=False,
+                                      assert_dihedral_params=False,
+                                      assert_improper_params=False)
 
         compare_atomtypes(typed_structure, reference_structure)
 
         assert np.round(np.sum([a.charge for a in typed_structure.atoms]), 6) % 1.0 == 0.0
 
+    @pytest.mark.parametrize('mol_name', correctly_implemented)
+    def test_angles_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+        mol = get_il(mol_name)
+        typed_structure = LOPES.apply(mol,
+                                      assert_angle_params=True,
+                                      assert_dihedral_params=False,
+                                      assert_improper_params=False)
+
+
+    @pytest.mark.parametrize('mol_name', correctly_implemented)
+    def test_dihedral_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+        mol = get_il(mol_name)
+        typed_structure = LOPES.apply(mol,
+                                      assert_angle_params=False,
+                                      assert_dihedral_params=True,
+                                      assert_improper_params=False)
+
+    @pytest.mark.parametrize('mol_name', correctly_implemented)
+    def test_improper_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+        mol = get_il(mol_name)
+        typed_structure = LOPES.apply(mol,
+                                      assert_angle_params=False,
+                                      assert_dihedral_params=False,
+                                      assert_improper_params=True)
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()
