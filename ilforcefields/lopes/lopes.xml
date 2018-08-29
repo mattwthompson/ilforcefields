@@ -104,6 +104,8 @@
   <Angle type1="lopes_010" type2="lopes_012" type3="lopes_012" angle="1.8692476288859268" k="292.6"/>
   <Angle type1="lopes_010" type2="lopes_012" type3="lopes_013" angle="2.129301687433082" k="146.3"/>
   <Angle type1="lopes_012" type2="lopes_012" type3="lopes_013" angle="2.2846359908605773" k="146.3"/>
+  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
   <Angle type1="lopes_010" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
   <Angle type1="lopes_017" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
   <Angle type1="lopes_016" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
@@ -111,12 +113,15 @@
   <Angle type1="lopes_014" type2="lopes_016" type3="lopes_020" angle="1.93207948" k="156.6"/>
   <Angle type1="lopes_017" type2="lopes_018" type3="lopes_020" angle="1.93207948" k="156.6"/>
   <Angle type1="lopes_017" type2="lopes_019" type3="lopes_020" angle="1.93207948" k="156.6"/>
+  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_010" type2="lopes_014" type3="lopes_017" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_010" type2="lopes_014" type3="lopes_016" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_014" type2="lopes_017" type3="lopes_018" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_014" type2="lopes_017" type3="lopes_019" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_017" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="418.4"/>
   <Angle type1="lopes_018" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="418.4"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="138.1"/>
   <Angle type1="lopes_015" type2="lopes_014" type3="lopes_015" angle="1.88146493" k="138.1"/>
   <Angle type1="lopes_020" type2="lopes_017" type3="lopes_020" angle="1.88146493" k="138.1"/>
   <Angle type1="lopes_020" type2="lopes_016" type3="lopes_020" angle="1.88146493" k="138.1"/>
