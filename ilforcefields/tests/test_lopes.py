@@ -72,7 +72,7 @@ class TestLOPES(object):
         assert np.round(np.sum([a.charge for a in typed_structure.atoms]), 6) % 1.0 == 0.0
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
-    def test_angles_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+    def test_angle_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
         mol = get_il(mol_name)
         typed_structure = LOPES.apply(mol,
                                       assert_angle_params=True,
