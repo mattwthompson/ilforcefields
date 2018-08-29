@@ -88,12 +88,5 @@ class TestLOPES(object):
                                       assert_dihedral_params=True,
                                       assert_improper_params=False)
 
-    @pytest.mark.parametrize('mol_name', correctly_implemented)
-    def test_improper_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
-        mol = get_il(mol_name)
-        typed_structure = LOPES.apply(mol,
-                                      assert_angle_params=False,
-                                      assert_dihedral_params=False,
-                                      assert_improper_params=True)
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()
