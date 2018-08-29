@@ -272,12 +272,11 @@
   <Proper type1="lopes_009" type2="lopes_006" type3="lopes_007" type4="lopes_008" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
  </RBTorsionForce>
  <PeriodicTorsionForce>
-  <Improper type1="lopes_010" class2="" class3="" class4="" c0="8.37" c1="0.0" c2="-8.37" c3="0.0" c4="0.0" c5="0.0"/>
-  <Improper type1="lopes_011" class2="" class3="" class4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
-  <Improper type1="lopes_012" class2="" class3="" class4="" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
-  <Improper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
-  <Improper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
-  <Improper type1="lopes_039" type2="lopes_039" type3="lopes_038" type4="lopes_042" c0="9.2" c1="0.0" c2="-9.2" c3="0.0" c4="0.0" c5="0.0"/>
+  <Improper type1="lopes_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
+  <Improper type1="lopes_011" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper type1="lopes_012" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper class1="CA" class2="" class3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper type1="lopes_038" class2="" class3="" class4="" periodicity1="2" phase1="3.14159265359" k1="4.18500"/>
  </PeriodicTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
   <Atom type="lopes_001" charge="0.31" sigma="0.25" epsilon="0.12552"/>
