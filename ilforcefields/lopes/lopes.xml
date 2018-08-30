@@ -3,12 +3,12 @@
   <Type name="lopes_001" class="" element="H" mass="1.008" def="H[N;X4]" desc="H on R3NH+"/>
   <Type name="lopes_002" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)H" desc="N on R3NH+"/>
   <Type name="lopes_003" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)C" desc="N on R4N+"/>
-  <Type name="lopes_004" class="" element="C" mass="12.011" def="C[N;X4;%lopes_003,%lopes_043]" desc="1st C on alkyl in TAA" doi="10.1021/jp063901o"/>
-  <Type name="lopes_005" class="" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="lopes_009" doi="10.1021/jp063901o"/>
-  <Type name="lopes_006" class="" element="C" mass="12.011" def="C(H)(H)(C)[C;%lopes_004]" desc="2nd C on alkyl in TAA" overrides="lopes_007" doi="10.1021/jp063901o"/>
+  <Type name="lopes_004" class="CT" element="C" mass="12.011" def="C[N;X4;%lopes_003,%lopes_043]" desc="1st C on alkyl in TAA" doi="10.1021/jp063901o"/>
+  <Type name="lopes_005" class="HC" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="lopes_009" doi="10.1021/jp063901o"/>
+  <Type name="lopes_006" class="CT" element="C" mass="12.011" def="C(H)(H)(C)[C;%lopes_004]" desc="2nd C on alkyl in TAA" overrides="lopes_007" doi="10.1021/jp063901o"/>
   <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_006]" desc="C in CH2 on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_008" class="" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007,%lopes_006]" desc="Terminal C on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_009" class="" element="H" mass="1.008" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_008" class="CT" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007,%lopes_006]" desc="Terminal C on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_009" class="HC" element="H" mass="1.008" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
   <Type name="lopes_010" class="NA" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="lopes_038"/>
   <Type name="lopes_011" class="" element="C" mass="12.011" def="[C;X3;r5]1[N;%lopes_010][C;X3;r5][C;X3;r5][N;%lopes_010]1" desc="CR in CMIm" doi="10.1021/jp0362133"/>
   <Type name="lopes_012" class="" element="C" mass="12.011" def="[C;X3;r5]1[C;X3;r5][N;%lopes_010][C;X3;r5][N;%lopes_010]1" desc="CW in CMIm" doi="10.1021/jp0362133"/>
@@ -207,6 +207,7 @@
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_010" type2="lopes_014" type3="lopes_017" type4="lopes_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="HC" class2="CT" class3="CT" class4="CT" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
   <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
   <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
@@ -217,11 +218,13 @@
   <Proper type1="lopes_020" type2="lopes_018" type3="lopes_017" type4="lopes_014" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_017" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
+  <Proper class1="HC" class2="CT" class3="CT" class4="HC" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
   <Proper type1="lopes_015" type2="lopes_014" type3="lopes_017" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
   <Proper type1="lopes_015" type2="lopes_014" type3="lopes_016" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_017" type3="lopes_018" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_017" type3="lopes_019" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
   <Proper type1="lopes_020" type2="lopes_019" type3="lopes_018" type4="lopes_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="CT" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
   <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_018" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
   <Proper type1="lopes_019" type2="lopes_018" type3="lopes_018" type4="lopes_017" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
   <Proper type1="lopes_019" type2="lopes_018" type3="lopes_017" type4="lopes_014" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
@@ -235,12 +238,20 @@
   <Proper type1="lopes_036" type2="lopes_035" type3="lopes_036" type4="lopes_037" c0="2.04" c1="-2.04" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_038" type2="lopes_039" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_038" type2="lopes_039" type3="lopes_040" type4="lopes_041" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_038" class2="CT" class3="CT" class4="CT" c0="-1.1769" c1="1.93595" c2="-3.1642" c3="2.4052" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_038" class2="CT" class3="CT" class4="HC" c0="0.1835" c1="0.5505" c2="0" c3="-0.734" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" type2="lopes_038" class3="CA" class4="CA" c0="12.552" c1="0.0" c2="12.552" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" type2="lopes_038" class3="CA" type4="lopes_042" c0="12.552" c1="0.0" c2="12.552" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CA" class2="CA" class3="CA" class4="CA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CA" class2="CA" class3="CA" class4="HA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="HA" class2="CA" class3="CA" class4="HA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_040" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_039" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_039" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_040" type2="lopes_041" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_039" type2="lopes_038" type3="lopes_039" type4="lopes_042" c0="12.5520" c1="0.0" c2="-12.5520" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_042" type2="lopes_039" type3="lopes_040" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_042" type2="lopes_039" type3="lopes_040" type4="lopes_041" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_042" type2="lopes_040" type3="lopes_041" type4="lopes_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_039" type2="lopes_038" type3="lopes_014" type4="lopes_015" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_039" type2="lopes_038" type3="lopes_039" type4="lopes_040" c0="12.552" c1="0.0" c2="-12.552" c3="0.0" c4="0.0" c5="0.0"/>
