@@ -17,9 +17,9 @@ def test_get_lopes():
     LOPES = get_ff('lopes')
 
 
-LOPES = Forcefield(resource_filename('ilforcefields', os.path.join('lopes', 'lopes.xml')))
+LOPES = get_ff('lopes')
 
-LOPES_TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
+TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
 
 
 class TestLOPES(object):
@@ -28,11 +28,11 @@ class TestLOPES(object):
     def initdir(self, tmpdir):
         tmpdir.chdir()
 
-    top_files = glob.glob(os.path.join(LOPES_TESTFILES_DIR, '*/*.top'))
-    mol2_files = glob.glob(os.path.join(LOPES_TESTFILES_DIR, '*/*.mol2'))
+    top_files = glob.glob(os.path.join(TESTFILES_DIR, '*/*.top'))
+    mol2_files = glob.glob(os.path.join(TESTFILES_DIR, '*/*.mol2'))
 
     implemented_tests_path = os.path.join(os.path.dirname(__file__),
-                                          'implemented_tests.txt')
+                                          'implemented_lopes_tests.txt')
     with open(implemented_tests_path) as f:
         correctly_implemented = [line.strip() for line in f]
 
@@ -51,7 +51,7 @@ class TestLOPES(object):
                         fh.write('{}\n'.format(mol_name))
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
-    def test_atomtyping(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+    def test_atomtyping(self, mol_name, testfiles_dir=TESTFILES_DIR):
         files = glob.glob(os.path.join(testfiles_dir, mol_name, '*'))
         for mol_file in files:
             _, ext = os.path.splitext(mol_file)
@@ -60,33 +60,33 @@ class TestLOPES(object):
                 gro_filename = '{}.gro'.format(mol_name)
                 top_path = os.path.join(testfiles_dir, mol_name, top_filename)
                 gro_path = os.path.join(testfiles_dir, mol_name, gro_filename)
-                structure = pmd.load_file(gro_path)
-                reference_structure = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
-        typed_structure = LOPES.apply(structure,
-                                      assert_angle_params=False,
-                                      assert_dihedral_params=False,
-                                      assert_improper_params=False)
+                struct = pmd.load_file(gro_path)
+                ref_struct = pmd.load_file(top_path, xyz=gro_path, parametrize=False)
+        typed_struct = LOPES.apply(struct,
+                                   assert_angle_params=False,
+                                   assert_dihedral_params=False,
+                                   assert_improper_params=False)
 
-        compare_atomtypes(typed_structure, reference_structure)
+        compare_atomtypes(typed_struct, ref_struct)
 
-        assert np.round(np.sum([a.charge for a in typed_structure.atoms]), 6) % 1.0 == 0.0
-
-    @pytest.mark.parametrize('mol_name', correctly_implemented)
-    def test_angle_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
-        mol = get_il(mol_name)
-        typed_structure = LOPES.apply(mol,
-                                      assert_angle_params=True,
-                                      assert_dihedral_params=False,
-                                      assert_improper_params=False)
-
+        assert np.isclose(np.sum([a.charge for a in typed_struct.atoms]) % 1.0, 0.0)
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
-    def test_dihedral_params_exist(self, mol_name, testfiles_dir=LOPES_TESTFILES_DIR):
+    def test_angle_params_exist(self, mol_name, testfiles_dir=TESTFILES_DIR):
         mol = get_il(mol_name)
-        typed_structure = LOPES.apply(mol,
-                                      assert_angle_params=False,
-                                      assert_dihedral_params=True,
-                                      assert_improper_params=False)
+        typed_struct = LOPES.apply(mol,
+                                   assert_angle_params=True,
+                                   assert_dihedral_params=False,
+                                   assert_improper_params=False)
+
+    @pytest.mark.parametrize('mol_name', correctly_implemented)
+    def test_dihedral_params_exist(self, mol_name, testfiles_dir=TESTFILES_DIR):
+        mol = get_il(mol_name)
+        typed_struct = LOPES.apply(mol,
+                                   assert_angle_params=False,
+                                   assert_dihedral_params=True,
+                                   assert_improper_params=False)
+
 
 if __name__ == '__main__':
     TestLOPES().find_correctly_implemented()
