@@ -8,7 +8,7 @@ import pytest
 from foyer import Forcefield
 import numpy as np
 
-from ilforcefields.utils.utils import get_ff, get_il
+from ilforcefields.utils import get_ff, get_il
 from ilforcefields.tests.utils import compare_atomtypes
 
 
