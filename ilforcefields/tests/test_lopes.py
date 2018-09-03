@@ -19,7 +19,7 @@ def test_get_lopes():
 
 LOPES = get_ff('lopes')
 
-TESTFILES_DIR = resource_filename('ilforcefields', 'lopes_validation')
+TESTFILES_DIR = resource_filename('ilforcefields', '/tests/lopes_test_files')
 
 
 class TestLOPES(object):
@@ -69,7 +69,8 @@ class TestLOPES(object):
 
         compare_atomtypes(typed_struct, ref_struct)
 
-        assert np.isclose(np.sum([a.charge for a in typed_struct.atoms]) % 1.0, 0.0)
+        assert np.isclose(np.abs(np.sum([a.charge for a in typed_struct.atoms])), 1.0)
+            
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
     def test_angle_params_exist(self, mol_name, testfiles_dir=TESTFILES_DIR):
