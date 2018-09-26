@@ -44,11 +44,10 @@
   <Type name="lopes_042" class="" element="H" mass="1.008" def="H[C;%lopes_041,%lopes_039,%lopes_040]" desc="HAP in pyridinium" doi="10.1021/jp063901o"/>
   <Type name="lopes_043" class="" element="N" mass="14.0067" def="[N;X4;R1](C)(C)(C)" desc="N3 in ammonium/pyrrolidinium" overrides="lopes_003" doi="10.1021/jp063901o"/>
   <Type name="lopes_044" class="" element="H" mass="1.008" def="H[N;%lopes_043]" desc="H in ammonium/pyrrolidinium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_045" class="" element="O" mass="15.9994" def="OS(N)(O)(F)" desc="OB in FSI"/>
-  <Type name="lopes_046" class="" element="N" mass="14.0067" def="N(S(O)(O)F)S(O)(O)F" desc="NB in FSI"/>
-  <Type name="lopes_047" class="" element="F" mass="18.9984" def="FS(O)(O)N" desc="FB in FSI"/>
-  <Type name="lopes_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI"/>
-
+  <Type name="lopes_045" class="" element="O" mass="15.9994" def="OS(N)(O)(F)" desc="OB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="lopes_046" class="" element="N" mass="14.0067" def="N(S(O)(O)(F))S(O)(O)(F)" desc="NB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="lopes_047" class="" element="F" mass="18.9984" def="FS(O)(O)N" desc="FB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="lopes_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="lopes_011" type2="lopes_013" length="0.108" k="284512"/>
@@ -195,7 +194,6 @@
   <Angle type1="lopes_047" type2="lopes_048" type3="lopes_046" angle="1.79768913" k="902.0"/>
   <Angle type1="lopes_046" type2="lopes_048" type3="lopes_045" angle="1.9827" k="789.0"/>
   <Angle type1="lopes_048" type2="lopes_046" type3="lopes_048" angle="2.1921" k="671.0"/>
-
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
