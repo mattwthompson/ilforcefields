@@ -21,11 +21,13 @@ def get_ff_path(ff_name):
 def get_ff(ff_name):
     """Get the Forcefield object from a force field xml file """
     """in a directory of the same name."""
+    ff_name = ff_name.lower()
     ff_path = get_ff_path(ff_name)
     FF = Forcefield(ff_path)
     return FF
 
 def get_il(il_name):
+    il_name = il_name.lower()
     cache_dir = resource_filename('ilforcefields', 'lib/un-typed')
     filename = '{}.mol2'.format(il_name)
     if any(file == filename for file in os.listdir(cache_dir)):
