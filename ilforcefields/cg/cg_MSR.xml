@@ -1,0 +1,18 @@
+<ForceField>
+ <AtomTypes>
+  <Type name="A"  class="A"  element="_A"  mass="86.81" def="[_A]" desc="tetrafluoroborate" doi="https://pubs.acs.org/doi/10.1021/jp3008877"/>
+  <Type name="C1" class="C1" element="_C1" mass="67.07" def="[_C1]" desc="Imidazolium ring in Mmim" doi="https://pubs.acs.org/doi/10.1021/jp3008877"/>
+  <Type name="C2" class="C2" element="_C2" mass="15.04" def="[_C2]" desc="Methyl group in Mim" doi="https://pubs.acs.org/doi/10.1021/jp3008877"/>
+  <Type name="C3" class="C3" element="_C3" mass="57.12"  def="[_C3]" desc="IM"  doi="https://pubs.acs.org/doi/10.1021/jp3008877"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond type1="C2" type2="C1" length="0.147" k="22000"/>
+  <Bond type1="C3" type2="C1" length="0.1483" k="22000"/>
+ </HarmonicBondForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <Atom type="A"  charge="-.7800" sigma="0.451" epsilon="3.24"/>
+  <Atom type="C1" charge=".4374" sigma="0.438" epsilon="2.56"/>
+  <Atom type="C2" charge=".1578" sigma="0.341" epsilon="0.36"/>
+  <Atom type="C3" charge=".1848" sigma="0.504" epsilon="1.83"/>
+ </NonbondedForce>
+</ForceField>
