@@ -1,0 +1,119 @@
+<ForceField>
+ <AtomTypes>
+  <Type name="ual_001" class="NA" element="N" mass="14.0067"    def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1"    desc="NA  in CMIm" doi="10.1021/jp204148q"/>
+  <Type name="ual_002" class="CR" element="C" mass="12.011"     def="[C;X3;r5]1[N;X3;r5][C;X3;r5][C;X3;r5][N;X3;r5]1"  desc="CR" doi="10.1021/jp204148q""/>
+  <Type name="ual_003" class="CW" element="C" mass="12.011"     def="[C;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][N;X3;r5]1"  desc="CW in CMIm" doi="10.1021/jp204148q"/> 
+  <Type name="ual_004" class="H4" element="H" mass="1.008"      def="H[C;%ual_003]" desc="H4 near methyl in CMIm" doi="10.1021/jp204148q"/>
+  <Type name="ual_005" class="H5" element="H" mass="1.008"      def="H[C;%ual_002]"  desc="H5 in CMIm" doi="10.1021/jp204148q"/>
+  <Type name="ual_006" class="CT2" element="_CT2" mass="12.011" def="_CT2[_CN2;%ual_010]" desc="second CH2 bead in alkyl chain of  CMIm"  doi="10.1021/jp204148q"/> 
+  <Type name="ual_007" class="CT3" element="_CT3" mass="12.011" def="_CT3[_CT2;%ual_006]"   desc="third CH2 bead in alkyl chain of CMIm" doi="10.1021/jp204148q"/> 
+  <Type name="ual_008" class="CT4" element="_CT4" mass="15.011" def="_CT4[_CT3;%ual_007]"   desc="Final  CH3 bead in alkyl chain of CMIm" doi="10.1021/jp204148q"/>
+  <Type name="ual_009" class="CN3" element="_CN3" mass="15.011" def="_CN3[N;%ual_001]"   desc="CH3 bead on methyl of CMIm" doi="10.1021/jp204148q"/>
+  <Type name="ual_010" class="CN2" element="_CN2" mass="14.011" def="_CN2[N;%ual_001]"   desc="First CH2 bead  in alkyl chain of MIm " doi="10.1021/jp204148q"/>
+  <Type name="ual_011" class="" element="N" mass="12.011"       def="N(S(O)(O)(_CF3))(S(O)(O)(_CF3))"   desc="N in TF2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_012" class="" element="S" mass="12.011"       def="S(O)(O)(_CF3)"   desc="s in Tf2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_013" class="" element="O" mass="12.011"       def="OS(N)(O)(_CF3)"   desc="O in tf2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_014" class="" element="_CF3" mass="69"        def="_CF3[S;%ual_012]"    desc="CF3 in tf2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_015" class="" element="P" mass="30.973762"    def="[P;X6]"   desc="N in TF2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_016" class="" element="F" mass="37.9968064"   def="F[P;%ual_015]"   desc="s in Tf2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_017" class="" element="B" mass="10.811"       def="[B;X4]"   desc="N in TF2n" doi="10.1021/jp204148q"/>
+  <Type name="ual_018" class="" element="F" mass="37.9968064"   def="F[B;%ual_017]"   desc="s in Tf2n" doi="10.1021/jp204148q"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond type1="ual_001" type2="ual_002" length="0.1325" k="172004.24"/>
+  <Bond type1="ual_003" type2="ual_001" length="0.1378" k="172004.24"/>
+  <Bond type1="ual_003" type2="ual_003" length="0.1343" k="200162.56"/>
+  <Bond type1="ual_003" type2="ual_004" length="0.1070" k="144055.12"/>
+  <Bond type1="ual_002" type2="ual_005" length="0.1070" k="144055.24"/>
+  <Bond type1="ual_001" type2="ual_009" length="0.15" k="108156.4"/>
+  <Bond type1="ual_001" type2="ual_010" length="0.1490" k="108156.4"/>
+  <Bond type1="ual_006" type2="ual_010" length="0.161" k="81420.6"/>
+  <Bond type1="ual_006" type2="ual_007" length="0.161" k="81420.6"/>
+  <Bond type1="ual_007" type2="ual_008" length="0.161" k="109202.4"/>
+  <Bond type1="ual_008" type2="ual_010" length="0.161" k="109202.4"/>
+  <Bond type1="ual_014" type2="ual_012" length="0.24" k="65814.32"/>
+  <Bond type1="ual_012" type2="ual_011" length="0.157" k="113302.72"/>
+  <Bond type1="ual_012" type2="ual_013" length="0.145" k="226396.24"/>  
+  <Bond type1="ual_015" type2="ual_016" length="0.139" k="167360"/>
+  <Bond type1="ual_017" type2="ual_018" length="0.16" k="125520"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle type1="ual_003" type2="ual_001" type3="ual_002" angle="1.884" k="283.6752"/>
+  <Angle type1="ual_001" type2="ual_002" type3="ual_001" angle="1.91811" k="308.3608"/> 
+  <Angle type1="ual_001" type2="ual_002" type3="ual_005" angle="2.1938" k="214.2208"/>
+  <Angle type1="ual_004" type2="ual_003" type3="ual_001" angle="2.1310" k="214.2208"/>
+  <Angle type1="ual_004" type2="ual_003" type3="ual_003" angle="2.2811" k="209.2"/>
+  <Angle type1="ual_001" type2="ual_003" type3="ual_003" angle="1.8692" k="292.04"/>
+  <Angle type1="ual_001" type2="ual_010" type3="ual_006" angle="1.9582" k="334.72"/>
+  <Angle type1="ual_003" type2="ual_001" type3="ual_010" angle="2.19387" k="268.6128"/>
+  <Angle type1="ual_002" type2="ual_001" type3="ual_010" angle="2.2043" k="268.6128"/>
+  <Angle type1="ual_009" type2="ual_001" type3="ual_003" angle="2.19387" k="268.6128"/>
+  <Angle type1="ual_009" type2="ual_001" type3="ual_002" angle="2.2043" k="268.6128"/>
+  <Angle type1="ual_006" type2="ual_006" type3="ual_010" angle="1.7837" k="391.6224"/>
+  <Angle type1="ual_006" type2="ual_006" type3="ual_006" angle="1.7837" k="391.6224"/>
+  <Angle type1="ual_006" type2="ual_006" type3="ual_007" angle="1.82910" k="475.3024"/>
+  <Angle type1="ual_006" type2="ual_007" type3="ual_008" angle="1.82910" k="475.3024"/>
+  <Angle type1="ual_011" type2="ual_012" type3="ual_014" angle="1.37706" k="330.1176"/>
+  <Angle type1="ual_013" type2="ual_012" type3="ual_014" angle="1.33517" k="320.076"/>
+  <Angle type1="ual_012" type2="ual_011" type3="ual_012" angle="1.06814" k="256.068"/>
+  <Angle type1="ual_013" type2="ual_012" type3="ual_013" angle="1.3020" k="312.1264"/>
+  <Angle type1="ual_011" type2="ual_012" type3="ual_013" angle="1.2252" k="293.7168"/>
+  <Angle type1="ual_016" type2="ual_015" type3="ual_016" angle="1.5708" k="836.8"/>
+  <Angle type1="ual_016" type2="ual_015" type3="ual_016" angle="3.14159" k="836.8"/>
+  <Angle type1="ual_018" type2="ual_017" type3="ual_018" angle="1.9111355" k="209.2"/>
+ </HarmonicAngleForce>
+ <RBTorsionForce>
+ </RBTorsionForce>
+ <PeriodicTorsionForce>
+  <Proper type1="ual_004" type2="ual_003" type3="ual_001" type4="ual_009" periodicity1="2" phase1="3.14159265359" k1="6.276"/>
+  <Proper type1="ual_004" type2="ual_003" type3="ual_001" type4="ual_010" periodicity1="2" phase1="3.14159265359" k1="6.276"/>    
+  <Proper type1="ual_004" type2="ual_003" type3="ual_001" type4="ual_002" periodicity1="2" phase1="3.14159265359" k1="8.368"/>
+  <Proper type1="ual_003" type2="ual_003" type3="ual_001" type4="ual_002" periodicity1="2" phase1="3.14159265359" k1="50.208"/>
+  <Proper type1="ual_003" type2="ual_003" type3="ual_001" type4="ual_009" periodicity1="2" phase1="3.14159265359" k1="8.368"/>
+  <Proper type1="ual_003" type2="ual_003" type3="ual_001" type4="ual_010" periodicity1="2" phase1="3.14159265359" k1="8.368"/>
+  <Proper type1="ual_001" type2="ual_003" type3="ual_003" type4="ual_004" periodicity1="2" phase1="3.14159265359" k1="6.276"/>
+  <Proper type1="ual_009" type2="ual_001" type3="ual_002" type4="ual_001" periodicity1="2" phase1="3.14159265359" k1="8.368"/>
+  <Proper type1="ual_010" type2="ual_001" type3="ual_002" type4="ual_001" periodicity1="2" phase1="3.14159265359" k1="8.368"/>
+  <Proper type1="ual_009" type2="ual_001" type3="ual_002" type4="ual_005" periodicity1="2" phase1="3.14159265359" k1="6.276"/>
+  <Proper type1="ual_010" type2="ual_001" type3="ual_002" type4="ual_005" periodicity1="2" phase1="3.14159265359" k1="6.276"/>
+  <Proper type1="ual_003" type2="ual_001" type3="ual_002" type4="ual_001" periodicity1="2" phase1="3.14159265359" k1="50.208"/>
+  <Proper type1="ual_003" type2="ual_001" type3="ual_002" type4="ual_005" periodicity1="2" phase1="3.14159265359" k1="6.276"/>
+  <Proper type1="ual_003" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="1" phase1="0" k1="0.8075"/>
+  <Proper type1="ual_003" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="2" phase1="3.1416" k1="0.92048"/>
+  <Proper type1="ual_003" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="3" phase1="0" k1="0.0376"/>
+  <Proper type1="ual_002" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="1" phase1="0" k1="0.7112"/>
+  <Proper type1="ual_002" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="2" phase1="3.1416" k1="0.0627"/>
+  <Proper type1="ual_002" type2="ual_001" type3="ual_010" type4="ual_006" periodicity1="3" phase1="0" k1="-0.887"/>
+  <Proper type1="ual_010" type2="ual_006" type3="ual_007" type4="ual_008" periodicity1="1" phase1="0" k1="-14.644"/>
+  <Proper type1="ual_010" type2="ual_006" type3="ual_007" type4="ual_008" periodicity1="2" phase1="3.1416" k1="6.6944"/>
+  <Proper type1="ual_010" type2="ual_006" type3="ual_007" type4="ual_008" periodicity1="3" phase1="0" k1="6.6944"/>
+  <Proper type1="ual_012" type2="ual_011" type3="ual_012" type4="ual_014" periodicity1="1" phase1="0" k1="3.83254"/>
+  <Proper type1="ual_012" type2="ual_011" type3="ual_012" type4="ual_014" periodicity1="2" phase1="3.14159" k1="-4.3722"/>
+  <Proper type1="ual_012" type2="ual_011" type3="ual_012" type4="ual_014" periodicity1="3" phase1="0" k1="-1.5982"/>
+  <Proper type1="ual_012" type2="ual_011" type3="ual_012" type4="ual_013" periodicity1="3" phase1="0" k1="3.3472"/> 
+  <Improper type1="ual_001" type2="ual_001" type3="ual_002" type4="ual_005" periodicity1="2" phase1="3.14159" k1="4.6024"/>
+  <Improper type1="ual_002" type2="ual_003" type3="ual_001" type4="ual_009" periodicity1="2" phase1="3.14159" k1="8.368"/>
+  <Improper type1="ual_002" type2="ual_003" type3="ual_001" type4="ual_010" periodicity1="2" phase1="3.14159" k1="8.368"/>
+  <Improper type1="ual_001" type2="ual_003" type3="ual_003" type4="ual_004" periodicity1="2" phase1="3.14159" k1="4.6024"/>
+ </PeriodicTorsionForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <Atom type="ual_001" charge="0.0150" sigma="0.325" epsilon="0.71128"/>
+  <Atom type="ual_002" charge="0" sigma="0.34" epsilon="0.359824"/>
+  <Atom type="ual_003" charge="-0.16" sigma="0.34" epsilon="0.359824"/>
+  <Atom type="ual_004" charge="0.2" sigma="0.1604" epsilon="0.12552"/>
+  <Atom type="ual_005" charge="0.15" sigma="0.1247" epsilon="0.12552"/>
+  <Atom type="ual_006" charge="0.050" sigma="0.395" epsilon="0.380774"/>
+  <Atom type="ual_007" charge="0" sigma="0.3750" epsilon="0.380774"/>
+  <Atom type="ual_008" charge="0" sigma="0.3550" epsilon="0.380774"/>
+  <Atom type="ual_009" charge="0.26" sigma="0.366" epsilon="0.79496"/>
+  <Atom type="ual_010" charge="0.23" sigma="0.382" epsilon="0.380774"/>
+  <Atom type="ual_011" charge="-0.272" sigma="0.325" epsilon="0.71128"/>
+  <Atom type="ual_012" charge="0.627" sigma="0.3564" epsilon="1.046"/>
+  <Atom type="ual_013" charge="-0.398" sigma="0.2960" epsilon="0.87864"/>
+  <Atom type="ual_014" charge="-0.095" sigma="0.4472" epsilon="0.66944"/>
+  <Atom type="ual_015" charge="0.442" sigma="0.3740" epsilon="0.8368"/>
+  <Atom type="ual_016" charge="-0.207" sigma="0.3118" epsilon="0.2594"/>
+  <Atom type="ual_017" charge="0.428" sigma="0.3580" epsilon="0.401664"/>
+  <Atom type="ual_018" charge="-0.307" sigma="0.3118" epsilon="0.259408"/>
+ </NonbondedForce>
+</ForceField>
