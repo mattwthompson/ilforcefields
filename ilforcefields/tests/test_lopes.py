@@ -74,7 +74,7 @@ class TestLOPES(object):
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
     def test_angle_params_exist(self, mol_name, testfiles_dir=TESTFILES_DIR):
-        mol = get_il(mol_name)
+        mol = get_il(mol_name).to_parmed()
         typed_struct = LOPES.apply(mol,
                                    assert_angle_params=True,
                                    assert_dihedral_params=False,
@@ -82,7 +82,7 @@ class TestLOPES(object):
 
     @pytest.mark.parametrize('mol_name', correctly_implemented)
     def test_dihedral_params_exist(self, mol_name, testfiles_dir=TESTFILES_DIR):
-        mol = get_il(mol_name)
+        mol = get_il(mol_name).to_parmed()
         typed_struct = LOPES.apply(mol,
                                    assert_angle_params=False,
                                    assert_dihedral_params=True,
