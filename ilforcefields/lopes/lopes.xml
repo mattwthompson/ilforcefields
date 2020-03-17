@@ -211,13 +211,15 @@
   <Angle type1="lopes_050" type2="lopes_049" type3="lopes_050" angle="1.98968" k="969.0"/>
   <Angle type1="lopes_050" type2="lopes_049" type3="lopes_051" angle="1.82387" k="870.0"/>
   <Angle type1="lopes_049" type2="lopes_051" type3="lopes_054" angle="2.32653" k="583.0"/>
-  <Angle class1="F" type2="lopes_049" class3="F" angle="1.9041542" k="644.34"/>
+  <Angle class1="F" type2="lopes_051" class3="F" angle="1.9041542" k="644.34"/>
   <Angle class1="F" class2="CF" class3="F" angle="1.9041542" k="644.34"/>
   <Angle class1="F" class2="CF" class3="CF" angle="1.9111355" k="418.4"/>
   <Angle class1="F" class2="CT" class3="CF" angle="1.9111355" k="418.4"/>
   <Angle class1="CF" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
   <Angle class1="CT" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
+  <Angle class1="CT" class2="CF" class3="F" angle="1.9111355" k="418.4"/>
   <Angle type1="lopes_049" type2="lopes_051" class3="F" angle="2.32653" k="583.0"/>
+  <Angle type1="lopes_049" type2="lopes_051" class3="CF" angle="2.32653" k="583.0"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
@@ -319,6 +321,7 @@
   <Proper type1="lopes_045" type2="lopes_048" type3="lopes_046" type4="lopes_048" c0="-0.0075" c1="-0.0225" c2="0.0" c3="0.03" c4="0.0" c5="0.0"/>
   <Proper class1="CT" class2="CF" class3="CF" class4="CF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="-11.6148" c4="-35.4468" c5="0.0"/>
   <Proper class1="F" class2="CT" class3="CF" class4="CF" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CF" class3="CF" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
   <Proper class1="F" class2="CT" class3="CF" class4="F" c0="-4.707" c1="6.799" c2="0.0" c3="2.092" c4="0.0" c5="0.0"/>
   <Proper class1="F" class2="CF" class3="CF" class4="F" c0="-4.707" c1="6.799" c2="0.0" c3="2.092" c4="0.0" c5="0.0"/>
   <Proper class1="F" class2="CF" class3="CF" class4="CF" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
