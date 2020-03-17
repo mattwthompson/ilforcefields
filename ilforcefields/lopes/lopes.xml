@@ -50,8 +50,10 @@
   <Type name="lopes_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
   <Type name="lopes_049" class="" element="S" mass="32.065" def="[S;X4](O)(O)(O)C" desc="S in sulfonate" doi="10.1021/jp800281e"/>
   <Type name="lopes_050" class="" element="O" mass="15.9994" def="O[S;X4]" desc="O in sulfonate" doi="10.1021/jp800281e"/>
-  <Type name="lopes_051" class="" element="C" mass="12.011" def="[C;X4](S)(C)" desc="C next to S in sulfonate" doi="10.1021/jp800281e"/>
-  <Type name="lopes_052" class="" element="C" mass="12.011" def="[C;X4](C)(C)" desc="C in sulfonate" doi="10.1021/jp800281e"/>
+  <Type name="lopes_051" class="CT" element="C" mass="12.011" def="[C;X4]([S;%lopes_049])(C)" desc="C next to S in sulfonate" doi="10.1021/jp800281e"/>
+  <Type name="lopes_053" class="F" element="F" mass="18.9984" def="FC" desc="F in perfluoroalkane" doi="10.1021/jp004071w"/>
+  <Type name="lopes_054" class="CF" element="C" mass="12.011" def="[C;X4](F)(F)(C)C" desc="CF2 in perfluoroalkane" doi="10.1021/jp004071w"/>
+  <Type name="lopes_055" class="CF" element="C" mass="12.011" def="[C;X4](F)(F)F" desc="CF3 in perfluoroalkane" doi="10.1021/jp004071w"/>
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="lopes_011" type2="lopes_013" length="0.108" k="284512"/>
@@ -106,6 +108,12 @@
   <Bond type1="lopes_046" type2="lopes_048" length="0.1570" k="313700"/>
   <Bond type1="lopes_049" type2="lopes_051" length="0.1757" k="197000"/>
   <Bond type1="lopes_049" type2="lopes_050" length="0.1455" k="533100"/>
+  <Bond type1="lopes_051" type2="lopes_054" length="0.1529" k="224200"/>
+  <Bond type1="lopes_054" type2="lopes_054" length="0.1529" k="224200"/>
+  <Bond type1="lopes_054" type2="lopes_055" length="0.1529" k="224200"/>
+  <Bond type1="lopes_051" type2="lopes_053" length="0.1332" k="307106"/>
+  <Bond type1="lopes_054" type2="lopes_053" length="0.1332" k="307106"/>
+  <Bond type1="lopes_055" type2="lopes_053" length="0.1332" k="307106"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
@@ -202,7 +210,14 @@
   <Angle type1="lopes_048" type2="lopes_046" type3="lopes_048" angle="2.1921" k="671.0"/>
   <Angle type1="lopes_050" type2="lopes_049" type3="lopes_050" angle="1.98968" k="969.0"/>
   <Angle type1="lopes_050" type2="lopes_049" type3="lopes_051" angle="1.82387" k="870.0"/>
-  <Angle type1="lopes_049" type2="lopes_051" type3="lopes_052" angle="2.32653" k="583.0"/>
+  <Angle type1="lopes_049" type2="lopes_051" type3="lopes_054" angle="2.32653" k="583.0"/>
+  <Angle class1="F" type2="lopes_049" class3="F" angle="1.9041542" k="644.34"/>
+  <Angle class1="F" class2="CF" class3="F" angle="1.9041542" k="644.34"/>
+  <Angle class1="F" class2="CF" class3="CF" angle="1.9111355" k="418.4"/>
+  <Angle class1="F" class2="CT" class3="CF" angle="1.9111355" k="418.4"/>
+  <Angle class1="CF" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
+  <Angle class1="CT" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
+  <Angle type1="lopes_049" type2="lopes_051" class3="F" angle="2.32653" k="583.0"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
@@ -302,8 +317,15 @@
   <Proper type1="lopes_009" type2="lopes_006" type3="lopes_007" type4="lopes_008" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_047" type2="lopes_048" type3="lopes_046" type4="lopes_048" c0="-9.8553" c1="-19.4568" c2="0.8757" c3="16.9748" c4="11.4616" c5="0.0"/>
   <Proper type1="lopes_045" type2="lopes_048" type3="lopes_046" type4="lopes_048" c0="-0.0075" c1="-0.0225" c2="0.0" c3="0.03" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_050" type2="lopes_049" type3="lopes_051" type4="lopes_052" c0="0.68985" c1="2.06955" c2="0.0" c3="2.7594" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_049" type2="lopes_051" type3="lopes_052" type4="lopes_052" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CF" class3="CF" class4="CF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="-11.6148" c4="-35.4468" c5="0.0"/>
+  <Proper class1="F" class2="CT" class3="CF" class4="CF" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
+  <Proper class1="F" class2="CT" class3="CF" class4="F" c0="-4.707" c1="6.799" c2="0.0" c3="2.092" c4="0.0" c5="0.0"/>
+  <Proper class1="F" class2="CF" class3="CF" class4="F" c0="-4.707" c1="6.799" c2="0.0" c3="2.092" c4="0.0" c5="0.0"/>
+  <Proper class1="F" class2="CF" class3="CF" class4="CF" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_049" class2="CT" class3="CF" class4="CF" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_049" class2="CT" class3="CF" class4="F" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="F" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="CF" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
  </RBTorsionForce>
  <PeriodicTorsionForce>
   <Improper type1="lopes_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
@@ -363,7 +385,9 @@
   <Atom type="lopes_048" charge="1.02" sigma="0.355" epsilon="1.04600"/>
   <Atom type="lopes_049" charge="1.180" sigma="0.355" epsilon="1.04600"/>
   <Atom type="lopes_050" charge="-0.680" sigma="0.315" epsilon="0.837"/>
-  <Atom type="lopes_051" charge="-0.140" sigma="0.350" epsilon="0.276"/>
-  <Atom type="lopes_052" charge="-0.120" sigma="0.350" epsilon="0.276"/>
+  <Atom type="lopes_051" charge="-0.10" sigma="0.350" epsilon="0.276"/>
+  <Atom type="lopes_053" charge="-0.120" sigma="0.295" epsilon="0.221752"/>
+  <Atom type="lopes_054" charge="0.24" sigma="0.350" epsilon="0.27614"/>
+  <Atom type="lopes_055" charge="0.36" sigma="0.350" epsilon="0.27614"/>
  </NonbondedForce>
 </ForceField>
