@@ -218,8 +218,8 @@
   <Angle class1="CF" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
   <Angle class1="CT" class2="CF" class3="CF" angle="1.966986067" k="488.27"/>
   <Angle class1="CT" class2="CF" class3="F" angle="1.9111355" k="418.4"/>
-  <Angle type1="lopes_049" type2="lopes_051" class3="F" angle="2.32653" k="583.0"/>
-  <Angle type1="lopes_049" type2="lopes_051" class3="CF" angle="2.32653" k="583.0"/>
+  <Angle type1="lopes_049" type2="lopes_051" class3="F" angle="1.9111455" k="418.40"/>
+  <Angle type1="lopes_049" type2="lopes_051" class3="CF" angle="1.911135" k="418.4"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
@@ -326,9 +326,9 @@
   <Proper class1="F" class2="CF" class3="CF" class4="F" c0="-4.707" c1="6.799" c2="0.0" c3="2.092" c4="0.0" c5="0.0"/>
   <Proper class1="F" class2="CF" class3="CF" class4="CF" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_049" class2="CT" class3="CF" class4="CF" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_049" class2="CT" class3="CF" class4="F" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="F" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
-  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="CF" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_049" class2="CT" class3="CF" class4="F" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="F" c0="-9.6709" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_050" type2="lopes_049" class3="CT" class4="CF" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
  </RBTorsionForce>
  <PeriodicTorsionForce>
   <Improper type1="lopes_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
@@ -388,7 +388,7 @@
   <Atom type="lopes_048" charge="1.02" sigma="0.355" epsilon="1.04600"/>
   <Atom type="lopes_049" charge="1.180" sigma="0.355" epsilon="1.04600"/>
   <Atom type="lopes_050" charge="-0.680" sigma="0.315" epsilon="0.837"/>
-  <Atom type="lopes_051" charge="-0.10" sigma="0.350" epsilon="0.276"/>
+  <Atom type="lopes_051" charge="0.10" sigma="0.350" epsilon="0.276"/>
   <Atom type="lopes_053" charge="-0.120" sigma="0.295" epsilon="0.221752"/>
   <Atom type="lopes_054" charge="0.24" sigma="0.350" epsilon="0.27614"/>
   <Atom type="lopes_055" charge="0.36" sigma="0.350" epsilon="0.27614"/>
