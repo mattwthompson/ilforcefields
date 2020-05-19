@@ -1,13 +1,13 @@
 <ForceField>
  <AtomTypes>
-  <Type name="fluor_01" class="CTF" element="C" mass="12.011" def="[C;X4](F)(F)F" desc="Terminal C in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_02" class="C" element="C" mass="12.011" def="[C;X4](C)(F)(F)C" desc="C in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_03" class="C" element="C" mass="12.011" def="[C;X4][S;%fluor_07]" desc="C(S) in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_04" class="F" element="F" mass="18.9984" def="FC" desc="F in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_05" class="F" element="F" mass="18.9984" def="FC(S)" overrides="fluor_04" desc="FC1 in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_06" class="F" element="F" mass="18.9984" def="FC(F)(F)" overrides="fluor_04" desc="F in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_07" class="S" element="S" mass="32.065" def="[S;X4](O)(O)O" desc="S in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="fluor_08" class="O" element="O" mass="15.9994" def="OS" desc="O in fluorinated triflamides" doi="10.1021/jp0476545"/>
+  <Type name="fluor_01" class="CTF" element="C" mass="12.011" def="[C;X4](F)(F)F" desc="Terminal C in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_02" class="C" element="C" mass="12.011" def="[C;X4](C)(F)(F)C" desc="C in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_03" class="C" element="C" mass="12.011" def="[C;X4][S;%fluor_07]" desc="C(S) in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_04" class="F" element="F" mass="18.9984" def="FC" desc="F in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_05" class="F" element="F" mass="18.9984" def="FC(S)" overrides="fluor_04" desc="FC1 in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_06" class="F" element="F" mass="18.9984" def="FC(F)(F)" overrides="fluor_04" desc="F in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_07" class="S" element="S" mass="32.065" def="[S;X4](O)(O)O" desc="S in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_08" class="O" element="O" mass="15.9994" def="OS" desc="O in fluorinated triflamides" doi="10.1039/c7cp06081e"/>
  </AtomTypes>
  <HarmonicBondForce>
   <Bond class1="C" class2="F" length="0.1332" k="30710"/>
