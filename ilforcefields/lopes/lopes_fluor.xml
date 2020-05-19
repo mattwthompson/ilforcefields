@@ -10,12 +10,12 @@
   <Type name="fluor_08" class="O" element="O" mass="15.9994" def="OS" desc="O in fluorinated triflamides" doi="10.1039/c7cp06081e"/>
  </AtomTypes>
  <HarmonicBondForce>
-  <Bond class1="C" class2="F" length="0.1332" k="30710"/>
-  <Bond class1="C" class2="C" length="0.1529" k="22430"/>
-  <Bond class1="C" class2="CTF" length="0.1529" k="22430"/>
-  <Bond class1="C" class2="S" length="0.1792" k="19700"/>
-  <Bond class1="S" class2="O" length="0.1445" k="53310"/>
-  <Bond class1="CTF" class2="F" length="0.1323" k="36970"/>
+  <Bond class1="C" class2="F" length="0.1332" k="307100"/>
+  <Bond class1="C" class2="C" length="0.1529" k="224300"/>
+  <Bond class1="C" class2="CTF" length="0.1529" k="224300"/>
+  <Bond class1="C" class2="S" length="0.1792" k="197000"/>
+  <Bond class1="S" class2="O" length="0.1445" k="533100"/>
+  <Bond class1="CTF" class2="F" length="0.1323" k="22430"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle class1="F" class2="C" class3="F" angle="1.9042" k="644.0"/>
@@ -32,16 +32,16 @@
   <Angle class1="S" class2="C" class3="C" angle="1.9775" k="583"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
-  <Proper class1="O" class2="S" class3="C" class4="C" c0="0.6969" c1="2.0907" c2="0" c3="2.7876" c4="0" c5="0"/>
-  <Proper class1="O" class2="S" class3="C" class4="F" c0="0.7255" c1="2.1765" c2="0" c3="2.902" c4="0" c5="0"/>
-  <Proper class1="S" class2="C" class3="C" class4="F" c0="0.68985" c1="2.06955" c2="0" c3="2.7594" c4="0" c5="0"/>
-  <Proper class1="S" class2="C" class3="C" class4="C" c0="-9.6709" c1="9.2011" c2="2.0046" c3="1.5348" c4="0" c5="0"/>
-  <Proper class1="C" class2="C" class3="C" class4="CTF" c0="14.9159" c1="-22.5643" c2="-3.9664" c3="-11.6148" c4="0" c5="0"/>
-  <Proper class1="C" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0" c5="0"/>
-  <Proper class1="F" class2="C" class3="C" class4="F" c0="-4.707" c1="6.799" c2="0" c3="2.092" c4="0" c5="0"/>
-  <Proper class1="C" class2="C" class3="CTF" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0" c5="0"/>
-  <Proper class1="F" class2="C" class3="CTF" class4="F" c0="-4.707" c1="6.799" c2="0" c3="2.092" c4="0" c5="0"/>
-  <Proper class1="CTF" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="3.3472" c4="0" c5="0"/>
+  <Proper class1="O" class2="S" class3="C" class4="C" c0="0.6969" c1="2.0907" c2="0" c3="-2.7876" c4="0" c5="0"/>
+  <Proper class1="O" class2="S" class3="C" class4="F" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
+  <Proper class1="S" class2="C" class3="C" class4="F" c0="0.68985" c1="2.06955" c2="0" c3="-2.7594" c4="0" c5="0"/>
+  <Proper class1="S" class2="C" class3="C" class4="C" c0="-9.6709" c1="9.2011" c2="2.0046" c3="-1.5348" c4="0" c5="0"/>
+  <Proper class1="C" class2="C" class3="C" class4="CTF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="11.6148" c4="0" c5="0"/>
+  <Proper class1="C" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+  <Proper class1="F" class2="C" class3="C" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+  <Proper class1="C" class2="C" class3="CTF" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+  <Proper class1="F" class2="C" class3="CTF" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+  <Proper class1="CTF" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
  </RBTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
   <Atom type="fluor_01" charge="0.36" sigma="0.35" epsilon="0.27614"/>
