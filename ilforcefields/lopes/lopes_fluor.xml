@@ -24,8 +24,8 @@
   <Angle class1="O" class2="S" class3="O" angle="1.9897" k="969.0"/>
   <Angle class1="C" class2="C" class3="F" angle="1.9111" k="418.0"/>
   <Angle class1="F" class2="CTF" class3="F" angle="1.9042" k="644.0"/>
-  <Angle class1="C" class2="C" class3="C" angle="1.9111" k="488.0"/>
-  <Angle class1="C" class2="C" class3="CTF" angle="1.9111" k="488.0"/>
+  <Angle class1="C" class2="C" class3="C" angle="1.967" k="488.0"/>
+  <Angle class1="C" class2="C" class3="CTF" angle="1.967" k="488.0"/>
   <Angle class1="F" class2="C" class3="CTF" angle="1.9111" k="418.0"/>
   <Angle class1="F" class2="CTF" class3="C" angle="1.9111" k="418.0"/>
   <Angle class1="F" class2="C" class3="S" angle="1.9495" k="694.0"/>
