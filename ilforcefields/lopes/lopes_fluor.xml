@@ -15,28 +15,28 @@
   <Bond class1="C" class2="CTF" length="0.1529" k="224300"/>
   <Bond class1="C" class2="S" length="0.1792" k="197000"/>
   <Bond class1="S" class2="O" length="0.1445" k="533100"/>
-  <Bond class1="CTF" class2="F" length="0.1323" k="22430"/>
+  <Bond class1="CTF" class2="F" length="0.1332" k="307100"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle class1="F" class2="C" class3="F" angle="1.9042" k="644.0"/>
   <Angle class1="S" class2="C" class3="F" angle="1.9495" k="694.0"/>
-  <Angle class1="C" class2="S" class3="O" angle="1.8221" k="870"/>
-  <Angle class1="O" class2="S" class3="O" angle="1.9897" k="969"/>
-  <Angle class1="C" class2="C" class3="F" angle="1.9111" k="418"/>
-  <Angle class1="F" class2="CTF" class3="F" angle="1.8692" k="781"/>
-  <Angle class1="C" class2="C" class3="C" angle="1.9111" k="488"/>
-  <Angle class1="C" class2="C" class3="CTF" angle="1.9111" k="488"/>
-  <Angle class1="F" class2="C" class3="CTF" angle="1.9111" k="418"/>
-  <Angle class1="F" class2="CTF" class3="C" angle="1.9111" k="418"/>
-  <Angle class1="F" class2="C" class3="S" angle="1.9495" k="694"/>
-  <Angle class1="S" class2="C" class3="C" angle="1.9775" k="583"/>
+  <Angle class1="C" class2="S" class3="O" angle="1.8221" k="870.0"/>
+  <Angle class1="O" class2="S" class3="O" angle="1.9897" k="969.0"/>
+  <Angle class1="C" class2="C" class3="F" angle="1.9111" k="418.0"/>
+  <Angle class1="F" class2="CTF" class3="F" angle="1.9042" k="644.0"/>
+  <Angle class1="C" class2="C" class3="C" angle="1.9111" k="488.0"/>
+  <Angle class1="C" class2="C" class3="CTF" angle="1.9111" k="488.0"/>
+  <Angle class1="F" class2="C" class3="CTF" angle="1.9111" k="418.0"/>
+  <Angle class1="F" class2="CTF" class3="C" angle="1.9111" k="418.0"/>
+  <Angle class1="F" class2="C" class3="S" angle="1.9495" k="694.0"/>
+  <Angle class1="S" class2="C" class3="C" angle="1.9775" k="583.0"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
   <Proper class1="O" class2="S" class3="C" class4="C" c0="0.6969" c1="2.0907" c2="0" c3="-2.7876" c4="0" c5="0"/>
   <Proper class1="O" class2="S" class3="C" class4="F" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
   <Proper class1="S" class2="C" class3="C" class4="F" c0="0.68985" c1="2.06955" c2="0" c3="-2.7594" c4="0" c5="0"/>
   <Proper class1="S" class2="C" class3="C" class4="C" c0="-9.6709" c1="9.2011" c2="2.0046" c3="-1.5348" c4="0" c5="0"/>
-  <Proper class1="C" class2="C" class3="C" class4="CTF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="11.6148" c4="0" c5="0"/>
+  <Proper class1="C" class2="C" class3="C" class4="CTF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="11.6148" c4="35.4468" c5="0"/>
   <Proper class1="C" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
   <Proper class1="F" class2="C" class3="C" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
   <Proper class1="C" class2="C" class3="CTF" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
