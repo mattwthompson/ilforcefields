@@ -10,7 +10,10 @@
   <Type name="fluor_08" class="O" element="O" mass="15.9994" def="OS" desc="O in fluorinated triflamides" doi="10.1039/c7cp06081e"/>
   <Type name="fluor_09" class="STF" element="S" mass="32.065" def="[S;X4](O)(O)(O)([C;%fluor_01])" overrides="fluor_07" desc="S in CF3-SO3" doi="10.1039/c7cp06081e"/>
   <Type name="fluor_10" class="O" element="O" mass="32.065" def="O[S;%fluor_09]" overrides="fluor_08" desc="O in TF" doi="10.1039/c7cp06081e"/>
-
+  <Type name="fluor_11" class="N" element="N" mass="14.0065" def="[N;X2](S)(S)" desc="N in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_12" class="STF" element="S" mass="32.065" def="[S;X4](N)(O)(O)(C)" desc="S in triflamides" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_13" class="O" element="O" mass="32.065" def="O[S;%fluor_12]" overrides="fluor_08" desc="O in TFSI" doi="10.1039/c7cp06081e"/>
+  <Type name="fluor_14" class="CTF" element="C" mass="12.011" def="[C;X4](F)(F)(F)([S;%fluor_12])" overrides="fluor_01" desc="Terminal C in triflamides" doi="10.1039/c7cp06081e"/>
  </AtomTypes>
  <HarmonicBondForce>
   <Bond class1="C" class2="F" length="0.1332" k="307100"/>
@@ -21,6 +24,7 @@
   <Bond class1="CTF" class2="F" length="0.1323" k="369700"/>
   <Bond class1="CTF" class2="STF" length="0.1818" k="197000"/>
   <Bond class1="O" class2="STF" length="0.575" k="187900"/>
+  <Bond class1="N" class2="STF" length="0.157" k="313700"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle class1="F" class2="C" class3="F" angle="1.9042" k="644.0"/>
@@ -38,6 +42,9 @@
   <Angle class1="O" class2="STF" class3="O" angle="2.0123646" k="969.0"/>
   <Angle class1="O" class2="STF" class3="CTF" angle="1.7907078" k="870.0"/>
   <Angle class1="F" class2="CTF" class3="STF" angle="1.9495" k="694.0"/>
+  <Angle class1="STF" class2="N" class3="STF" angle="2.1921335" k="671.0"/>
+  <Angle class1="N" class2="STF" class3="O" angle="1.982694" k="789.0"/>
+  <Angle class1="N" class2="STF" class3="CTF" angle="1.8064158" k="764.0"/>
 
  </HarmonicAngleForce>
  <RBTorsionForce>
@@ -52,7 +59,9 @@
   <Proper class1="F" class2="C" class3="CTF" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
   <Proper class1="CTF" class2="C" class3="C" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
   <Proper class1="O" class2="STF" class3="CTF" class4="F" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
- 
+  <Proper class1="F" class2="CTF" class3="STF" class4="N" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
+  <Proper class1="CTF" class2="STF" class3="N" class4="STF" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
+  <Proper class1="O" class2="STF" class3="N" class4="STF" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
  </RBTorsionForce>
  <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
   <Atom type="fluor_01" charge="0.36" sigma="0.35" epsilon="0.27614"/>
@@ -65,5 +74,9 @@
   <Atom type="fluor_08" charge="-0.68" sigma="0.315" epsilon="0.83736"/>
   <Atom type="fluor_09" charge="1.02" sigma="0.355" epsilon="1.046"/>
   <Atom type="fluor_10" charge="-0.63" sigma="0.315" epsilon="0.83736"/>
+  <Atom type="fluor_11" charge="-0.66" sigma="0.325" epsilon="0.711"/>
+  <Atom type="fluor_12" charge="1.02" sigma="0.355" epsilon="1.046"/>
+  <Atom type="fluor_13" charge="-0.53" sigma="0.315" epsilon="0.83736"/>
+  <Atom type="fluor_14" charge="0.35" sigma="0.35" epsilon="0.27614"/>
  </NonbondedForce>
 </ForceField>
