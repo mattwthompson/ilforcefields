@@ -1,0 +1,186 @@
+<ForceField>
+    <AtomTypes>
+        <Type name="fluor_01" class="CTF" element="C" mass="12.011" def="[C;X4](F)(F)(F)" desc="Terminal C in triflamides, CTF" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_02" class="CFS" element="C" mass="12.011" def="[C;X4](C)(F)(F)C" desc="C in triflamides, CFS" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_03" class="CF3" element="C" mass="12.011" def="[C;X4]([S;%fluor_07])(C)" desc="C(S) in triflamides, CF3" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_04" class="F" element="F" mass="18.9984" def="FC" desc="F in triflamides" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_05" class="FC1" element="F" mass="18.9984" def="FC(S)(C)" overrides="fluor_04" desc="F in triflamides, FC1" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_06" class="FTF" element="F" mass="18.9984" def="FC(F)(F)(S)" overrides="fluor_04" desc="F in triflamides, FTF" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_07" class="SO" element="S" mass="32.065" def="[S;X4](O)(O)O" desc="S in triflamides, SO" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_08" class="OS3" element="O" mass="15.9994" def="OS" desc="O in fluorinated triflamides, 0S3" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_09" class="STF" element="S" mass="32.065" def="[S;X4](O)(O)(O)([C;%fluor_01])" overrides="fluor_07" desc="S in CF3-SO3, STF" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_10" class="OTF" element="O" mass="32.065" def="O[S;%fluor_09]" overrides="fluor_08" desc="OTF" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_11" class="NBT" element="N" mass="14.0065" def="[N;X2](S)(S)" desc="N in triflamides, NBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_12" class="SBT" element="S" mass="32.065" def="[S;X4](N)(O)(O)" desc="S in triflamides, SBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_13" class="OBT" element="O" mass="32.065" def="O[S;%fluor_12]" overrides="fluor_08" desc="O in TFSI, OBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_14" class="CBT" element="C" mass="12.011" def="[C;X4](F)(F)(F)([S;%fluor_12])" overrides="fluor_01" desc="Terminal C in triflamides, CBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_15" class="CF2" element="C" mass="12.011" def="[C;X4](F)(F)(C)([S;%fluor_12])" desc="Terminal C in triflamides, CF2" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_16" class="FBT" element="F" mass="18.9984" def="F[C;%fluor_15,%fluor_14]" overrides="fluor_04, fluor_05, fluor_06" desc="F in triflamides, FBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_17" class="FSI" element="F" mass="18.9984" def="FS" desc="F in FSI" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_18" class="CZ" element="C" mass="12.011" def="[C;X2](N)(N)" desc="C in TFSAM" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_19" class="NCS" element="N" mass="14.0065" def="[N;X2](S)([C;%fluor_18,%fluor_21])" desc="N in triflamides, NBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_20" class="NZ" element="N" mass="14.0065" def="[N;X1]([C;%fluor_18])" desc="N in triflamides, NBT" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_21" class="C2N" element="C" mass="12.011" def="[C;X3](O)(N)(C)" desc="C in TFSAM" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_22" class="CF1" element="C" mass="12.011" def="[C;X4]([C;%fluor_21])(F)(F)(F)" overrides="fluor_01" desc="C in TFSAM" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_23" class="O2N" element="O" mass="32.065" def="O[C;%fluor_21]" overrides="fluor_08" desc="OTF" doi="10.1039/c7cp06081e"/>
+        <Type name="fluor_24" class="FC1" element="F" mass="18.9984" def="F[C;%fluor_22]([C;%fluor_21])" overrides="fluor_04" desc="F in triflamides, FC1" doi="10.1039/c7cp06081e"/>
+
+    </AtomTypes>
+    <HarmonicBondForce>
+        <Bond class1="CTF" class2="F" length="0.1332" k="307100"/>
+        <Bond class1="CF2" class2="FBT" length="0.1332" k="307100"/>
+        <Bond class1="CF2" class2="CTF" length="0.1529" k="224300"/>
+        <Bond class1="CF2" class2="SBT" length="0.1792" k="197000"/>
+        <Bond class1="OBT" class2="SBT" length="0.1437" k="533100"/>
+        <Bond class1="NBT" class2="SBT" length="0.157" k="313700"/>
+
+        <Bond class1="OS3" class2="SO" length="0.1445" k="533100"/>
+        <Bond class1="CF3" class2="SO" length="0.1792" k="197000"/>
+        <Bond class1="CF3" class2="FC1" length="0.1332" k="307100"/>
+        <Bond class1="CF3" class2="CFS" length="0.1529" k="224300"/>
+        <Bond class1="CFS" class2="CFS" length="0.1529" k="224300"/>
+        <Bond class1="CFS" class2="F" length="0.1332" k="307100"/>
+        <Bond class1="CTF" class2="CFS" length="0.1529" k="224300"/>
+
+        <Bond class1="OTF" class2="STF" length="0.1437" k="533100"/>
+        <Bond class1="CTF" class2="FTF" length="0.1323" k="369700"/>
+        <Bond class1="CTF" class2="STF" length="0.1818" k="197000"/>
+
+        <Bond class1="FSI" class2="SBT" length="0.1575" k="187900"/>
+
+        <Bond class1="CBT" class2="FBT" length="0.1323" k="369700"/>
+        <Bond class1="CBT" class2="SBT" length="0.1792" k="197000"/>
+
+        <Bond class1="NCS" class2="SBT" length="0.157" k="313700"/>
+        <Bond class1="NCS" class2="CZ" length="0.131" k="420600"/>
+        <Bond class1="NZ" class2="CZ" length="0.115" k="774600"/>
+
+        <Bond class1="NCS" class2="C2N" length="0.1335" k="410300"/>
+        <Bond class1="C2N" class2="O2N" length="0.1229" k="477300"/>
+        <Bond class1="C2N" class2="CF1" length="0.1523" k="265400"/>
+        <Bond class1="CF1" class2="FC1" length="0.1332" k="307100"/>
+    </HarmonicBondForce>
+    <HarmonicAngleForce>
+        <Angle class1="F" class2="CTF" class3="F" angle="1.9042" k="644.0"/>
+        <Angle class1="FBT" class2="CF2" class3="FBT" angle="1.9042" k="644.0"/>
+        <Angle class1="FBT" class2="CBT" class3="FBT" angle="1.8692476289" k="781.0"/>
+        <Angle class1="F" class2="CTF" class3="CF2" angle="1.9111" k="418.0"/>
+        <Angle class1="CTF" class2="CF2" class3="FBT" angle="1.9111" k="418.0"/>
+        <Angle class1="SBT" class2="CF2" class3="CTF" angle="2.0228366031" k="418.0"/>
+        <Angle class1="NBT" class2="SBT" class3="CF2" angle="1.8064158" k="764.0"/>
+        <Angle class1="CF2" class2="SBT" class3="OBT" angle="1.7907078125" k="870.0"/>
+        <Angle class1="SBT" class2="CF2" class3="FBT" angle="1.9495" k="694.0"/>
+        <Angle class1="OBT" class2="SBT" class3="OBT" angle="2.0682152" k="969.0"/>
+        <Angle class1="NBT" class2="SBT" class3="OBT" angle="1.982694" k="789.0"/>
+        <Angle class1="SBT" class2="NBT" class3="SBT" angle="2.1921335" k="671.0"/>
+        <Angle class1="CF2" class2="SBT" class3="NBT" angle="1.8064157758" k="764.0"/>
+
+        <Angle class1="OS3" class2="SO" class3="OS3" angle="1.9896753473" k="969.0"/>
+        <Angle class1="OS3" class2="SO" class3="CF3" angle="1.8221237391" k="870.0"/>
+        <Angle class1="SO" class2="CF3" class3="CFS" angle="1.9774580425" k="583.0"/>
+        <Angle class1="SO" class2="CF3" class3="FC1" angle="1.9495" k="694.0"/>
+        <Angle class1="FC1" class2="CF3" class3="CFS" angle="1.9111" k="418.0"/>
+        <Angle class1="F" class2="CFS" class3="CF3" angle="1.9111" k="418.0"/>
+        <Angle class1="F" class2="CFS" class3="CFS" angle="1.9111" k="418.0"/>
+        <Angle class1="CF3" class2="CFS" class3="CFS" angle="1.967" k="488.0"/>
+        <Angle class1="FC1" class2="CF3" class3="FC1" angle="1.9042" k="644.0"/>
+        <Angle class1="F" class2="CFS" class3="F" angle="1.9042" k="644.0"/>
+        <Angle class1="CTF" class2="CFS" class3="CFS" angle="1.967" k="488.0"/>
+        <Angle class1="F" class2="CFS" class3="CTF" angle="1.9111" k="418.0"/>
+        <Angle class1="F" class2="CTF" class3="CFS" angle="1.9111" k="418.0"/>
+
+        <Angle class1="OTF" class2="STF" class3="OTF" angle="2.0123646275" k="969.0"/>
+        <Angle class1="OTF" class2="STF" class3="CTF" angle="1.7907078" k="870.0"/>
+        <Angle class1="STF" class2="CTF" class3="FTF" angle="1.9495" k="694.0"/>
+        <Angle class1="FTF" class2="CTF" class3="FTF" angle="1.8692476289" k="781.0"/>
+
+        <Angle class1="FSI" class2="SBT" class3="NBT" angle="1.79769" k="902.0"/>
+        <Angle class1="OBT" class2="SBT" class3="FSI" angle="1.8186331" k="1077.0"/>
+
+        <Angle class1="SBT" class2="CBT" class3="FBT" angle="1.9495" k="694.0"/>
+        <Angle class1="CBT" class2="SBT" class3="OBT" angle="1.7907078125" k="870.0"/>
+        <Angle class1="CBT" class2="SBT" class3="NBT" angle="1.8064157758" k="764.0"/>
+
+        <Angle class1="CBT" class2="SBT" class3="NCS" angle="1.8064157758" k="764.0"/>
+        <Angle class1="NCS" class2="SBT" class3="OBT" angle="1.982694" k="789.0"/>
+        <Angle class1="SBT" class2="NCS" class3="CZ" angle="2.0123646275" k="419.0"/>
+        <Angle class1="NZ" class2="CZ" class3="NCS" angle="3.0578168495" k="425.0"/>
+
+        <Angle class1="SBT" class2="NCS" class3="C2N" angle="2.0123646275" k="419.0"/>
+        <Angle class1="NCS" class2="C2N" class3="O2N" angle="2.3282692222" k="670.0"/>
+        <Angle class1="NCS" class2="C2N" class3="CF1" angle="1.8971728969" k="586.0"/>
+        <Angle class1="C2N" class2="CF1" class3="FC1" angle="1.9111355309" k="418.0"/>
+        <Angle class1="CF1" class2="C2N" class3="O2N" angle="2.1013764194" k="670.0"/>
+        <Angle class1="FC1" class2="CF1" class3="FC1" angle="1.9042" k="644.0"/>
+    </HarmonicAngleForce>
+    <RBTorsionForce>
+        <Proper class1="F" class2="CTF" class3="CF2" class4="FBT" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+        <Proper class1="F" class2="CTF" class3="CF2" class4="SBT" c0="0.7265" c1="2.1795" c2="0" c3="-2.906" c4="0" c5="0"/>
+        <Proper class1="CTF" class2="CF2" class3="SBT" class4="NBT" c0="-1.547" c1="1.547" c2="0" c3="0" c4="0" c5="0"/>
+        <Proper class1="OBT" class2="SBT" class3="CF2" class4="CTF" c0="-0.37" c1="-1.11" c2="0" c3="1.48" c4="0" c5="0"/>
+        <Proper class1="CF2" class2="SBT" class3="NBT" class4="SBT" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
+        <Proper class1="FBT" class2="CF2" class3="SBT" class4="NBT" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
+        <Proper class1="OBT" class2="SBT" class3="CF2" class4="FBT" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
+        <Proper class1="OBT" class2="SBT" class3="NBT" class4="SBT" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
+
+        <Proper class1="OS3" class2="SO" class3="CF3" class4="FC1" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
+        <Proper class1="OS3" class2="SO" class3="CF3" class4="CFS" c0="0.6969" c1="2.0907" c2="0" c3="-2.7876" c4="0" c5="0"/>
+        <Proper class1="SO" class2="CF3" class3="CFS" class4="CFS" c0="-9.6709" c1="9.2011" c2="2.0046" c3="-1.5348" c4="0" c5="0"/>
+        <Proper class1="SO" class2="CF3" class3="CFS" class4="F" c0="0.68985" c1="2.06955" c2="0" c3="-2.7594" c4="0" c5="0"/>
+        <Proper class1="FC1" class2="CF3" class3="CFS" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+        <Proper class1="CFS" class2="CFS" class3="CF3" class4="FC1" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+        <Proper class1="CF3" class2="CFS" class3="CFS" class4="CTF" c0="14.9159" c1="-22.5643" c2="-39.4132" c3="11.6148" c4="35.4468" c5="0"/>
+        <Proper class1="CF3" class2="CFS" class3="CFS" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+        <Proper class1="F" class2="CFS" class3="CFS" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+        <Proper class1="CTF" class2="CFS" class3="CFS" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+        <Proper class1="CFS" class2="CFS" class3="CTF" class4="F" c0="1.4644" c1="1.8828" c2="0.0" c3="-3.3472" c4="0" c5="0"/>
+        <Proper class1="F" class2="CFS" class3="CTF" class4="F" c0="-4.707" c1="6.799" c2="0" c3="-2.092" c4="0" c5="0"/>
+
+        <Proper class1="OTF" class2="STF" class3="CTF" class4="FTF" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
+
+        <Proper class1="FSI" class2="SBT" class3="NBT" class4="SBT" c0="-11.0695" c1="-10.5405" c2="15.186" c3="6.424" c4="0" c5="0"/>
+
+        <Proper class1="FBT" class2="CBT" class3="SBT" class4="NBT" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
+        <Proper class1="OBT" class2="SBT" class3="CBT" class4="FBT" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
+        <Proper class1="CBT" class2="SBT" class3="NBT" class4="SBT" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
+
+        <Proper class1="FBT" class2="CBT" class3="SBT" class4="NCS" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
+        <Proper class1="CBT" class2="SBT" class3="NCS" class4="CZ" c0="-5.4078" c1="-10.177" c2="20.556" c3="-4.9712" c4="0" c5="0"/>
+        <Proper class1="OBT" class2="SBT" class3="NCS" class4="CZ" c0="0" c1="0" c2="0" c3="0" c4="0" c5="0"/>
+        <Proper class1="SBT" class2="NCS" class3="CZ" class4="NZ" c0="0" c1="0" c2="0" c3="0" c4="0" c5="0"/>
+
+        <Proper class1="OBT" class2="SBT" class3="NCS" class4="C2N" c0="0" c1="0" c2="0" c3="0" c4="0" c5="0"/>
+        <Proper class1="CBT" class2="SBT" class3="NCS" class4="C2N" c0="7.15015" c1="-9.99105" c2="3.3713" c3="-0.5304" c4="0" c5="0"/>
+        <Proper class1="SBT" class2="NCS" class3="C2N" class4="O2N" c0="0" c1="0" c2="0" c3="0" c4="0" c5="0"/>
+        <Proper class1="SBT" class2="NCS" class3="C2N" class4="CF1" c0="67.45905" c1="-7.91845" c2="-76.4356" c3="-11.1914" c4="-28.0864" c5="0"/>
+        <Proper class1="NCS" class2="C2N" class3="CF1" class4="FC1" c0="-0.57" c1="-1.71" c2="0" c3="2.28" c4="0" c5="0"/>
+        <Proper class1="O2N" class2="C2N" class3="CF1" class4="FC1" c0="0" c1="0" c2="0" c3="0" c4="0" c5="0"/>
+    </RBTorsionForce>
+    <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+        <Atom type="fluor_01" charge="0.36" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_02" charge="0.24" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_03" charge="0.26" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_04" charge="-0.12" sigma="0.295" epsilon="0.222"/>
+        <Atom type="fluor_05" charge="-0.2" sigma="0.295" epsilon="0.222"/>
+        <Atom type="fluor_06" charge="-0.163333333333333333333333333" sigma="0.3118" epsilon="0.2554"/>
+        <Atom type="fluor_07" charge="1.18" sigma="0.355" epsilon="1.046"/>
+        <Atom type="fluor_08" charge="-0.68" sigma="0.315" epsilon="0.83736"/>
+        <Atom type="fluor_09" charge="1.02" sigma="0.355" epsilon="1.046"/>
+        <Atom type="fluor_10" charge="-0.63" sigma="0.315" epsilon="0.83736"/>
+        <Atom type="fluor_11" charge="-0.66" sigma="0.325" epsilon="0.711"/>
+        <Atom type="fluor_12" charge="1.02" sigma="0.355" epsilon="1.046"/>
+        <Atom type="fluor_13" charge="-0.53" sigma="0.315" epsilon="0.83736"/>
+        <Atom type="fluor_14" charge="0.35" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_15" charge="0.19" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_16" charge="-0.16" sigma="0.3118" epsilon="0.2554"/>
+        <Atom type="fluor_17" charge="-0.13" sigma="0.3118" epsilon="0.2554"/>
+        <Atom type="fluor_18" charge="0.64" sigma="0.33" epsilon="0.276"/>
+        <Atom type="fluor_19" charge="-0.71" sigma="0.325" epsilon="0.711"/>
+        <Atom type="fluor_20" charge="-0.76" sigma="0.32" epsilon="0.711"/>
+        <Atom type="fluor_21" charge="0.7" sigma="0.375" epsilon="0.4396"/>
+        <Atom type="fluor_22" charge="0.4" sigma="0.35" epsilon="0.27614"/>
+        <Atom type="fluor_23" charge="-0.62" sigma="0.296" epsilon="0.87923"/>
+        <Atom type="fluor_24" charge="-0.2" sigma="0.295" epsilon="0.222"/>
+    </NonbondedForce>
+</ForceField>
+
