@@ -67,7 +67,6 @@
         <Angle class1="F" class2="CTF" class3="CF2" angle="1.9111" k="418.0"/>
         <Angle class1="CTF" class2="CF2" class3="FBT" angle="1.9111" k="418.0"/>
         <Angle class1="SBT" class2="CF2" class3="CTF" angle="2.0228366031" k="418.0"/>
-        <Angle class1="NBT" class2="SBT" class3="CF2" angle="1.8064158" k="764.0"/>
         <Angle class1="CF2" class2="SBT" class3="OBT" angle="1.7907078125" k="870.0"/>
         <Angle class1="SBT" class2="CF2" class3="FBT" angle="1.9495" k="694.0"/>
         <Angle class1="OBT" class2="SBT" class3="OBT" angle="2.0682152" k="969.0"/>
