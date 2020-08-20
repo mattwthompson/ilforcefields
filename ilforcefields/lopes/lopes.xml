@@ -106,6 +106,8 @@
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle type1="lopes_003" type2="lopes_004" type3="lopes_005" angle="1.9320795" k="313.8"/>
+  <Angle type1="lopes_004" type2="lopes_003" type3="lopes_004" angle="1.9111355" k="418.4"/>
+  <Angle type1="lopes_003" type2="lopes_004" type3="lopes_006" angle="1.9669861" k="488.3"/>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_014" angle="2.192133540504878" k="282.6"/>
   <Angle type1="lopes_011" type2="lopes_010" type3="lopes_014" angle="2.2060961745208325" k="282.6"/>
