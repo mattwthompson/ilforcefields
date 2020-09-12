@@ -6,8 +6,8 @@
   <Type name="lopes_004" class="CT" element="C" mass="12.011" def="C[N;X4;%lopes_003,%lopes_043]" desc="1st C on alkyl in TAA" doi="10.1021/jp063901o"/>
   <Type name="lopes_005" class="HC" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="lopes_009" doi="10.1021/jp063901o"/>
   <Type name="lopes_006" class="CT" element="C" mass="12.011" def="C(H)(H)(C)[C;%lopes_004]" desc="2nd C on alkyl in TAA" overrides="lopes_007" doi="10.1021/jp063901o"/>
-  <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%lopes_006]" desc="C in CH2 on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
-  <Type name="lopes_008" class="CT" element="C" mass="12.011" def="C(H)(H)(H)[C;%lopes_007,%lopes_006]" desc="Terminal C on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_007" class="" element="C" mass="12.011" def="[C;X4](H)(H)(C)C" desc="C in CH2 on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="lopes_008" class="CT" element="C" mass="12.011" def="C(H)(H)(H)C" desc="Terminal C on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
   <Type name="lopes_009" class="HC" element="H" mass="1.008" def="H[C;%lopes_006,%lopes_007,%lopes_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
   <Type name="lopes_010" class="NA" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="lopes_038"/>
   <Type name="lopes_011" class="" element="C" mass="12.011" def="[C;X3;r5]1[N;%lopes_010][C;X3;r5][C;X3;r5][N;%lopes_010]1" desc="CR in CMIm" doi="10.1021/jp0362133"/>
