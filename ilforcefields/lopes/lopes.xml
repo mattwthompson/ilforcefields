@@ -202,6 +202,11 @@
   <Angle type1="lopes_048" type2="lopes_046" type3="lopes_048" angle="2.1921" k="671.0"/>
  </HarmonicAngleForce>
  <RBTorsionForce>
+  <Proper type1="lopes_003" type2="lopes_004" type3="lopes_006" type4="lopes_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_003" type2="lopes_004" type3="lopes_006" type4="lopes_007" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_003" type3="lopes_004" type4="lopes_006" c0="1.7886" c1="3.4916" c2="0.5356" c3="-5.8158" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_005" type2="lopes_004" type3="lopes_003" type4="lopes_004" c0="1.1715" c1="3.5145" c2="0.0" c3="-4.686" c4="0.0" c5="0.0"/>
+  <Proper type1="lopes_004" type2="lopes_003" type3="lopes_004" type4="lopes_005" c0="1.1715" c1="3.5145" c2="0.0" c3="-4.686" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_005" type2="lopes_003" type3="lopes_004" type4="lopes_005" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
   <Proper type1="lopes_014" type2="lopes_010" type3="lopes_011" type4="lopes_013" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
