@@ -50,7 +50,7 @@
   <Type name="lopes_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
  </AtomTypes>
  <HarmonicBondForce>
-  <Bond type1="lopes_003" type2="lopes_004" length="0.108" k="282000"/>
+  <Bond type1="lopes_003" type2="lopes_004" length="0.1448" k="319660"/>
   <Bond type1="lopes_004" type2="lopes_006" length="0.1529" k="224200"/>
   <Bond type1="lopes_004" type2="lopes_005" length="0.109" k="284500"/>
   <Bond type1="lopes_006" type2="lopes_006" length="0.1529" k="224200"/>
@@ -105,9 +105,9 @@
   <Bond type1="lopes_046" type2="lopes_048" length="0.1570" k="313700"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
-  <Angle type1="lopes_003" type2="lopes_004" type3="lopes_005" angle="1.9320795" k="313.8"/>
-  <Angle type1="lopes_004" type2="lopes_003" type3="lopes_004" angle="1.9111355" k="418.4"/>
-  <Angle type1="lopes_003" type2="lopes_004" type3="lopes_006" angle="1.9669861" k="488.3"/>
+  <Angle type1="lopes_003" type2="lopes_004" type3="lopes_005" angle="1.911135" k="292.9"/>
+  <Angle type1="lopes_004" type2="lopes_003" type3="lopes_004" angle="1.870993" k="433.5"/>
+  <Angle type1="lopes_003" type2="lopes_004" type3="lopes_006" angle="1.911135" k="470.3"/>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
   <Angle type1="lopes_012" type2="lopes_010" type3="lopes_014" angle="2.192133540504878" k="282.6"/>
   <Angle type1="lopes_011" type2="lopes_010" type3="lopes_014" angle="2.2060961745208325" k="282.6"/>
