@@ -50,17 +50,17 @@
   <Type name="seiji_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
  </AtomTypes>
  <HarmonicBondForce>
-  <Bond type1="seiji_003" type2="seiji_004" length="0.148" k="382000"/>
-  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224200"/>
-  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="331000"/>
-  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224200"/>
-  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="331000"/>
-  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224200"/>
-  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224200"/>
-  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="284500"/>
-  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224200"/>
-  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224200"/>
-  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="284500"/>
+  <Bond type1="seiji_003" type2="seiji_004" length="0.148" k="319658"/>
+  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224262"/>
+  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="276980"/>
+  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224262"/>
+  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="276980"/>
+  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224262"/>
+  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224262"/>
+  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="276980"/>
+  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224262"/>
+  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224262"/>
+  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="276980"/>
   <Bond type1="seiji_011" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_012" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_011" type2="seiji_010" length="0.135" k="199600"/>
@@ -105,8 +105,8 @@
   <Bond type1="seiji_046" type2="seiji_048" length="0.1570" k="313700"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
-  <Angle type1="seiji_003" type2="seiji_004" type3="seiji_005" angle="1.74533" k="146.4"/>
-  <Angle type1="seiji_004" type2="seiji_003" type3="seiji_004" angle="1.870993" k="216.7"/>
+  <Angle type1="seiji_003" type2="seiji_004" type3="seiji_005" angle="1.74533" k="292.8"/>
+  <Angle type1="seiji_004" type2="seiji_003" type3="seiji_004" angle="1.870993" k="453.4"/>
   <Angle type1="seiji_003" type2="seiji_004" type3="seiji_006" angle="1.911135" k="470.3"/>
   <Angle type1="seiji_012" type2="seiji_010" type3="seiji_011" angle="1.8849555921538759" k="282.6"/>
   <Angle type1="seiji_012" type2="seiji_010" type3="seiji_014" angle="2.192133540504878" k="282.6"/>
@@ -178,134 +178,29 @@
   <Angle type1="seiji_044" type2="seiji_004" type3="seiji_043" angle="1.9111" k="209.2"/>
   <Angle type1="seiji_005" type2="seiji_004" type3="seiji_005" angle="1.8815" k="276.1"/>
   <Angle type1="seiji_005" type2="seiji_004" type3="seiji_043" angle="1.9111" k="209.2"/>
-  <Angle type1="seiji_007" type2="seiji_008" type3="seiji_009" angle="1.967" k="488.3"/>
-  <Angle type1="seiji_006" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.8"/>
+  <Angle type1="seiji_007" type2="seiji_008" type3="seiji_009" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_006" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.22"/>
   <Angle type1="seiji_043" type2="seiji_004" type3="seiji_006" angle="1.9111" k="669.4"/>
-  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_008" angle="1.967" k="488.3"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_007" angle="1.967" k="488.3"/>
-  <Angle type1="seiji_005" type2="seiji_004" type3="seiji_006" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_009" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_009" angle="1.8815" k="276.1"/>
-  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_009" angle="1.8815" k="276.1"/>
-  <Angle type1="seiji_009" type2="seiji_008" type3="seiji_009" angle="1.8815" k="276.1"/>
-  <Angle type1="seiji_006" type2="seiji_008" type3="seiji_009" angle="1.967" k="488.3"/>
+  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_008" angle="1.9548" k="836.8"/>
+  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_007" angle="1.9548" k="836.8"/>
+  <Angle type1="seiji_005" type2="seiji_004" type3="seiji_006" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_009" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_009" angle="1.8815" k="276.2"/>
+  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_009" angle="1.8815" k="276.2"/>
+  <Angle type1="seiji_009" type2="seiji_008" type3="seiji_009" angle="1.8815" k="276.2"/>
+  <Angle type1="seiji_006" type2="seiji_008" type3="seiji_009" angle="1.9321" k="313.22"/>
   <Angle type1="seiji_022" type2="seiji_023" type3="seiji_025" angle="1.8169" k="1077"/>
   <Angle type1="seiji_022" type2="seiji_023" type3="seiji_026" angle="1.7977" k="902"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_006" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_007" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_008" angle="1.9321" k="313.8"/>
+  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_006" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_007" angle="1.9321" k="313.22"/>
+  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_008" angle="1.9321" k="313.22"/>
   <Angle type1="seiji_045" type2="seiji_048" type3="seiji_045" angle="2.0682" k="969.0"/>
   <Angle type1="seiji_047" type2="seiji_048" type3="seiji_045" angle="1.8169" k="1077.0"/>
   <Angle type1="seiji_047" type2="seiji_048" type3="seiji_046" angle="1.79768913" k="902.0"/>
   <Angle type1="seiji_046" type2="seiji_048" type3="seiji_045" angle="1.9827" k="789.0"/>
   <Angle type1="seiji_048" type2="seiji_046" type3="seiji_048" angle="2.1921" k="671.0"/>
  </HarmonicAngleForce>
- <!--<RBTorsionForce>
-   <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_007" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" c0="1.7886" c1="3.4916" c2="0.5356" c3="-5.8158" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_003" type4="seiji_004" c0="1.1715" c1="3.5145" c2="0.0" c3="-4.686" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_005" c0="1.1715" c1="3.5145" c2="0.0" c3="-4.686" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_003" type3="seiji_004" type4="seiji_005" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_014" type2="seiji_010" type3="seiji_011" type4="seiji_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_014" type2="seiji_010" type3="seiji_011" type4="seiji_013" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_012" type2="seiji_010" type3="seiji_011" type4="seiji_010" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_012" type2="seiji_010" type3="seiji_011" type4="seiji_013" c0="19.46" c1="0.0" c2="-19.46" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_012" type3="seiji_012" type4="seiji_010" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_012" type3="seiji_012" type4="seiji_013" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_013" type2="seiji_012" type3="seiji_012" type4="seiji_013" c0="44.98" c1="0.0" c2="-44.98" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_014" type2="seiji_010" type3="seiji_012" type4="seiji_013" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_014" type2="seiji_010" type3="seiji_012" type4="seiji_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_011" type2="seiji_010" type3="seiji_012" type4="seiji_013" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_011" type2="seiji_010" type3="seiji_012" type4="seiji_012" c0="12.55" c1="0.0" c2="-12.55" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_012" type2="seiji_010" type3="seiji_014" type4="seiji_015" c0="0.2595" c1="0.7785" c2="0" c3="-1.038" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_011" type2="seiji_010" type3="seiji_014" type4="seiji_015" c0="0.0" c1="0.0" c2="0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_012" type2="seiji_010" type3="seiji_014" type4="seiji_017" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_012" type2="seiji_010" type3="seiji_014" type4="seiji_016" c0="2.926" c1="4.768" c2="-6.106" c3="-1.588" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_011" type2="seiji_010" type3="seiji_014" type4="seiji_016" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_011" type2="seiji_010" type3="seiji_014" type4="seiji_017" c0="-2.6345" c1="2.6345" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_014" type3="seiji_017" type4="seiji_018" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_014" type3="seiji_017" type4="seiji_019" c0="-1.1775" c1="1.9335" c2="-3.164" c3="2.406" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_014" type3="seiji_016" type4="seiji_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_010" type2="seiji_014" type3="seiji_017" type4="seiji_020" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="HC" class2="CT" class3="CT" class4="CT" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_015" type2="seiji_014" type3="seiji_017" type4="seiji_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_015" type2="seiji_014" type3="seiji_017" type4="seiji_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_017" type3="seiji_018" type4="seiji_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_017" type3="seiji_018" type4="seiji_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_018" type3="seiji_018" type4="seiji_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_018" type3="seiji_018" type4="seiji_019" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_018" type3="seiji_018" type4="seiji_017" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_018" type3="seiji_017" type4="seiji_014" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_019" type3="seiji_018" type4="seiji_018" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_019" type3="seiji_018" type4="seiji_017" c0="0.7655" c1="2.2965" c2="0" c3="-3.062" c4="0" c5="0"/>
-  <Proper class1="HC" class2="CT" class3="CT" class4="HC" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper type1="seiji_015" type2="seiji_014" type3="seiji_017" type4="seiji_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper type1="seiji_015" type2="seiji_014" type3="seiji_016" type4="seiji_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_017" type3="seiji_018" type4="seiji_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_017" type3="seiji_019" type4="seiji_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper type1="seiji_020" type2="seiji_019" type3="seiji_018" type4="seiji_020" c0="0.6655" c1="1.9965" c2="0" c3="-2.662" c4="0" c5="0"/>
-  <Proper class1="CT" class2="CT" class3="CT" class4="CT" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_019" type2="seiji_018" type3="seiji_018" type4="seiji_018" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_019" type2="seiji_018" type3="seiji_018" type4="seiji_017" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_019" type2="seiji_018" type3="seiji_017" type4="seiji_014" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_018" type2="seiji_018" type3="seiji_017" type4="seiji_014" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_018" type2="seiji_018" type3="seiji_018" type4="seiji_017" c0="3.5665" c1="-1.8895" c2="0.657" c3="-2.334" c4="0" c5="0"/>
-  <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_024" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
-  <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_025" c0="0.7255" c1="2.1765" c2="0" c3="-2.902" c4="0" c5="0"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_025" c0="-0.0075" c1="-0.0225" c2="0" c3="0.03" c4="0" c5="0"/>
-  <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_026" c0="0.661" c1="1.983" c2="0" c3="-2.644" c4="0" c5="0"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_021" c0="4.369" c1="-21.179" c2="10.42" c3="6.39" c4="0" c5="0"/>
-  <Proper type1="seiji_036" type2="seiji_035" type3="seiji_036" type4="seiji_037" c0="2.04" c1="-2.04" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_038" type2="seiji_039" type3="seiji_040" type4="seiji_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_038" type2="seiji_039" type3="seiji_040" type4="seiji_041" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_038" class2="CT" class3="CT" class4="CT" c0="-1.1769" c1="1.93595" c2="-3.1642" c3="2.4052" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_038" class2="CT" class3="CT" class4="HC" c0="0.1835" c1="0.5505" c2="0" c3="-0.734" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" type2="seiji_038" class3="CA" class4="CA" c0="12.552" c1="0.0" c2="12.552" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="CT" type2="seiji_038" class3="CA" type4="seiji_042" c0="12.552" c1="0.0" c2="12.552" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="CA" class2="CA" class3="CA" class4="CA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="CA" class2="CA" class3="CA" class4="HA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper class1="HA" class2="CA" class3="CA" class4="HA"  c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_039" type2="seiji_040" type3="seiji_041" type4="seiji_040" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_040" type2="seiji_041" type3="seiji_040" type4="seiji_039" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_039" type2="seiji_040" type3="seiji_041" type4="seiji_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_040" type2="seiji_041" type3="seiji_040" type4="seiji_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_039" type2="seiji_038" type3="seiji_039" type4="seiji_042" c0="12.5520" c1="0.0" c2="-12.5520" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_042" type2="seiji_039" type3="seiji_040" type4="seiji_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_042" type2="seiji_039" type3="seiji_040" type4="seiji_041" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_042" type2="seiji_040" type3="seiji_041" type4="seiji_042" c0="30.334" c1="0.0" c2="-30.334" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_039" type2="seiji_038" type3="seiji_014" type4="seiji_015" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_039" type2="seiji_038" type3="seiji_039" type4="seiji_040" c0="12.552" c1="0.0" c2="-12.552" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_014" type2="seiji_038" type3="seiji_039" type4="seiji_040" c0="12.552" c1="0.0" c2="-12.552" c3="0.0" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_017" type2="seiji_014" type3="seiji_038" type4="seiji_039" c0="1.112" c1="0.0" c2="1.648" c3="0.0" c4="-2.76" c5="0.0"/>
-  <Proper type1="seiji_016" type2="seiji_014" type3="seiji_038" type4="seiji_039" c0="1.112" c1="0.0" c2="1.648" c3="0.0" c4="-2.76" c5="0.0"/>
-  <Proper type1="seiji_044" type2="seiji_004" type3="seiji_004" type4="seiji_043" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_044" type2="seiji_004" type3="seiji_043" type4="seiji_004" c0="1.17" c1="3.51" c2="0.0" c3="-4.68" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_043" type3="seiji_004" type4="seiji_006" c0="1.7886" c1="3.4916" c2="0.5356" c3="-5.8158" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_043" type4="seiji_004" c0="1.17" c1="3.51" c2="0" c3="-4.68" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_007" type4="seiji_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_006" type4="seiji_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_006" type2="seiji_007" type3="seiji_008" type4="seiji_009" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_006" type4="seiji_009" c0="0.66525" c1="1.99575" c2="0" c3="-2.661" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_043" type2="seiji_004" type3="seiji_006" type4="seiji_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_006" type4="seiji_004" c0="3.56675" c1="-1.88905" c2="0.6569" c3="-2.3346" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_007" type4="seiji_008" c0="3.56675" c1="-1.88905" c2="0.6569" c3="-2.3346" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_009" type2="seiji_007" type3="seiji_008" type4="seiji_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_009" type2="seiji_006" type3="seiji_007" type4="seiji_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_009" type2="seiji_006" type3="seiji_006" type4="seiji_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_006" type4="seiji_007" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_043" type2="seiji_004" type3="seiji_006" type4="seiji_006" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_043" type2="seiji_004" type3="seiji_006" type4="seiji_007" c0="3.33465" c1="-1.55225" c2="2.82" c3="-4.6024" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_006" type4="seiji_006" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0626" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_043" type2="seiji_006" type3="seiji_008" type4="seiji_009" c0="-4.0962" c1="5.0877" c2="2.9665" c3="-3.958" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_009" type2="seiji_006" type3="seiji_008" type4="seiji_009" c0="0.66525" c1="1.99575" c2="0.0" c3="-2.661" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_022" type2="seiji_023" type3="seiji_026" type4="seiji_023" c0="-9.8553" c1="-19.4568" c2="0.8758" c3="16.9748" c4="11.4614" c5="0.0"/>
-  <Proper type1="seiji_025" type2="seiji_023" type3="seiji_026" type4="seiji_023" c0="-0.0075" c1="-0.0225" c2="0.0" c3="0.03" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_009" type2="seiji_006" type3="seiji_007" type4="seiji_008" c0="0.76565" c1="2.29695" c2="0.0" c3="-3.0636" c4="0.0" c5="0.0"/>
-  <Proper type1="seiji_047" type2="seiji_048" type3="seiji_046" type4="seiji_048" c0="-9.8553" c1="-19.4568" c2="0.8757" c3="16.9748" c4="11.4616" c5="0.0"/>
-  <Proper type1="seiji_045" type2="seiji_048" type3="seiji_046" type4="seiji_048" c0="-0.0075" c1="-0.0225" c2="0.0" c3="0.03" c4="0.0" c5="0.0"/>
- </RBTorsionForce>-->
  <PeriodicTorsionForce>
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_005" periodicity1="3" phase1="0.0" k1="0.56484"/>
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.56484"/>
