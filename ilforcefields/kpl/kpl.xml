@@ -21,58 +21,58 @@
  <HarmonicBondForce>
   <Bond type1="kpl_011" type2="kpl_013a" length="0.108" k="284512"/>
   <Bond type1="kpl_012" type2="kpl_013b" length="0.108" k="284512"/>
-  <Bond type1="kpl_011" type2="kpl_010" length="0.1315" k="199600"/>
-  <Bond type1="kpl_012" type2="kpl_010" length="0.1378" k="178700"/>
-  <Bond type1="kpl_012" type2="kpl_012" length="0.1341" k="217600"/>
-  <Bond type1="kpl_010" type2="kpl_014" length="0.1466" k="141000"/>
+  <Bond type1="kpl_011" type2="kpl_010" length="0.1315" k="399200"/>
+  <Bond type1="kpl_012" type2="kpl_010" length="0.1378" k="357400"/>
+  <Bond type1="kpl_012" type2="kpl_012" length="0.1341" k="435200"/>
+  <Bond type1="kpl_010" type2="kpl_014" length="0.1466" k="282000"/>
   <Bond type1="kpl_014" type2="kpl_015" length="0.109" k="284512"/>
   <Bond type1="kpl_017" type2="kpl_020" length="0.109" k="284512"/>
   <Bond type1="kpl_016" type2="kpl_020" length="0.109" k="284512"/>
   <Bond type1="kpl_018" type2="kpl_020" length="0.109" k="284512"/>
   <Bond type1="kpl_019" type2="kpl_020" length="0.109" k="284512"/>
-  <Bond type1="kpl_014" type2="kpl_017" length="0.1529" k="112100"/>
-  <Bond type1="kpl_014" type2="kpl_016" length="0.1529" k="112100"/>
-  <Bond type1="kpl_017" type2="kpl_018" length="0.1529" k="112100"/>
-  <Bond type1="kpl_017" type2="kpl_019" length="0.1529" k="112100"/>
-  <Bond type1="kpl_018" type2="kpl_018" length="0.1529" k="112100"/>
-  <Bond type1="kpl_018" type2="kpl_019" length="0.1529" k="112100"/>
+  <Bond type1="kpl_014" type2="kpl_017" length="0.1529" k="224200"/>
+  <Bond type1="kpl_014" type2="kpl_016" length="0.1529" k="224200"/>
+  <Bond type1="kpl_017" type2="kpl_018" length="0.1529" k="224200"/>
+  <Bond type1="kpl_017" type2="kpl_019" length="0.1529" k="224200"/>
+  <Bond type1="kpl_018" type2="kpl_018" length="0.1529" k="224200"/>
+  <Bond type1="kpl_018" type2="kpl_019" length="0.1529" k="224200"/>
   <Bond type1="kpl_021" type2="kpl_022" length="0.1323" k="369700"/>
   <Bond type1="kpl_021" type2="kpl_023" length="0.1818" k="197000"/>
   <Bond type1="kpl_023" type2="kpl_025" length="0.1442" k="533100"/>
   <Bond type1="kpl_023" type2="kpl_026" length="0.157" k="311300"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
-  <Angle type1="kpl_012" type2="kpl_010" type3="kpl_011" angle="1.8849555921538759" k="282.6"/>
-  <Angle type1="kpl_012" type2="kpl_010" type3="kpl_014" angle="2.192133540504878" k="282.6"/>
-  <Angle type1="kpl_011" type2="kpl_010" type3="kpl_014" angle="2.2060961745208325" k="282.6"/>
-  <Angle type1="kpl_010" type2="kpl_011" type3="kpl_013a" angle="2.1834068942449063" k="146.3"/>
-  <Angle type1="kpl_010" type2="kpl_011" type3="kpl_010" angle="1.9163715186897738" k="292.6"/>
-  <Angle type1="kpl_010" type2="kpl_012" type3="kpl_012" angle="1.8692476288859268" k="292.6"/>
-  <Angle type1="kpl_010" type2="kpl_012" type3="kpl_013b" angle="2.129301687433082" k="146.3"/>
-  <Angle type1="kpl_012" type2="kpl_012" type3="kpl_013b" angle="2.2846359908605773" k="146.3"/>
-  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_017" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_016" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_014" type2="kpl_016" type3="kpl_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_017" type2="kpl_018" type3="kpl_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="kpl_017" type2="kpl_019" type3="kpl_020" angle="1.93207948" k="156.6"/>
-  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
-  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_017" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_016" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_018" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_017" type2="kpl_018" type3="kpl_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="kpl_018" type2="kpl_018" type3="kpl_019" angle="1.96698607" k="418.4"/>
-  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="138.1"/>
-  <Angle type1="kpl_015" type2="kpl_014" type3="kpl_015" angle="1.88146493" k="138.1"/>
-  <Angle type1="kpl_020" type2="kpl_017" type3="kpl_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="kpl_020" type2="kpl_016" type3="kpl_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="kpl_020" type2="kpl_018" type3="kpl_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="kpl_020" type2="kpl_019" type3="kpl_020" angle="1.88146493" k="138.1"/>
+  <Angle type1="kpl_012" type2="kpl_010" type3="kpl_011" angle="1.8849555921538759" k="585.2"/>
+  <Angle type1="kpl_012" type2="kpl_010" type3="kpl_014" angle="2.192133540504878" k="585.2"/>
+  <Angle type1="kpl_011" type2="kpl_010" type3="kpl_014" angle="2.2060961745208325" k="585.2"/>
+  <Angle type1="kpl_010" type2="kpl_011" type3="kpl_013a" angle="2.1834068942449063" k="292.6"/>
+  <Angle type1="kpl_010" type2="kpl_011" type3="kpl_010" angle="1.9163715186897738" k="585.2"/>
+  <Angle type1="kpl_010" type2="kpl_012" type3="kpl_012" angle="1.8692476288859268" k="585.2"/>
+  <Angle type1="kpl_010" type2="kpl_012" type3="kpl_013b" angle="2.129301687433082" k="292.6"/>
+  <Angle type1="kpl_012" type2="kpl_012" type3="kpl_013b" angle="2.2846359908605773" k="313.2"/>
+  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="292.6"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="292.6"/>
+  <Angle type1="kpl_017" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_016" type2="kpl_014" type3="kpl_015" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_014" type2="kpl_016" type3="kpl_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_017" type2="kpl_018" type3="kpl_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="kpl_017" type2="kpl_019" type3="kpl_020" angle="1.93207948" k="313.2"/>
+  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="836.8"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_017" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_010" type2="kpl_014" type3="kpl_016" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_018" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_014" type2="kpl_017" type3="kpl_019" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_017" type2="kpl_018" type3="kpl_019" angle="1.96698607" k="836.8"/>
+  <Angle type1="kpl_018" type2="kpl_018" type3="kpl_019" angle="1.96698607" k="836.8"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="276.1"/>
+  <Angle type1="kpl_015" type2="kpl_014" type3="kpl_015" angle="1.88146493" k="276.1"/>
+  <Angle type1="kpl_020" type2="kpl_017" type3="kpl_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="kpl_020" type2="kpl_016" type3="kpl_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="kpl_020" type2="kpl_018" type3="kpl_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="kpl_020" type2="kpl_019" type3="kpl_020" angle="1.88146493" k="276.1"/>
   <Angle type1="kpl_022" type2="kpl_021" type3="kpl_022" angle="1.8692476288859268" k="781.0"/>
   <Angle type1="kpl_023" type2="kpl_021" type3="kpl_022" angle="1.9512781037296603" k="694.0"/>
   <Angle type1="kpl_021" type2="kpl_023" type3="kpl_025" angle="1.790707812546182" k="870"/>
