@@ -51,16 +51,16 @@
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="seiji_003" type2="seiji_004" length="0.148" k="319658"/>
-  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224262"/>
-  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="276980"/>
-  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224262"/>
-  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="276980"/>
-  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224262"/>
-  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224262"/>
-  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="276980"/>
-  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224262"/>
-  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224262"/>
-  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="276980"/>
+  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224200"/>
+  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="277000"/>
+  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224200"/>
+  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="277000"/>
+  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224200"/>
+  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224200"/>
+  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="277000"/>
+  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224200"/>
+  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224200"/>
+  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="277000"/>
   <Bond type1="seiji_011" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_012" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_011" type2="seiji_010" length="0.135" k="199600"/>
@@ -78,11 +78,11 @@
   <Bond type1="seiji_017" type2="seiji_019" length="0.1529" k="112100"/>
   <Bond type1="seiji_018" type2="seiji_018" length="0.1529" k="112100"/>
   <Bond type1="seiji_018" type2="seiji_019" length="0.1529" k="112100"/>
-  <Bond type1="seiji_021" type2="seiji_022" length="0.1323" k="184850"/>
-  <Bond type1="seiji_021" type2="seiji_023" length="0.1818" k="98500"/>
+  <Bond type1="seiji_021" type2="seiji_022" length="0.1340" k="739732"/>
+  <Bond type1="seiji_021" type2="seiji_023" length="0.1835" k="394132"/>
   <Bond type1="seiji_023" type2="seiji_024" length="0.1442" k="266550"/>
-  <Bond type1="seiji_023" type2="seiji_025" length="0.1442" k="266550"/>
-  <Bond type1="seiji_023" type2="seiji_026" length="0.157" k="155650"/>
+  <Bond type1="seiji_023" type2="seiji_025" length="0.1450" k="1066084"/>
+  <Bond type1="seiji_023" type2="seiji_026" length="0.1600" k="622580"/>
   <Bond type1="seiji_027" type2="seiji_030a" length="0.1606" k="310000"/>
   <Bond type1="seiji_027" type2="seiji_030b" length="0.1606" k="310000"/>
   <Bond type1="seiji_027" type2="seiji_030c" length="0.1606" k="310000"/>
@@ -106,7 +106,7 @@
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle type1="seiji_003" type2="seiji_004" type3="seiji_005" angle="1.74533" k="292.8"/>
-  <Angle type1="seiji_004" type2="seiji_003" type3="seiji_004" angle="1.870993" k="453.4"/>
+  <Angle type1="seiji_004" type2="seiji_003" type3="seiji_004" angle="1.870993" k="433.4"/>
   <Angle type1="seiji_003" type2="seiji_004" type3="seiji_006" angle="1.911135" k="470.3"/>
   <Angle type1="seiji_012" type2="seiji_010" type3="seiji_011" angle="1.8849555921538759" k="282.6"/>
   <Angle type1="seiji_012" type2="seiji_010" type3="seiji_014" angle="2.192133540504878" k="282.6"/>
