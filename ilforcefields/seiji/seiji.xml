@@ -139,15 +139,15 @@
   <Angle type1="seiji_020" type2="seiji_016" type3="seiji_020" angle="1.88146493" k="138.1"/>
   <Angle type1="seiji_020" type2="seiji_018" type3="seiji_020" angle="1.88146493" k="138.1"/>
   <Angle type1="seiji_020" type2="seiji_019" type3="seiji_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_022" type2="seiji_021" type3="seiji_022" angle="1.8954276" k="782.4"/>
-  <Angle type1="seiji_023" type2="seiji_021" type3="seiji_022" angle="1.9268435" k="694.5"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_024" angle="1.790707812546182" k="870"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_025" angle="1.790707812546182" k="870"/>
-  <Angle type1="seiji_024" type2="seiji_023" type3="seiji_024" angle="2.012364627549462" k="969"/>
-  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_025" angle="2.0978858" k="970.7"/>
-  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_026" angle="1.9442968" k="790.8"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_026" angle="1.7488199104983182" k="815.9"/>
-  <Angle type1="seiji_023" type2="seiji_026" type3="seiji_023" angle="2.11185" k="334.7"/>
+  <Angle type1="seiji_022" type2="seiji_021" type3="seiji_022" angle="1.8954276" k="1564.816"/>
+  <Angle type1="seiji_023" type2="seiji_021" type3="seiji_022" angle="1.9268435" k="1389.088"/>
+  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_024" angle="1.790707812546182" k="1740.544"/>
+  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_025" angle="1.790707812546182" k="1740.544"/>
+  <Angle type1="seiji_024" type2="seiji_023" type3="seiji_024" angle="2.097885761" k="1941.376"/>
+  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_025" angle="2.0978858" k="1941.376"/>
+  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_026" angle="1.9442968" k="1581.552"/>
+  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_026" angle="1.7488199104983182" k="1631.76"/>
+  <Angle type1="seiji_023" type2="seiji_026" type3="seiji_023" angle="2.11185" k="669.44"/>
   <Angle type1="seiji_030a" type2="seiji_027" type3="seiji_030b" angle="1.57079633" k="1165"/>
   <Angle type1="seiji_030a" type2="seiji_027" type3="seiji_030c" angle="1.57079633" k="1165"/>
   <Angle type1="seiji_030b" type2="seiji_027" type3="seiji_030c" angle="1.57079633" k="1165"/>
