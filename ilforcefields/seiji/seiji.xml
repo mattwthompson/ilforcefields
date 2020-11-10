@@ -206,6 +206,7 @@
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
   <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_007" periodicity1="1" phase1="0.0" k1="-8.144156" periodicity2="2" phase2="0.0" k2="-1.127588" periodicity3="3" phase3="0.0" k3="-1.163152"/>
   <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_009" periodicity1="1" phase1="0.0" k1="-2.119196" periodicity2="2" phase2="0.0" k2="1.1483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
+  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_007" type4="seiji_008" periodicity1="1" phase1="0.0" k1="0.887008" periodicity2="2" phase2="0.0" k2="0.106692" periodicity3="3" phase3="0.0" k3="-0.016736"/>
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
   <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="0.357732"/>
   <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_026" periodicity1="3" phase1="0.0" k1="0.0"/>
