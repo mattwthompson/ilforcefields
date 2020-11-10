@@ -51,16 +51,16 @@
  </AtomTypes>
  <HarmonicBondForce>
   <Bond type1="seiji_003" type2="seiji_004" length="0.148" k="319658"/>
-  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224200"/>
-  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="277000"/>
-  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224200"/>
-  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="277000"/>
-  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224200"/>
-  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224200"/>
-  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="277000"/>
-  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224200"/>
-  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224200"/>
-  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="277000"/>
+  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224262"/>
+  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="276981"/>
+  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224262"/>
+  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="276981"/>
+  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224262"/>
+  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224262"/>
+  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="276981"/>
+  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224262"/>
+  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224262"/>
+  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="276981"/>
   <Bond type1="seiji_011" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_012" type2="seiji_013" length="0.108" k="284512"/>
   <Bond type1="seiji_011" type2="seiji_010" length="0.135" k="199600"/>
@@ -125,15 +125,15 @@
   <Angle type1="seiji_014" type2="seiji_016" type3="seiji_020" angle="1.93207948" k="156.6"/>
   <Angle type1="seiji_017" type2="seiji_018" type3="seiji_020" angle="1.93207948" k="156.6"/>
   <Angle type1="seiji_017" type2="seiji_019" type3="seiji_020" angle="1.93207948" k="156.6"/>
-  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
-  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
+  <Angle class1="NA" class2="CT" class3="CT" angle="1.911135" k="470.3"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.954768" k="836.8"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.881464934" k="276.144"/>
   <Angle type1="seiji_010" type2="seiji_014" type3="seiji_017" angle="1.96698607" k="418.4"/>
   <Angle type1="seiji_010" type2="seiji_014" type3="seiji_016" angle="1.96698607" k="418.4"/>
   <Angle type1="seiji_014" type2="seiji_017" type3="seiji_018" angle="1.96698607" k="418.4"/>
   <Angle type1="seiji_014" type2="seiji_017" type3="seiji_019" angle="1.96698607" k="418.4"/>
   <Angle type1="seiji_017" type2="seiji_018" type3="seiji_019" angle="1.96698607" k="418.4"/>
   <Angle type1="seiji_018" type2="seiji_018" type3="seiji_019" angle="1.96698607" k="418.4"/>
-  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="138.1"/>
   <Angle type1="seiji_015" type2="seiji_014" type3="seiji_015" angle="1.88146493" k="138.1"/>
   <Angle type1="seiji_020" type2="seiji_017" type3="seiji_020" angle="1.88146493" k="138.1"/>
   <Angle type1="seiji_020" type2="seiji_016" type3="seiji_020" angle="1.88146493" k="138.1"/>
@@ -203,14 +203,14 @@
  </HarmonicAngleForce>
  <PeriodicTorsionForce>
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_005" periodicity1="3" phase1="0.0" k1="0.56484"/>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.56484"/>
+  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
   <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_007" periodicity1="1" phase1="0.0" k1="-8.144156" periodicity2="2" phase2="0.0" k2="-1.127588" periodicity3="3" phase3="0.0" k3="-1.163152"/>
-  <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_009" periodicity1="1" phase1="0.0" k1="2.119196" periodicity2="2" phase2="0.0" k2="1.1483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
+  <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_009" periodicity1="1" phase1="0.0" k1="-2.119196" periodicity2="2" phase2="0.0" k2="1.1483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
   <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
   <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="0.357732"/>
   <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_026" periodicity1="3" phase1="0.0" k1="0.0"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="0.008368"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_021" periodicity1="1" phase1="0.0" k1="16.386636" periodicity2="2" phase2="0.0" k2="5.20908" periodicity3="3" phase3="0.0" k3="1.598288"/>
+  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="-0.008368"/>
+  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_021" periodicity1="1" phase1="0.0" k1="16.386636" periodicity2="2" phase2="0.0" k2="5.20908" periodicity3="3" phase3="0.0" k3="-1.598288"/>
   <Improper type1="seiji_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
   <Improper type1="seiji_011" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
   <Improper type1="seiji_012" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
