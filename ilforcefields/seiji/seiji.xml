@@ -1,8 +1,8 @@
 <ForceField>
  <AtomTypes>
   <Type name="seiji_001" class="" element="H" mass="1.008" def="H[N;X4]" desc="H on R3NH+"/>
-  <Type name="seiji_002" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)H" desc="N on R3NH+"/>
-  <Type name="seiji_003" class="" element="N" mass="14.0067" def="[N;X4](C)(C)(C)C" desc="N on R4N+"/>
+  <Type name="seiji_002" class="NT" element="N" mass="14.0067" def="[N;X4](C)(C)(C)H" desc="N on R3NH+"/>
+  <Type name="seiji_003" class="NT" element="N" mass="14.0067" def="[N;X4](C)(C)(C)C" desc="N on R4N+"/>
   <Type name="seiji_004" class="CT" element="C" mass="12.011" def="C[N;X4;%seiji_003,%seiji_043]" desc="1st C on alkyl in TAA" doi="10.1021/jp063901o"/>
   <Type name="seiji_005" class="HC" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="seiji_009" doi="10.1021/jp063901o"/>
   <Type name="seiji_006" class="CT" element="C" mass="12.011" def="C(H)(H)(C)[C;%seiji_004]" desc="2nd C on alkyl in TAA" overrides="seiji_007" doi="10.1021/jp063901o"/>
@@ -20,12 +20,12 @@
   <Type name="seiji_018" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%seiji_017,%seiji_018]" desc="CS in CMIm" doi="10.1021/jp0362133"/>
   <Type name="seiji_019" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%seiji_018]" desc="CT in CMIm" overrides="seiji_008" doi="10.1021/jp0362133"/>
   <Type name="seiji_020" class="HC" element="H" mass="1.008" def="H[C;%seiji_016,%seiji_017,%seiji_018,%seiji_019]" desc="HC in CMIm" overrides="seiji_009" doi="10.1021/jp0362133"/>
-  <Type name="seiji_021" class="" element="C" mass="12.011" def="C(F)(F)(F)S" desc="C in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="seiji_022" class="" element="F" mass="18.9984" def="FC(F)(F)S" desc="F in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="seiji_023" class="" element="S" mass="32.065" def="S(O)(O)C(F)(F)(F)" desc="S in triflamides" doi="10.1021/jp0476545"/>
-  <Type name="seiji_024" class="" element="O" mass="15.9994" def="OS(O)(O)C(F)(F)(F)" desc="O in OTf" doi="10.1021/jp0476545"/>
-  <Type name="seiji_025" class="" element="O" mass="15.9994" def="OS(N)(O)C(F)(F)(F)" desc="O in Tf2N" doi="10.1021/jp0476545"/>
-  <Type name="seiji_026" class="" element="N" mass="14.0067" def="N(S(O)(O)(C))S(O)(O)(C)" desc="N in Tf2N" doi="10.1021/jp0476545"/>
+  <Type name="seiji_021" class="CF" element="C" mass="12.011" def="C(F)(F)(F)S" desc="C in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_022" class="FC" element="F" mass="18.9984" def="FC(F)(F)S" desc="F in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_023" class="SO" element="S" mass="32.065" def="S(O)(O)C(F)(F)(F)" desc="S in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_024" class="OS" element="O" mass="15.9994" def="OS(O)(O)C(F)(F)(F)" desc="O in OTf" doi="10.1021/jp0476545"/>
+  <Type name="seiji_025" class="OS" element="O" mass="15.9994" def="OS(N)(O)C(F)(F)(F)" desc="O in Tf2N" doi="10.1021/jp0476545"/>
+  <Type name="seiji_026" class="NI" element="N" mass="14.0067" def="N(S(O)(O)(C))S(O)(O)(C)" desc="N in Tf2N" doi="10.1021/jp0476545"/>
   <Type name="seiji_027" class="" element="P" mass="30.973762" def="P(F)(F)(F)(F)(F)F" desc="P in PF6" doi="10.1021/jp0476545"/>
   <Type name="seiji_030a" class="" element="F" mass="18.9984" def="FP([!%seiji_030a])([!%seiji_030a])([!%seiji_030a])([!%seiji_030a])F" desc="F1 in PF6" doi="10.1021/jp0476545"/>
   <Type name="seiji_030b" class="" element="F" mass="18.9984" def="FP([!%seiji_030a;!%seiji_030b])([!%seiji_030a;!%seiji_030b])([%seiji_030a])([%seiji_030a])F" desc="F2 in PF6" overrides="seiji_030a" doi="10.1021/jp0476545"/>
@@ -50,174 +50,41 @@
   <Type name="seiji_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
  </AtomTypes>
  <HarmonicBondForce>
-  <Bond type1="seiji_003" type2="seiji_004" length="0.148" k="319658"/>
-  <Bond type1="seiji_004" type2="seiji_006" length="0.1529" k="224262"/>
-  <Bond type1="seiji_004" type2="seiji_005" length="0.109" k="276981"/>
-  <Bond type1="seiji_006" type2="seiji_006" length="0.1529" k="224262"/>
-  <Bond type1="seiji_006" type2="seiji_009" length="0.109" k="276981"/>
-  <Bond type1="seiji_006" type2="seiji_007" length="0.1529" k="224262"/>
-  <Bond type1="seiji_006" type2="seiji_008" length="0.1529" k="224262"/>
-  <Bond type1="seiji_007" type2="seiji_009" length="0.109" k="276981"/>
-  <Bond type1="seiji_007" type2="seiji_007" length="0.1529" k="224262"/>
-  <Bond type1="seiji_007" type2="seiji_008" length="0.1529" k="224262"/>
-  <Bond type1="seiji_008" type2="seiji_009" length="0.109" k="276981"/>
-  <Bond type1="seiji_011" type2="seiji_013" length="0.108" k="284512"/>
-  <Bond type1="seiji_012" type2="seiji_013" length="0.108" k="284512"/>
-  <Bond type1="seiji_011" type2="seiji_010" length="0.135" k="199600"/>
-  <Bond type1="seiji_012" type2="seiji_010" length="0.1378" k="178700"/>
-  <Bond type1="seiji_012" type2="seiji_012" length="0.1341" k="217600"/>
-  <Bond type1="seiji_010" type2="seiji_014" length="0.1466" k="141000"/>
-  <Bond type1="seiji_014" type2="seiji_015" length="0.109" k="284512"/>
-  <Bond type1="seiji_017" type2="seiji_020" length="0.109" k="284512"/>
-  <Bond type1="seiji_016" type2="seiji_020" length="0.109" k="284512"/>
-  <Bond type1="seiji_018" type2="seiji_020" length="0.109" k="284512"/>
-  <Bond type1="seiji_019" type2="seiji_020" length="0.109" k="284512"/>
-  <Bond type1="seiji_014" type2="seiji_017" length="0.1529" k="112100"/>
-  <Bond type1="seiji_014" type2="seiji_016" length="0.1529" k="112100"/>
-  <Bond type1="seiji_017" type2="seiji_018" length="0.1529" k="112100"/>
-  <Bond type1="seiji_017" type2="seiji_019" length="0.1529" k="112100"/>
-  <Bond type1="seiji_018" type2="seiji_018" length="0.1529" k="112100"/>
-  <Bond type1="seiji_018" type2="seiji_019" length="0.1529" k="112100"/>
-  <Bond type1="seiji_021" type2="seiji_022" length="0.1340" k="739732"/>
-  <Bond type1="seiji_021" type2="seiji_023" length="0.1835" k="394132"/>
-  <Bond type1="seiji_023" type2="seiji_024" length="0.1442" k="266550"/>
-  <Bond type1="seiji_023" type2="seiji_025" length="0.1450" k="1066084"/>
-  <Bond type1="seiji_023" type2="seiji_026" length="0.1600" k="622580"/>
-  <Bond type1="seiji_027" type2="seiji_030a" length="0.1606" k="310000"/>
-  <Bond type1="seiji_027" type2="seiji_030b" length="0.1606" k="310000"/>
-  <Bond type1="seiji_027" type2="seiji_030c" length="0.1606" k="310000"/>
-  <Bond type1="seiji_031" type2="seiji_032" length="0.1394" k="323500"/>
-  <Bond type1="seiji_035" type2="seiji_036" length="0.131" k="420600"/>
-  <Bond type1="seiji_036" type2="seiji_037" length="0.115" k="774600"/>
-  <Bond type1="seiji_038" type2="seiji_039" length="0.134" k="404200"/>
-  <Bond type1="seiji_039" type2="seiji_040" length="0.138" k="392500"/>
-  <Bond type1="seiji_039" type2="seiji_042" length="0.108" k="307100"/>
-  <Bond type1="seiji_040" type2="seiji_041" length="0.138" k="392500"/>
-  <Bond type1="seiji_040" type2="seiji_042" length="0.108" k="307100"/>
-  <Bond type1="seiji_041" type2="seiji_042" length="0.108" k="307100"/>
-  <Bond type1="seiji_038" type2="seiji_014" length="0.148" k="282000"/>
-  <Bond type1="seiji_043" type2="seiji_044" length="0.101" k="363200"/>
-  <Bond type1="seiji_044" type2="seiji_004" length="0.109" k="284500"/>
-  <Bond type1="seiji_004" type2="seiji_043" length="0.1471" k="307100"/>
-  <Bond type1="seiji_023" type2="seiji_022" length="0.1575" k="187900"/>
-  <Bond type1="seiji_045" type2="seiji_048" length="0.1437" k="533100"/>
-  <Bond type1="seiji_047" type2="seiji_048" length="0.1575" k="187900"/>
-  <Bond type1="seiji_046" type2="seiji_048" length="0.1570" k="313700"/>
+  <Bond class1="CT" class2="CT" length="0.1529" k="224262"/>
+  <Bond class1="NT" class2="CT" length="0.148" k="319658"/>
+  <Bond class1="CT" class2="HC" length="0.109" k="276980"/>
+  <Bond class1="CF" class2="FC" length="0.1340" k="739732"/>
+  <Bond class1="CF" class2="SO" length="0.1835" k="394132"/>
+  <Bond class1="OS" class2="SO" length="0.145" k="1066083"/>
+  <Bond class1="SO" class2="NI" length="0.16" k="622579"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
-  <Angle type1="seiji_003" type2="seiji_004" type3="seiji_005" angle="1.74533" k="292.8"/>
-  <Angle type1="seiji_004" type2="seiji_003" type3="seiji_004" angle="1.870993" k="433.4"/>
-  <Angle type1="seiji_003" type2="seiji_004" type3="seiji_006" angle="1.911135" k="470.3"/>
-  <Angle type1="seiji_012" type2="seiji_010" type3="seiji_011" angle="1.8849555921538759" k="282.6"/>
-  <Angle type1="seiji_012" type2="seiji_010" type3="seiji_014" angle="2.192133540504878" k="282.6"/>
-  <Angle type1="seiji_011" type2="seiji_010" type3="seiji_014" angle="2.2060961745208325" k="282.6"/>
-  <Angle type1="seiji_010" type2="seiji_011" type3="seiji_013" angle="2.1834068942449063" k="146.3"/>
-  <Angle type1="seiji_010" type2="seiji_011" type3="seiji_010" angle="1.9163715186897738" k="292.6"/>
-  <Angle type1="seiji_010" type2="seiji_012" type3="seiji_012" angle="1.8692476288859268" k="292.6"/>
-  <Angle type1="seiji_010" type2="seiji_012" type3="seiji_013" angle="2.129301687433082" k="146.3"/>
-  <Angle type1="seiji_012" type2="seiji_012" type3="seiji_013" angle="2.2846359908605773" k="146.3"/>
-  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_010" type2="seiji_014" type3="seiji_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_017" type2="seiji_014" type3="seiji_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_016" type2="seiji_014" type3="seiji_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_014" type2="seiji_017" type3="seiji_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_014" type2="seiji_016" type3="seiji_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_017" type2="seiji_018" type3="seiji_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="seiji_017" type2="seiji_019" type3="seiji_020" angle="1.93207948" k="156.6"/>
-  <Angle class1="NA" class2="CT" class3="CT" angle="1.911135" k="470.3"/>
-  <Angle class1="CT" class2="CT" class3="CT" angle="1.954768" k="836.8"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.954768762" k="836.8"/>
   <Angle class1="HC" class2="CT" class3="HC" angle="1.881464934" k="276.144"/>
-  <Angle type1="seiji_010" type2="seiji_014" type3="seiji_017" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_010" type2="seiji_014" type3="seiji_016" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_014" type2="seiji_017" type3="seiji_018" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_014" type2="seiji_017" type3="seiji_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_017" type2="seiji_018" type3="seiji_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_018" type2="seiji_018" type3="seiji_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="seiji_015" type2="seiji_014" type3="seiji_015" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_020" type2="seiji_017" type3="seiji_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_020" type2="seiji_016" type3="seiji_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_020" type2="seiji_018" type3="seiji_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_020" type2="seiji_019" type3="seiji_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="seiji_022" type2="seiji_021" type3="seiji_022" angle="1.8954276" k="1564.816"/>
-  <Angle type1="seiji_023" type2="seiji_021" type3="seiji_022" angle="1.9268435" k="1389.088"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_024" angle="1.790707812546182" k="1740.544"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_025" angle="1.790707812546182" k="1740.544"/>
-  <Angle type1="seiji_024" type2="seiji_023" type3="seiji_024" angle="2.097885761" k="1941.376"/>
-  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_025" angle="2.0978858" k="1941.376"/>
-  <Angle type1="seiji_025" type2="seiji_023" type3="seiji_026" angle="1.9442968" k="1581.552"/>
-  <Angle type1="seiji_021" type2="seiji_023" type3="seiji_026" angle="1.7488199104983182" k="1631.76"/>
-  <Angle type1="seiji_023" type2="seiji_026" type3="seiji_023" angle="2.11185" k="669.44"/>
-  <Angle type1="seiji_030a" type2="seiji_027" type3="seiji_030b" angle="1.57079633" k="1165"/>
-  <Angle type1="seiji_030a" type2="seiji_027" type3="seiji_030c" angle="1.57079633" k="1165"/>
-  <Angle type1="seiji_030b" type2="seiji_027" type3="seiji_030c" angle="1.57079633" k="1165"/>
-  <Angle type1="seiji_030a" type2="seiji_027" type3="seiji_030a" angle="3.14159265" k="291"/>
-  <Angle type1="seiji_030b" type2="seiji_027" type3="seiji_030b" angle="3.14159265" k="291"/>
-  <Angle type1="seiji_030c" type2="seiji_027" type3="seiji_030c" angle="3.14159265" k="291"/>
-  <Angle type1="seiji_032" type2="seiji_031" type3="seiji_032" angle="1.9111355" k="669.5"/>
-  <Angle type1="seiji_035" type2="seiji_036" type3="seiji_037" angle="3.05781685" k="425"/>
-  <Angle type1="seiji_036" type2="seiji_035" type3="seiji_036" angle="2.0682152" k="362"/>
-  <Angle class1="CA" class2="NAP" class3="CA" angle="2.10137642" k="586"/>
-  <Angle type1="seiji_039" type2="seiji_038" type3="seiji_039" angle="2.10137642" k="586"/>
-  <Angle class1="NAP" class2="CA" class3="CA" angle="2.0944" k="586"/>
-  <Angle type1="seiji_038" type2="seiji_039" type3="seiji_040" angle="2.0944" k="586"/>
-  <Angle class1="CA" class2="CA" class3="CA" angle="2.0944" k="586"/>
-  <Angle type1="seiji_039" type2="seiji_040" type3="seiji_041" angle="2.0944" k="527.2"/>
-  <Angle type1="seiji_040" type2="seiji_041" type3="seiji_040" angle="2.0944" k="527.2"/>
-  <Angle class1="CA" class2="CA" type3="seiji_042" angle="2.0944" k="293"/>
-  <Angle type1="seiji_038" type2="seiji_039" type3="seiji_042" angle="2.0944" k="293"/>
-  <Angle type1="seiji_039" type2="seiji_040" type3="seiji_042" angle="2.0944" k="293"/>
-  <Angle type1="seiji_042" type2="seiji_040" type3="seiji_041" angle="2.0944" k="293"/>
-  <Angle type1="seiji_040" type2="seiji_040" type3="seiji_041" angle="2.0944" k="293"/>
-  <Angle type1="seiji_040" type2="seiji_041" type3="seiji_042" angle="2.0944" k="293"/>
-  <Angle type1="seiji_039" type2="seiji_038" type3="seiji_014" angle="2.09090444" k="585.8"/>
-  <Angle type1="seiji_038" class2="CT" class3="HC" angle="1.9111" k="292.9"/>
-  <Angle type1="seiji_038" class2="CT" class3="CT" angle="1.9669861" k="488.3"/>
-  <Angle type1="seiji_004" type2="seiji_004" type3="seiji_044" angle="1.9321" k="313.8"/>
-  <Angle type1="seiji_004" type2="seiji_043" type3="seiji_004" angle="1.9111" k="418.4"/>
-  <Angle type1="seiji_044" type2="seiji_004" type3="seiji_043" angle="1.9111" k="209.2"/>
-  <Angle type1="seiji_005" type2="seiji_004" type3="seiji_005" angle="1.8815" k="276.1"/>
-  <Angle type1="seiji_005" type2="seiji_004" type3="seiji_043" angle="1.9111" k="209.2"/>
-  <Angle type1="seiji_007" type2="seiji_008" type3="seiji_009" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_006" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_043" type2="seiji_004" type3="seiji_006" angle="1.9111" k="669.4"/>
-  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_008" angle="1.9548" k="836.8"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_007" angle="1.9548" k="836.8"/>
-  <Angle type1="seiji_005" type2="seiji_004" type3="seiji_006" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_009" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_006" type2="seiji_007" type3="seiji_009" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_009" angle="1.8815" k="276.2"/>
-  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_009" angle="1.8815" k="276.2"/>
-  <Angle type1="seiji_009" type2="seiji_008" type3="seiji_009" angle="1.8815" k="276.2"/>
-  <Angle type1="seiji_006" type2="seiji_008" type3="seiji_009" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_022" type2="seiji_023" type3="seiji_025" angle="1.8169" k="1077"/>
-  <Angle type1="seiji_022" type2="seiji_023" type3="seiji_026" angle="1.7977" k="902"/>
-  <Angle type1="seiji_004" type2="seiji_006" type3="seiji_006" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_009" type2="seiji_006" type3="seiji_007" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_009" type2="seiji_007" type3="seiji_008" angle="1.9321" k="313.22"/>
-  <Angle type1="seiji_045" type2="seiji_048" type3="seiji_045" angle="2.0682" k="969.0"/>
-  <Angle type1="seiji_047" type2="seiji_048" type3="seiji_045" angle="1.8169" k="1077.0"/>
-  <Angle type1="seiji_047" type2="seiji_048" type3="seiji_046" angle="1.79768913" k="902.0"/>
-  <Angle type1="seiji_046" type2="seiji_048" type3="seiji_045" angle="1.9827" k="789.0"/>
-  <Angle type1="seiji_048" type2="seiji_046" type3="seiji_048" angle="2.1921" k="671.0"/>
+  <Angle class1="NT" class2="CT" class3="CT" angle="1.911135" k="470.3"/>
+  <Angle class1="NT" class2="CT" class3="HC" angle="1.745329252" k="292.88"/>
+  <Angle class1="CT" class2="NT" class3="CT" angle="1.870992958" k="433.46"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.932079482" k="313.21424"/>
+  <Angle class1="FC" class2="CF" class3="FC" angle="1.895427568" k="1564.816"/>
+  <Angle class1="SO" class2="CF" class3="FC" angle="1.926843494" k="1389.088"/>
+  <Angle class1="CF" class2="SO" class3="OS" angle="1.790707813" k="1740.544"/>
+  <Angle class1="OS" class2="SO" class3="OS" angle="2.097885761" k="1941.376"/>
+  <Angle class1="OS" class2="SO" class3="NI" angle="1.944296787" k="1581.552"/>
+  <Angle class1="CF" class2="SO" class3="NI" angle="1.74881991"  k="1631.76"/>
+  <Angle class1="SO" class2="NI" class3="SO" angle="2.11184395"  k="669.44"/>
  </HarmonicAngleForce>
  <PeriodicTorsionForce>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_005" periodicity1="3" phase1="0.0" k1="0.56484"/>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
-  <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_007" periodicity1="1" phase1="0.0" k1="-8.144156" periodicity2="2" phase2="0.0" k2="-1.127588" periodicity3="3" phase3="0.0" k3="-1.163152"/>
-  <Proper type1="seiji_003" type2="seiji_004" type3="seiji_006" type4="seiji_009" periodicity1="1" phase1="0.0" k1="-2.119196" periodicity2="2" phase2="0.0" k2="1.1483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_007" type4="seiji_008" periodicity1="1" phase1="0.0" k1="0.887008" periodicity2="2" phase2="0.0" k2="0.106692" periodicity3="3" phase3="0.0" k3="-0.016736"/>
-  <Proper type1="seiji_004" type2="seiji_006" type3="seiji_007" type4="seiji_009" periodicity1="3" phase1="0.0" k1="0.765672"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_006" type4="seiji_009" periodicity1="3" phase1="0.0" k1="0.665256"/>
-  <Proper type1="seiji_006" type2="seiji_007" type3="seiji_008" type4="seiji_009" periodicity1="3" phase1="0.0" k1="0.765672"/>
-  <Proper type1="seiji_005" type2="seiji_004" type3="seiji_006" type4="seiji_007" periodicity1="3" phase1="0.0" k1="0.765672"/>
-  <Proper type1="seiji_009" type2="seiji_006" type3="seiji_007" type4="seiji_009" periodicity1="3" phase1="0.0" k1="0.665256"/>
-  <Proper type1="seiji_009" type2="seiji_007" type3="seiji_008" type4="seiji_009" periodicity1="3" phase1="0.0" k1="0.665256"/>
-  <Proper type1="seiji_004" type2="seiji_003" type3="seiji_004" type4="seiji_006" periodicity1="3" phase1="0.0" k1="0.194556"/>
-  <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="0.357732"/>
-  <Proper type1="seiji_022" type2="seiji_021" type3="seiji_023" type4="seiji_026" periodicity1="3" phase1="0.0" k1="0.0"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_025" periodicity1="3" phase1="0.0" k1="-0.008368"/>
-  <Proper type1="seiji_023" type2="seiji_026" type3="seiji_023" type4="seiji_021" periodicity1="1" phase1="0.0" k1="16.386636" periodicity2="2" phase2="0.0" k2="5.20908" periodicity3="3" phase3="0.0" k3="-1.598288"/>
+  <Proper class1="CT" class2="NT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.56484"/>
+  <Proper class1="CT" class2="NT" class3="CT" class4="CT" periodicity1="3" phase1="0.0" k1="0.194556"/>
+  <Proper class1="NT" class2="CT" class3="CT" class4="CT" periodicity1="1" phase1="0.0" k1="-8.144156" periodicity2="2" phase2="0.0" k2="-1.127588" periodicity3="3" phase3="0.0" k3="-1.163152"/>
+  <Proper class1="NT" class2="CT" class3="CT" class4="HC" periodicity1="1" phase1="0.0" k1="-2.119196" periodicity2="2" phase2="0.0" k2="1.483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="CT" periodicity1="1" phase1="0.0" k1="0.887008" periodicity2="2" phase2="0.0" k2="0.106692" periodicity3="3" phase3="0.0" k3="-0.016736"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.765672"/>
+  <Proper class1="HC" class2="CT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.665256"/>
+  <Proper class1="FC" class2="CF" class3="SO" class4="OS" periodicity1="3" phase1="0.0" k1="0.357732"/>
+  <Proper class1="FC" class2="CF" class3="SO" class4="NI" periodicity1="3" phase1="0.0" k1="0.0"/>
+  <Proper class1="SO" class2="NI" class3="SO" class4="OS" periodicity1="3" phase1="0.0" k1="-0.008368"/>
+  <Proper class1="SO" class2="NI" class3="SO" class4="CF" periodicity1="1" phase1="0.0" k1="16.386636" periodicity2="2" phase2="0.0" k2="5.20908" periodicity3="3" phase3="0.0" k3="-1.598288"/>
   <Improper type1="seiji_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
   <Improper type1="seiji_011" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
   <Improper type1="seiji_012" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
