@@ -63,10 +63,10 @@
   <Bond type1="lopes_008" type2="lopes_009" length="0.109" k="284500"/>
   <Bond type1="lopes_011" type2="lopes_013" length="0.108" k="284512"/>
   <Bond type1="lopes_012" type2="lopes_013" length="0.108" k="284512"/>
-  <Bond type1="lopes_011" type2="lopes_010" length="0.135" k="199600"/>
-  <Bond type1="lopes_012" type2="lopes_010" length="0.1378" k="178700"/>
-  <Bond type1="lopes_012" type2="lopes_012" length="0.1341" k="217600"/>
-  <Bond type1="lopes_010" type2="lopes_014" length="0.1466" k="141000"/>
+  <Bond type1="lopes_011" type2="lopes_010" length="0.1315" k="399200"/>
+  <Bond type1="lopes_012" type2="lopes_010" length="0.1378" k="357400"/>
+  <Bond type1="lopes_012" type2="lopes_012" length="0.1341" k="435200"/>
+  <Bond type1="lopes_010" type2="lopes_014" length="0.1466" k="282000"/>
   <Bond type1="lopes_014" type2="lopes_015" length="0.109" k="284512"/>
   <Bond type1="lopes_017" type2="lopes_020" length="0.109" k="284512"/>
   <Bond type1="lopes_016" type2="lopes_020" length="0.109" k="284512"/>
@@ -108,37 +108,37 @@
   <Angle type1="lopes_003" type2="lopes_004" type3="lopes_005" angle="1.911135" k="292.9"/>
   <Angle type1="lopes_004" type2="lopes_003" type3="lopes_004" angle="1.870993" k="433.5"/>
   <Angle type1="lopes_003" type2="lopes_004" type3="lopes_006" angle="1.911135" k="470.3"/>
-  <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="282.6"/>
-  <Angle type1="lopes_012" type2="lopes_010" type3="lopes_014" angle="2.192133540504878" k="282.6"/>
-  <Angle type1="lopes_011" type2="lopes_010" type3="lopes_014" angle="2.2060961745208325" k="282.6"/>
-  <Angle type1="lopes_010" type2="lopes_011" type3="lopes_013" angle="2.1834068942449063" k="146.3"/>
-  <Angle type1="lopes_010" type2="lopes_011" type3="lopes_010" angle="1.9163715186897738" k="292.6"/>
-  <Angle type1="lopes_010" type2="lopes_012" type3="lopes_012" angle="1.8692476288859268" k="292.6"/>
-  <Angle type1="lopes_010" type2="lopes_012" type3="lopes_013" angle="2.129301687433082" k="146.3"/>
-  <Angle type1="lopes_012" type2="lopes_012" type3="lopes_013" angle="2.2846359908605773" k="146.3"/>
-  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_017" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_016" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_014" type2="lopes_016" type3="lopes_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_017" type2="lopes_018" type3="lopes_020" angle="1.93207948" k="156.6"/>
-  <Angle type1="lopes_017" type2="lopes_019" type3="lopes_020" angle="1.93207948" k="156.6"/>
-  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
-  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_017" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_016" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_018" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_017" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="418.4"/>
-  <Angle type1="lopes_018" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="418.4"/>
-  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="138.1"/>
-  <Angle type1="lopes_015" type2="lopes_014" type3="lopes_015" angle="1.88146493" k="138.1"/>
-  <Angle type1="lopes_020" type2="lopes_017" type3="lopes_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="lopes_020" type2="lopes_016" type3="lopes_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="lopes_020" type2="lopes_018" type3="lopes_020" angle="1.88146493" k="138.1"/>
-  <Angle type1="lopes_020" type2="lopes_019" type3="lopes_020" angle="1.88146493" k="138.1"/>
+  <Angle type1="lopes_012" type2="lopes_010" type3="lopes_011" angle="1.8849555921538759" k="585.2"/>
+  <Angle type1="lopes_012" type2="lopes_010" type3="lopes_014" angle="2.192133540504878" k="585.2"/>
+  <Angle type1="lopes_011" type2="lopes_010" type3="lopes_014" angle="2.2060961745208325" k="585.2"/>
+  <Angle type1="lopes_010" type2="lopes_011" type3="lopes_013" angle="2.1834068942449063" k="292.6"/>
+  <Angle type1="lopes_010" type2="lopes_011" type3="lopes_010" angle="1.9163715186897738" k="585.2"/>
+  <Angle type1="lopes_010" type2="lopes_012" type3="lopes_012" angle="1.8692476288859268" k="585.2"/>
+  <Angle type1="lopes_010" type2="lopes_012" type3="lopes_013" angle="2.129301687433082" k="292.6"/>
+  <Angle type1="lopes_012" type2="lopes_012" type3="lopes_013" angle="2.2846359908605773" k="313.2"/>
+  <Angle class1="NA" class2="CT" class3="HC" angle="1.93207948" k="292.6"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="292.6"/>
+  <Angle type1="lopes_017" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_016" type2="lopes_014" type3="lopes_015" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_014" type2="lopes_016" type3="lopes_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_017" type2="lopes_018" type3="lopes_020" angle="1.93207948" k="313.2"/>
+  <Angle type1="lopes_017" type2="lopes_019" type3="lopes_020" angle="1.93207948" k="313.2"/>
+  <Angle class1="NA" class2="CT" class3="CT" angle="1.96698607" k="836.8"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_017" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_010" type2="lopes_014" type3="lopes_016" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_018" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_014" type2="lopes_017" type3="lopes_019" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_017" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="836.8"/>
+  <Angle type1="lopes_018" type2="lopes_018" type3="lopes_019" angle="1.96698607" k="836.8"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493" k="276.1"/>
+  <Angle type1="lopes_015" type2="lopes_014" type3="lopes_015" angle="1.88146493" k="276.1"/>
+  <Angle type1="lopes_020" type2="lopes_017" type3="lopes_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="lopes_020" type2="lopes_016" type3="lopes_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="lopes_020" type2="lopes_018" type3="lopes_020" angle="1.88146493" k="276.1"/>
+  <Angle type1="lopes_020" type2="lopes_019" type3="lopes_020" angle="1.88146493" k="276.1"/>
   <Angle type1="lopes_022" type2="lopes_021" type3="lopes_022" angle="1.8692476288859268" k="781.0"/>
   <Angle type1="lopes_023" type2="lopes_021" type3="lopes_022" angle="1.9512781037296603" k="694.0"/>
   <Angle type1="lopes_021" type2="lopes_023" type3="lopes_024" angle="1.790707812546182" k="870"/>
