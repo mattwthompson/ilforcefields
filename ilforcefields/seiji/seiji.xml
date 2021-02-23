@@ -1,0 +1,144 @@
+<ForceField>
+ <AtomTypes>
+  <Type name="seiji_001" class="" element="H" mass="1.008" def="H[N;X4]" desc="H on R3NH+"/>
+  <Type name="seiji_002" class="NT" element="N" mass="14.0067" def="[N;X4](C)(C)(C)H" desc="N on R3NH+"/>
+  <Type name="seiji_003" class="NT" element="N" mass="14.0067" def="[N;X4](C)(C)(C)C" desc="N on R4N+"/>
+  <Type name="seiji_004" class="CT" element="C" mass="12.011" def="C[N;X4;%seiji_003,%seiji_043]" desc="1st C on alkyl in TAA" doi="10.1021/jp063901o"/>
+  <Type name="seiji_005" class="HC" element="H" mass="1.008" def="HC[N;X4]" desc="first HC on alkyl in TAA" overrides="seiji_009" doi="10.1021/jp063901o"/>
+  <Type name="seiji_006" class="CT" element="C" mass="12.011" def="C(H)(H)(C)[C;%seiji_004]" desc="2nd C on alkyl in TAA" overrides="seiji_007" doi="10.1021/jp063901o"/>
+  <Type name="seiji_007" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(C)C" desc="C in CH2 on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_008" class="CT" element="C" mass="12.011" def="C(H)(H)(H)C" desc="Terminal C on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_009" class="HC" element="H" mass="1.008" def="H[C;%seiji_006,%seiji_007,%seiji_008]" desc="Generic H past first carbon on alkyl in alkylammonium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_010" class="NA" element="N" mass="14.0067" def="[N;X3;r5]1[C;X3;r5][N;X3;r5][C;X3;r5][C;X3;r5]1" desc="NA in CMIm" doi="10.1021/jp0362133" overrides="seiji_038"/>
+  <Type name="seiji_011" class="" element="C" mass="12.011" def="[C;X3;r5]1[N;%seiji_010][C;X3;r5][C;X3;r5][N;%seiji_010]1" desc="CR in CMIm" doi="10.1021/jp0362133"/>
+  <Type name="seiji_012" class="" element="C" mass="12.011" def="[C;X3;r5]1[C;X3;r5][N;%seiji_010][C;X3;r5][N;%seiji_010]1" desc="CW in CMIm" doi="10.1021/jp0362133"/>
+  <Type name="seiji_013" class="" element="H" mass="1.008" def="H[C;%seiji_011,%seiji_012]" desc="HA in CMIm" doi="10.1021/jp0362133" overrides="seiji_009"/>
+  <Type name="seiji_014" class="CT" element="C" mass="12.011" def="[C;X4][N;%seiji_010,%seiji_038]" desc="C1 in CMIm" doi="10.1021/jp0362133" overrides="seiji_004,seiji_008"/>
+  <Type name="seiji_015" class="HC" element="H" mass="1.008" def="H[C;%seiji_014]" desc="H1 in CMIm" doi="10.1021/jp0362133" overrides="seiji_009"/>
+  <Type name="seiji_016" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%seiji_014]" desc="CE in CMIm" overrides="seiji_008,seiji_017,seiji_019" doi="10.1021/jp0362133"/>
+  <Type name="seiji_017" class="CT" element="C" mass="12.011" def="[C;X4]([C;%seiji_014])(C)" desc="C2 in CMIm" doi="10.1021/jp0362133" overrides="seiji_018"/>
+  <Type name="seiji_018" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(C)[C;%seiji_017,%seiji_018]" desc="CS in CMIm" doi="10.1021/jp0362133"/>
+  <Type name="seiji_019" class="CT" element="C" mass="12.011" def="[C;X4](H)(H)(H)[C;%seiji_018]" desc="CT in CMIm" overrides="seiji_008" doi="10.1021/jp0362133"/>
+  <Type name="seiji_020" class="HC" element="H" mass="1.008" def="H[C;%seiji_016,%seiji_017,%seiji_018,%seiji_019]" desc="HC in CMIm" overrides="seiji_009" doi="10.1021/jp0362133"/>
+  <Type name="seiji_021" class="CF" element="C" mass="12.011" def="C(F)(F)(F)S" desc="C in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_022" class="FC" element="F" mass="18.9984" def="FC(F)(F)S" desc="F in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_023" class="SO" element="S" mass="32.065" def="S(O)(O)C(F)(F)(F)" desc="S in triflamides" doi="10.1021/jp0476545"/>
+  <Type name="seiji_024" class="OS" element="O" mass="15.9994" def="OS(O)(O)C(F)(F)(F)" desc="O in OTf" doi="10.1021/jp0476545"/>
+  <Type name="seiji_025" class="OS" element="O" mass="15.9994" def="OS(N)(O)C(F)(F)(F)" desc="O in Tf2N" doi="10.1021/jp0476545"/>
+  <Type name="seiji_026" class="NI" element="N" mass="14.0067" def="N(S(O)(O)(C))S(O)(O)(C)" desc="N in Tf2N" doi="10.1021/jp0476545"/>
+  <Type name="seiji_027" class="" element="P" mass="30.973762" def="P(F)(F)(F)(F)(F)F" desc="P in PF6" doi="10.1021/jp0476545"/>
+  <Type name="seiji_030a" class="" element="F" mass="18.9984" def="FP([!%seiji_030a])([!%seiji_030a])([!%seiji_030a])([!%seiji_030a])F" desc="F1 in PF6" doi="10.1021/jp0476545"/>
+  <Type name="seiji_030b" class="" element="F" mass="18.9984" def="FP([!%seiji_030a;!%seiji_030b])([!%seiji_030a;!%seiji_030b])([%seiji_030a])([%seiji_030a])F" desc="F2 in PF6" overrides="seiji_030a" doi="10.1021/jp0476545"/>
+  <Type name="seiji_030c" class="" element="F" mass="18.9984" def="FP([%seiji_030a])([%seiji_030a])([%seiji_030b])([%seiji_030b])F" desc="F3 in PF6" overrides="seiji_030a,seiji_030b" doi="10.1021/jp0476545"/>
+  <Type name="seiji_031" class="" element="B" mass="10.811" def="B" desc="B in BF4" doi="10.1021/jp063901o"/>
+  <Type name="seiji_032" class="" element="F" mass="18.998" def="FB" desc="F in BF4" doi="10.1021/jp063901o"/>
+  <Type name="seiji_033" class="" element="Cl" mass="35.45300" def="Cl" desc="chloride ion" doi="10.1021/jp063901o"/>
+  <Type name="seiji_034" class="" element="Br" mass="35.45300" def="Br" desc="bromide ion" doi="10.1021/jp063901o"/>
+  <Type name="seiji_035" class="" element="N" mass="14.0067" def="N(CN)CN" desc="central N in dicyanamide" doi="10.1021/jp063901o"/>
+  <Type name="seiji_036" class="" element="C" mass="12.011" def="C(NCN)N" desc="cyano C in dicyanamide" doi="10.1021/jp063901o"/>
+  <Type name="seiji_037" class="" element="N" mass="14.0067" def="NCNCN" desc="cyano N in dicyanamide" doi="10.1021/jp063901o"/>
+  <Type name="seiji_038" class="NAP" element="N" mass="14.0067" def="[N;r6;X3](C)(C)C" desc="NAP in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_039" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][N;%seiji_038]1" desc="CA1 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_040" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][C;X3;r6][N;%seiji_038][C;X3;r6]1" desc="CA2 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_041" class="CA" element="C" mass="12.011" def="[C;X3;r6]1[C;X3;r6][C;X3;r6][N;%seiji_038][C;X3;r6][C;X3;r6]1" desc="CA3 in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_042" class="" element="H" mass="1.008" def="H[C;%seiji_041,%seiji_039,%seiji_040]" desc="HAP in pyridinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_043" class="" element="N" mass="14.0067" def="[N;X4;R1](C)(C)(C)" desc="N3 in ammonium/pyrrolidinium" overrides="seiji_003" doi="10.1021/jp063901o"/>
+  <Type name="seiji_044" class="" element="H" mass="1.008" def="H[N;%seiji_043]" desc="H in ammonium/pyrrolidinium" doi="10.1021/jp063901o"/>
+  <Type name="seiji_045" class="" element="O" mass="15.9994" def="OS(N)(O)(F)" desc="OB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="seiji_046" class="" element="N" mass="14.0067" def="N(S(O)(O)(F))S(O)(O)(F)" desc="NB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="seiji_047" class="" element="F" mass="18.9984" def="FS(O)(O)N" desc="FB in FSI" doi="10.1021/jp9120468"/>
+  <Type name="seiji_048" class="" element="S" mass="32.065" def="S(F)(O)(O)N" desc="SB in FSI" doi="10.1021/jp9120468"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond class1="CT" class2="CT" length="0.1529" k="224262"/>
+  <Bond class1="NT" class2="CT" length="0.148" k="319658"/>
+  <Bond class1="CT" class2="HC" length="0.109" k="276980"/>
+  <Bond class1="CF" class2="FC" length="0.1340" k="739732"/>
+  <Bond class1="CF" class2="SO" length="0.1835" k="394132"/>
+  <Bond class1="OS" class2="SO" length="0.145" k="1066083"/>
+  <Bond class1="SO" class2="NI" length="0.16" k="622579"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.954768762" k="836.8"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.881464934" k="276.144"/>
+  <Angle class1="NT" class2="CT" class3="CT" angle="1.911135" k="470.3"/>
+  <Angle class1="NT" class2="CT" class3="HC" angle="1.745329252" k="292.88"/>
+  <Angle class1="CT" class2="NT" class3="CT" angle="1.870992958" k="433.46"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.932079482" k="313.21424"/>
+  <Angle class1="FC" class2="CF" class3="FC" angle="1.895427568" k="1564.816"/>
+  <Angle class1="SO" class2="CF" class3="FC" angle="1.926843494" k="1389.088"/>
+  <Angle class1="CF" class2="SO" class3="OS" angle="1.790707813" k="1740.544"/>
+  <Angle class1="OS" class2="SO" class3="OS" angle="2.097885761" k="1941.376"/>
+  <Angle class1="OS" class2="SO" class3="NI" angle="1.944296787" k="1581.552"/>
+  <Angle class1="CF" class2="SO" class3="NI" angle="1.74881991"  k="1631.76"/>
+  <Angle class1="SO" class2="NI" class3="SO" angle="2.11184395"  k="669.44"/>
+ </HarmonicAngleForce>
+ <PeriodicTorsionForce>
+  <Proper class1="CT" class2="NT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.56484"/>
+  <Proper class1="CT" class2="NT" class3="CT" class4="CT" periodicity1="3" phase1="0.0" k1="0.194556"/>
+  <Proper class1="NT" class2="CT" class3="CT" class4="CT" periodicity1="1" phase1="0.0" k1="-8.144156" periodicity2="2" phase2="0.0" k2="-1.127588" periodicity3="3" phase3="0.0" k3="-1.163152"/>
+  <Proper class1="NT" class2="CT" class3="CT" class4="HC" periodicity1="1" phase1="0.0" k1="-2.119196" periodicity2="2" phase2="0.0" k2="1.483228" periodicity3="3" phase3="0.0" k3="0.989516"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="CT" periodicity1="1" phase1="0.0" k1="0.887008" periodicity2="2" phase2="0.0" k2="0.106692" periodicity3="3" phase3="0.0" k3="-0.016736"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.765672"/>
+  <Proper class1="HC" class2="CT" class3="CT" class4="HC" periodicity1="3" phase1="0.0" k1="0.665256"/>
+  <Proper class1="FC" class2="CF" class3="SO" class4="OS" periodicity1="3" phase1="0.0" k1="0.357732"/>
+  <Proper class1="FC" class2="CF" class3="SO" class4="NI" periodicity1="3" phase1="0.0" k1="0.0"/>
+  <Proper class1="SO" class2="NI" class3="SO" class4="OS" periodicity1="3" phase1="0.0" k1="-0.008368"/>
+  <Proper class1="SO" class2="NI" class3="SO" class4="CF" periodicity1="1" phase1="0.0" k1="16.386636" periodicity2="2" phase2="0.0" k2="5.20908" periodicity3="3" phase3="0.0" k3="-1.598288"/>
+  <Improper type1="seiji_010" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.185"/>
+  <Improper type1="seiji_011" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper type1="seiji_012" type2="" type3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper class1="CA" class2="" class3="" type4="" periodicity1="2" phase1="3.14159265359" k1="4.6"/>
+  <Improper type1="seiji_038" class2="" class3="" class4="" periodicity1="2" phase1="3.14159265359" k1="4.18500"/>
+ </PeriodicTorsionForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <Atom type="seiji_001" charge="0.31" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="seiji_002" charge="0.03" sigma="0.325" epsilon="0.71128"/>
+  <Atom type="seiji_003" charge="0.29" sigma="0.345" epsilon="0.71128"/>
+  <Atom type="seiji_004" charge="-0.4" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_005" charge="0.19" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="seiji_006" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_007" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_008" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_009" charge="0.06" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="seiji_010" charge="0.15" sigma="0.325" epsilon="0.71128"/>
+  <Atom type="seiji_011" charge="-0.11" sigma="0.355" epsilon="0.29288"/>
+  <Atom type="seiji_012" charge="-0.13" sigma="0.355" epsilon="0.29288"/>
+  <Atom type="seiji_013" charge="0.21" sigma="0.242" epsilon="0.12552"/>
+  <Atom type="seiji_014" charge="-0.17" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_015" charge="0.13" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="seiji_016" charge="-0.05" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_017" charge="0.01" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_018" charge="-0.12" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_019" charge="-0.18" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_020" charge="0.06" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="seiji_021" charge="0.52" sigma="0.35" epsilon="0.27614"/>
+  <Atom type="seiji_022" charge="-0.18" sigma="0.295" epsilon="0.22175"/>
+  <Atom type="seiji_023" charge="0.96" sigma="0.355" epsilon="1.046"/>
+  <Atom type="seiji_024" charge="-0.63" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="seiji_025" charge="-0.54" sigma="0.326" epsilon="0.87864"/>
+  <Atom type="seiji_026" charge="-0.72" sigma="0.345" epsilon="0.71128"/>
+  <Atom type="seiji_027" charge="1.34" sigma="0.374" epsilon="0.83680"/>
+  <Atom type="seiji_030a" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
+  <Atom type="seiji_030b" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
+  <Atom type="seiji_030c" charge="-0.39" sigma="0.31181" epsilon="0.25522"/>
+  <Atom type="seiji_031" charge="0.96" sigma="0.358" epsilon="0.3975"/>
+  <Atom type="seiji_032" charge="-0.49" sigma="0.312" epsilon="0.2552"/>
+  <Atom type="seiji_033" charge="-1" sigma="0.365" epsilon="0.83"/>
+  <Atom type="seiji_034" charge="-1" sigma="0.397" epsilon="0.86"/>
+  <Atom type="seiji_035" charge="-0.76" sigma="0.325" epsilon="0.711"/>
+  <Atom type="seiji_036" charge="0.64" sigma="0.33" epsilon="0.276"/>
+  <Atom type="seiji_037" charge="-0.76" sigma="0.32" epsilon="0.711"/>
+  <Atom type="seiji_038" charge="0.15" sigma=".325" epsilon="0.71128"/>
+  <Atom type="seiji_039" charge="0.00" sigma=".355" epsilon="0.29288"/>
+  <Atom type="seiji_040" charge="-0.07" sigma=".355" epsilon="0.29288"/>
+  <Atom type="seiji_041" charge="0.02" sigma=".355" epsilon="0.29288"/>
+  <Atom type="seiji_042" charge="0.15" sigma=".242" epsilon="0.12552"/>
+  <Atom type="seiji_043" charge="0.12" sigma=".325" epsilon="0.71128"/>
+  <Atom type="seiji_044" charge="0.13" sigma=".250" epsilon="0.12552"/>
+  <Atom type="seiji_045" charge="-0.53" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="seiji_046" charge="-0.66" sigma="0.325" epsilon="0.71128"/>
+  <Atom type="seiji_047" charge="-0.13" sigma="0.295" epsilon="0.22175"/>
+  <Atom type="seiji_048" charge="1.02" sigma="0.355" epsilon="1.04600"/>
+ </NonbondedForce>
+</ForceField>
