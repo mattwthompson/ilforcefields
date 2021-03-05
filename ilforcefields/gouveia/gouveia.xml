@@ -359,7 +359,7 @@
   <Atom type="clp_042" charge="0.15" sigma=".242" epsilon="0.12552"/>
   <Atom type="clp_043" charge="0.12" sigma=".325" epsilon="0.71128"/>
   <Atom type="clp_044" charge="0.13" sigma=".250" epsilon="0.12552"/>
-  <Atom type="clp_045" charge="-0.53" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="clp_045" charge="-0.53" sigma="0.3150" epsilon="0.83736"/>
   <Atom type="clp_046" charge="-0.66" sigma="0.325" epsilon="0.71128"/>
   <Atom type="clp_047" charge="-0.13" sigma="0.3118" epsilon="0.25540"/>
   <Atom type="clp_048" charge="1.02" sigma="0.355" epsilon="1.04600"/>
