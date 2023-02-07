@@ -67,11 +67,11 @@
   <Bond type1="lopes_017" type2="lopes_019" length="0.1529" k="112100"/>
   <Bond type1="lopes_018" type2="lopes_018" length="0.1529" k="112100"/>
   <Bond type1="lopes_018" type2="lopes_019" length="0.1529" k="112100"/>
-  <Bond type1="lopes_021" type2="lopes_022" length="0.1323" k="184850"/>
-  <Bond type1="lopes_021" type2="lopes_023" length="0.1818" k="98500"/>
-  <Bond type1="lopes_023" type2="lopes_024" length="0.1442" k="266550"/>
-  <Bond type1="lopes_023" type2="lopes_025" length="0.1442" k="266550"/>
-  <Bond type1="lopes_023" type2="lopes_026" length="0.157" k="155650"/>
+  <Bond type1="lopes_021" type2="lopes_022" length="0.1323" k="369700"/>
+  <Bond type1="lopes_021" type2="lopes_023" length="0.1818" k="197000"/>
+  <Bond type1="lopes_023" type2="lopes_024" length="0.1442" k="533100"/>
+  <Bond type1="lopes_023" type2="lopes_025" length="0.1442" k="533100"/>
+  <Bond type1="lopes_023" type2="lopes_026" length="0.157" k="311300"/>
   <Bond type1="lopes_027" type2="lopes_030a" length="0.1606" k="310000"/>
   <Bond type1="lopes_027" type2="lopes_030b" length="0.1606" k="310000"/>
   <Bond type1="lopes_027" type2="lopes_030c" length="0.1606" k="310000"/>
